@@ -48,4 +48,7 @@ set backupdir^=$TEMP
 "
 " Don't auto-linewrap
 set formatoptions-=t
+"
+" Default to using Tabs
+autocmd BufReadPost * tab ball
 
