@@ -1,4 +1,3 @@
-set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -14,22 +13,30 @@ function MyDiff()
   if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
   let arg3 = v:fname_out
   if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
-  let eq = ''
   if $VIMRUNTIME =~ ' '
     if &sh =~ '\<cmd'
-      let cmd = '""' . $VIMRUNTIME . '\diff"'
-      let eq = '"'
+      if empty(&shellxquote)
+        let l:shxq_sav = ''
+        set shellxquote&
+      endif
+      let cmd = '"' . $VIMRUNTIME . '\diff"'
     else
       let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
     endif
   else
     let cmd = $VIMRUNTIME . '\diff'
   endif
-  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3
+  if exists('l:shxq_sav')
+    let &shellxquote=l:shxq_sav
+  endif
 endfunction
 
 "
 " User defined
+" Enable power of vim, compatible mode cripples it
+set nocompatible
+"
 " Optimized for python development
 set ts=4
 set softtabstop=4
@@ -46,9 +53,15 @@ set ai
 set backupdir-=.
 set backupdir^=$TEMP
 "
+" Don't save undo files
+set noundofile
+"
 " Don't auto-linewrap
 set formatoptions-=t
 "
-" Default to using Tabs
-autocmd BufReadPost * tab ball
+" Default to using Tabs - this seems to cause problems:
+"autocmd BufReadPost * tab ball
+"
+" Enable line numbers by default
+set number
 
