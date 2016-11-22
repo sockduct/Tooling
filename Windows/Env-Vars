@@ -1,18 +1,27 @@
 Environment Variable    Value
 ----------------------------------------------------------------------------------------------------
 DIRCMD                  /OGNE
-PATH                    C:\Windows\system32\WindowsPowerShell\v1.0\;C:\Apps\Python27\;
-                        C:\Apps\Python27\Scripts;C:\Apps\Python27\Tools\Scripts;C:\Apps\Bin;
+
+PATH                    C:\Program Files\ConEmu\ConEmu\Scripts;C:\Program Files\ConEmu;
+                        C:\Program Files\ConEmu\ConEmu;
+                        C:\Apps\Python27\;C:\Apps\Python27\Scripts;C:\Apps\Python27\Tools\Scripts;
+                        C:\Apps\Bin;
                         C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;
-                        C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Wireshark;
-                        C:\Program Files (x86)\Vim\vim74;
+                        C:\Windows\System32\WindowsPowerShell\v1.0\;
+                        C:\Program Files\Wireshark;
+                        C:\Program Files (x86)\Vim\vim80;
                         C:\Program Files\VanDyke Software\SecureCRT;
+                        C:\Program Files\OpenSSH;
+                        C:\ProgramData\chocolatey\bin;
+                        C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;
                         C:\Program Files (x86)\PuTTY\;
                         C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client;
-                        C:\Apps\OpenSSL\bin;C:\Apps\NetSNMP\bin;
+                        C:\Apps\OpenSSL\bin;
+                        C:\Apps\NetSNMP\bin;
+                        C:\Program Files\Oracle\VirtualBox;
                         C:\Program Files (x86)\RSA SecurID Token Common;
-                        C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Java\jre8\bin;.;
-                        C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files\Git\cmd;
-                        C:\Program Files\OpenSSH;C:\Program Files\1E\NomadBranch\;
-                        C:\Program Files (x86)\WebEx\Productivity Tools 
+                        C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Java\jre8\bin;
+                        .;
+                        C:\Program Files (x86)\WebEx\Productivity Tools;
+                        C:\Program Files (x86)\Enterprise Vault\EVClient\
 
