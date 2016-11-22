@@ -1,5 +1,5 @@
 ﻿# Load posh-git example profile
-#. 'C:\apps\working\Tooling\git\posh-git\profile.example.ps1'
+#. 'C:\Apps\Working\Tooling\git\modules\posh-git\profile.example.ps1'
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
@@ -7,7 +7,7 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-. "C:\Apps\Working\Tooling\PowerShell\Get-ChildItem-Color\Get-ChildItem-Color.ps1"
+. "C:\Apps\Working\Tooling\PowerShell\Modules\Get-ChildItem-Color\Get-ChildItem-Color.ps1"
 Set-Alias l Get-ChildItem-Color -option AllScope -Force
 Set-Alias dir Get-ChildItem-Color -option AllScope -Force
 Set-Alias ls Get-ChildItem-Format-Wide -option AllScope -Force
