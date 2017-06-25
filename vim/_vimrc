@@ -64,4 +64,10 @@ set formatoptions-=t
 "
 " Enable line numbers by default
 set number
+"
+" Disable annoying auto-insert \n
+set textwidth=0
+"
+" Interesting to note:
+" set nowrap - disable line wrapping, have to scroll all the way to the right, useful in some circumstances
 
