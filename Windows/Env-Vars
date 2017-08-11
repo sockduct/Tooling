@@ -11,19 +11,16 @@ SYSTEM-PATH             C:\Apps\Bin;
                         C:\Apps\Python27\;
                         C:\Apps\Python27\Scripts;
                         C:\Apps\Python27\Tools\Scripts;
-                        C:\Program Files\Git\cmd;
-                        C:\Program Files\Git\usr\bin;
-                        C:\Program Files\nodejs\;
                         C:\Program Files (x86)\Google\google_appengine\;
                         C:\ProgramData\Oracle\Java\javapath;
-                        C:\Program Files (x86)\Java\jre1.8.0_121\bin;
+                        C:\Program Files (x86)\Java\jre1.8.0_141\bin;
                         C:\Program Files (x86)\Java\jre1.7.0_111\bin;
                         C:\Windows\system32;
                         C:\Windows;
                         C:\Windows\System32\Wbem;
                         C:\Windows\System32\WindowsPowerShell\v1.0\;
                         C:\Program Files\VanDyke Software\SecureCRT;
-                        C:\Program Files (x86)\PuTTY\;
+                        C:\Program Files\PuTTY\;
                         C:\Program Files (x86)\Vim\vim80;
                         C:\Program Files\Sublime Text 3;
                         C:\Program Files (x86)\Microsoft VS Code\bin;
@@ -35,13 +32,23 @@ SYSTEM-PATH             C:\Apps\Bin;
                         C:\Apps\OpenSSL\bin;
                         C:\Apps\NetSNMP\bin;
                         C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client;
-                        C:\Program Files (x86)\WebEx\Productivity Tools;
-                        C:\Program Files (x86)\RSA SecurID Token Common;
                         .
+                        C:\Program Files\Git\cmd;
+                        C:\Apps\HashiCorp\Vagrant\bin
+                        C:\Program Files\nodejs\;
+                        C:\Program Files (x86)\WebEx\Productivity Tools;
+                        C:\Program Files (x86)\Plantronics\Spokes3G\
+                        C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services
+                        C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services
+                        C:\Program Files (x86)\RSA SecurID Token Common;
 
 USER-PATH               C:\Users\js646y\AppData\Local\atom\bin;
                         C:\Users\js646y\AppData\Roaming\npm;
+                        C:\Users\js646y\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin
+                        C:\Program Files (x86)\Nmap
+                        C:\Program Files\Heroku\bin
 
 Previous Programs:      C:\Program Files\OpenSSH;
                         C:\ProgramData\chocolatey\bin;
+                        C:\Program Files\Git\usr\bin; (present but not in path - Git Bash only?)
 
