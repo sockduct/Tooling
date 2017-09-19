@@ -1,0 +1,8763 @@
+
+# 2017-03-30 09:53:01.390000
++dir()
+
+# 2017-03-30 09:53:17.057000
++dir(__builtins__)
+
+# 2017-03-30 11:34:46.460000
++for i in range(10):
++    print(i)
+
+# 2017-03-30 11:53:27.865000
++import parsedatetime
+
+# 2017-03-30 11:53:31.363000
++dir(parsedatetime)
+
+# 2017-03-30 11:54:22.411000
++import pdir
+
+# 2017-03-30 11:54:28.967000
++pdir(parsedatetime)
+
+# 2017-03-30 11:56:18.859000
++pdir(parsedatetime.Calendar)
+
+# 2017-03-30 11:58:54.207000
++cal = parsedatetime.Calendar
+
+# 2017-03-30 11:59:00.663000
++cal = parsedatetime.Calendar()
+
+# 2017-03-30 11:59:06.298000
++cal
+
+# 2017-03-30 11:59:28.773000
++cal.parseDT
+
+# 2017-03-30 11:59:39.167000
++cal.parseDT('03/02/2017 03:33 AM')
+
+# 2017-03-30 13:01:17.692000
++dt, result = cal.parseDT('03/02/2017 03:33 AM')
+
+# 2017-03-30 13:01:19.117000
++result
+
+# 2017-03-30 13:01:20.376000
++dt
+
+# 2017-03-30 13:01:27.267000
++dt.ctime()
+
+# 2017-03-30 13:02:15.503000
++help(dt.timetz)
+
+# 2017-03-30 13:02:25.677000
++help(dt.tzinfo)
+
+# 2017-03-30 13:02:40.124000
++help(dt.tzname)
+
+# 2017-03-30 13:02:45.160000
++dt.tzname
+
+# 2017-03-30 13:02:48.903000
++dt.tzname()
+
+# 2017-03-30 13:03:18.953000
++dt
+
+# 2017-03-30 13:03:25.539000
++dt.astimezone
+
+# 2017-03-30 13:03:27.761000
++dt.astimezone()
+
+# 2017-03-30 13:03:39.183000
++dt.dst
+
+# 2017-03-30 13:03:41.203000
++dt.dst()
+
+# 2017-03-30 13:03:44.199000
++dt.ctime()
+
+# 2017-03-30 13:03:50.361000
++dt.day
+
+# 2017-03-30 13:03:59.530000
++dt.timetz
+
+# 2017-03-30 13:04:01
++dt.timetz()
+
+# 2017-03-30 13:04:15.749000
++dt.tzinfo
+
+# 2017-03-30 13:04:17.084000
++dt.tzinfo()
+
+# 2017-03-30 13:04:22.821000
++dt.tzname
+
+# 2017-03-30 13:04:24.131000
++dt.tzname()
+
+# 2017-03-30 13:09:15.093000
++dt.astime(detroit)
+
+# 2017-03-30 13:09:22.053000
++dt.astime
+
+# 2017-03-30 13:09:42.791000
++dt.astimezone
+
+# 2017-03-30 13:09:48.240000
++help(dt.astimezone)
+
+# 2017-03-30 13:10:37.962000
++import pytz
+
+# 2017-03-30 13:11:04.800000
++sodtz = pytz.timezone('US/Pacific')
+
+# 2017-03-30 13:12:27.790000
++dt, result = cal.parseDT('03/02/2017 03:33 AM', tzinfo=sodtz)
+
+# 2017-03-30 13:12:29.956000
++result
+
+# 2017-03-30 13:12:31.157000
++dt
+
+# 2017-03-30 13:12:50.351000
++dt.astimezone('Detroit')
+
+# 2017-03-30 13:13:11.458000
++localtz = pytz.timezone('US/Eastern')
+
+# 2017-03-30 13:13:21.146000
++dt.astimezone(localtz)
+
+# 2017-03-31 08:38:00.782000
++1/0
+
+# 2017-03-31 08:38:19.019000
++2 ** 500
+
+# 2017-03-31 08:38:52.307000
++l = [1, 2]
+
+# 2017-03-31 08:38:52.978000
++l
+
+# 2017-03-31 08:38:58.283000
++l.append(l)
+
+# 2017-03-31 08:38:59.223000
++l
+
+# 2017-03-31 13:44:26.718000
++help(ValueError)
+
+# 2017-03-31 13:59:53.455000
++cal
+
+# 2017-03-31 14:00:39.389000
++dt, result = cal.parseDT('2017/03/02 17:33:24')
+
+# 2017-03-31 14:00:40.653000
++result
+
+# 2017-03-31 14:00:41.963000
++dt
+
+# 2017-03-31 14:00:51.609000
++sodtz
+
+# 2017-03-31 14:00:53.967000
++localtz
+
+# 2017-03-31 14:01:06.493000
++dt.ctime()
+
+# 2017-03-31 14:01:25.128000
++dt.astimezone(localtz)
+
+# 2017-03-31 14:01:48.202000
++stty 
+
+# 2017-03-31 14:04:06.539000
++utctz = pytz.timezone('UTC')
+
+# 2017-03-31 14:04:17.742000
++dt, result = cal.parseDT('2017/03/02 17:33:24', utctz)
+
+# 2017-03-31 14:04:34.446000
++dir(pytz)
+
+# 2017-03-31 14:04:39.627000
++pdir(pytz)
+
+# 2017-03-31 14:06:44.641000
++dt, result = cal.parseDT('2017/03/02 17:33:24', utctz)
+
+# 2017-03-31 14:06:46.904000
++utctz
+
+# 2017-03-31 14:06:49.805000
++localtz
+
+# 2017-03-31 14:07:04.171000
++dt, result = cal.parseDT('2017/03/02 17:33:24', localtz)
+
+# 2017-03-31 14:07:24.933000
++dt, result = cal.parseDT('2017/03/02 17:33:24', tzinfo=utctz)
+
+# 2017-03-31 14:07:27.523000
++result
+
+# 2017-03-31 14:07:31.081000
++dt.ctime()
+
+# 2017-03-31 14:07:39.315000
++dt.astimezone(localtz)
+
+# 2017-03-31 14:07:44.989000
++dt.astimezone(localtz).ctime()
+
+# 2017-03-31 14:11:24.217000
++help(split)
+
+# 2017-03-31 14:11:32.164000
++help(str.split)
+
+# 2017-03-31 14:11:45.451000
++dir(str)
+
+# 2017-03-31 14:11:49.914000
++pdir(str)
+
+# 2017-03-31 14:12:43.856000
++help(str.partition)
+
+# 2017-03-31 14:13:11.252000
++help(str.split)
+
+# 2017-04-01 19:30:15.240000
++a = 5.01
+
+# 2017-04-01 19:30:17.586000
++dir(a)
+
+# 2017-04-01 19:30:19.838000
++pdir(a)
+
+# 2017-04-01 19:31:24.862000
++a.__str__
+
+# 2017-04-01 19:31:27.158000
++a.__str__()
+
+# 2017-04-01 19:31:33.260000
++a.__repr__()
+
+# 2017-04-04 09:46:05.038000
++help(str)
+
+# 2017-04-04 11:51:47.997000
++ 
+
+# 2017-04-07 14:05:16.149000
++def choice(chooser):
++    def func1(data):
++        return data.lower()
++    def func2(data):
++        return data.upper()
++    if chooser == 1:
++        return func1
++    else:
++        return func2
+
+# 2017-04-07 14:05:33.375000
++x = choice
+
+# 2017-04-07 14:05:35.022000
++x
+
+# 2017-04-07 14:05:43.552000
++x(1)
+
+# 2017-04-07 14:05:52.253000
++x(1)('test text')
+
+# 2017-04-07 14:05:59.549000
++x(2)('test text')
+
+# 2017-04-07 14:06:08.037000
++x = choice(2)
+
+# 2017-04-07 14:06:12.164000
++x('test text')
+
+# 2017-04-07 20:20:03.636000
++pdir(str)
+
+# 2017-04-07 20:20:07.986000
++import pdir2
+
+# 2017-04-07 20:20:12.886000
++import pdir
+
+# 2017-04-07 20:20:15.804000
++pdir(str)
+
+# 2017-04-07 20:20:24.295000
++help(str.capitalize)
+
+# 2017-04-07 20:20:41.032000
++'february'.capitalize
+
+# 2017-04-07 20:20:43.182000
++'february'.capitalize()
+
+# 2017-04-08 08:53:19.938000
++months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+
+# 2017-04-08 08:53:47.348000
++month_abr = dict((m[:3].lower(), m) for m in months)
+
+# 2017-04-08 08:53:49.947000
++month_abr
+
+# 2017-04-08 09:02:36.127000
++pdir(str)
+
+# 2017-04-08 09:02:57.911000
++help(str.isdigit)
+
+# 2017-04-08 09:36:35.781000
++"I like %s." % 'ice cream'
+
+# 2017-04-08 11:33:06.828000
++def valid_month(month):
++    brd_months = dict((m[0:3].lower(), m) for m in months)
++    if month and len(month) >= 3:
++        if month[0:3].lower() in brd_months:
++            return brd_months[month[0:3]]
++
++def valid_day(day):
++    if day and day.isdigit():
++        num_day = int(day)
++        if num_day >= 1 and num_day <= 31:
++            return num_day
++
++def valid_year(year):
++    if year and year.isdigit():
++        num_year = int(year)
++        if num_year >= 1900 and num_year <= 2017:
++            return num_year
+
+# 2017-04-08 11:33:16.209000
++valid_month('january')
+
+# 2017-04-08 11:33:20.436000
++valid_month('jan1234123')
+
+# 2017-04-08 11:33:24.657000
++valid_month('garbage')
+
+# 2017-04-08 11:33:36.903000
++valid_day('0')
+
+# 2017-04-08 11:33:38.598000
++valid_day('1')
+
+# 2017-04-08 11:33:40.650000
++valid_day('31')
+
+# 2017-04-08 11:33:42.443000
++valid_day('32')
+
+# 2017-04-08 11:33:48.921000
++valid_year('1899')
+
+# 2017-04-08 11:33:51.620000
++valid_year('1900')
+
+# 2017-04-08 11:33:55.788000
++valid_year('2018')
+
+# 2017-04-08 11:33:57.408000
++valid_year('2017')
+
+# 2017-04-08 11:37:22.235000
++'Error: {error}'.format(error='404')
+
+# 2017-04-08 12:07:12.579000
++a = 'January'
+
+# 2017-04-08 12:07:14.601000
++b = None
+
+# 2017-04-08 12:07:58.102000
++a = '' if not a else a
+
+# 2017-04-08 12:07:59.025000
++a
+
+# 2017-04-08 12:08:09.477000
++b = '' if not b else b
+
+# 2017-04-08 12:08:13.081000
++b
+
+# 2017-04-08 12:40:18.231000
++pdir(str)
+
+# 2017-04-08 12:41:13.535000
++help(str.replace)
+
+# 2017-04-08 12:42:07.628000
++a = "this is a normal string"
+
+# 2017-04-08 12:42:45.876000
++b = "this <string> has some \"special\" characters in it & could wreak havoc"
+
+# 2017-04-08 12:47:26.955000
++l = ['a', 'b', 'c']
+
+# 2017-04-08 12:47:33.792000
++j =l.join('')
+
+# 2017-04-08 12:47:41.986000
++pdir(l)
+
+# 2017-04-08 12:48:10.603000
++pdir(str)
+
+# 2017-04-08 12:48:43.712000
++help(str.join)
+
+# 2017-04-08 12:48:55.743000
++l
+
+# 2017-04-08 12:49:04.323000
++s.join(l)
+
+# 2017-04-08 12:49:16.183000
++s = ''
+
+# 2017-04-08 12:49:24.214000
++s.join(l)
+
+# 2017-04-08 12:49:43.434000
++''.join(l)
+
+# 2017-04-08 12:51:29.131000
++a
+
+# 2017-04-08 12:51:29.573000
++b
+
+# 2017-04-09 18:39:48.938000
++15 % 15
+
+# 2017-04-09 18:39:51.169000
++14 % 15
+
+# 2017-04-09 18:39:55.914000
++n = 15
+
+# 2017-04-09 18:40:18.319000
++if n % 15:
++    print('Yes')
++else:
++    print('No')
+
+# 2017-04-09 18:40:26.839000
++(n % 15)
+
+# 2017-04-09 18:40:34.582000
++print True
+
+# 2017-04-09 18:40:47.224000
++if 0:
++    print('yes')
+
+# 2017-04-09 18:40:53.932000
++if 1:
++    print('yes')
+
+# 2017-04-09 18:42:05.103000
++if not n % 15:
++    print('FizzBuzz')
++elif not n % 3:
++    print('Fizz')
++elif not n % 5:
++    print('Buzz')
++else:
++    print(n)
++    
++
++
++
+
+# 2017-04-09 18:42:36.819000
++for i in range(100):
++  if not n % 15:
++    print('FizzBuzz')
++  elif not n % 3:
++    print('Fizz')
++  elif not n % 5:
++    print('Buzz')
++  else:
++    print(n)
+
+# 2017-04-09 18:43:01.921000
++for i in range(100):
++  if not i % 15:
++    print('FizzBuzz')
++  elif not i % 3:
++    print('Fizz')
++  elif not i % 5:
++    print('Buzz')
++  else:
++    print(i)
+
+# 2017-04-09 18:43:30.415000
++for i in range(1, 100):
++  if not i % 15:
++    print('FizzBuzz')
++  elif not i % 3:
++    print('Fizz')
++  elif not i % 5:
++    print('Buzz')
++  else:
++    print(i)
+
+# 2017-04-09 18:43:59.544000
++ 
+
+# 2017-04-10 10:21:43.267000
++for i in range(1, 100):
++  if not i % 15:
++    print('FizzBuzz')
++  elif not i % 3:
++    print('Fizz')
++  elif not i % 5:
++    print('Buzz')
++  else:
++    print(i)
+
+# 2017-04-10 10:22:08.441000
++(x for x in range(20) if x % 2)
+
+# 2017-04-10 10:22:18.431000
++tuple((x for x in range(20) if x % 2))
+
+# 2017-04-10 10:25:57.012000
++a = (1,)
+
+# 2017-04-10 10:25:58.654000
++type(a)
+
+# 2017-04-10 16:07:02.145000
++dir(str)
+
+# 2017-04-10 16:07:05.769000
++pdir(str)
+
+# 2017-04-10 16:07:22.786000
++'1'.islower()
+
+# 2017-04-10 16:07:27.025000
++'a'.islower()
+
+# 2017-04-10 16:07:32.456000
++'A'.isupper()
+
+# 2017-04-10 16:09:36.360000
++ANLOWER = 'abcdefghijklmnopqrstuvwxyz'
+
+# 2017-04-10 16:09:51.354000
++ANLOWER.index('a')
+
+# 2017-04-10 16:09:54.714000
++ANLOWER.index('u')
+
+# 2017-04-10 16:12:24.316000
++ANLOWER.index('z')
+
+# 2017-04-10 16:13:18.831000
++ANLOWER.index('u') + 13
+
+# 2017-04-10 16:13:24.799000
++(ANLOWER.index('u') + 13) % 26
+
+# 2017-04-10 16:13:41.403000
++(ANLOWER.index('a') + 13) % 26
+
+# 2017-04-10 16:14:27.798000
++ANLOWER[5]
+
+# 2017-04-10 16:16:15.793000
++def rot13(text):
++    rot13_text = []
++    for line in text:
++        print('Processing line {}'.format(line))
++        for char in line:
++            print('Processing char {}'.format(char))
++            if char.islower():
++                number = (ANLOWER.index(char) + 13) % 26
++                char = ANLOWER[char]
++            elif char.isupper():
++                number = (ANUPPER.index(char) + 13) % 26
++                char = ANUPPER[char]
++            rot13_text.append(char)
++    return ''.join(rot13_text)
+
+# 2017-04-10 16:16:22.355000
++rot13('this is a test')
+
+# 2017-04-10 16:16:52.781000
++rot13('this is a test\nthis is line 2\nThis is line!!!')
+
+# 2017-04-10 16:17:49.721000
++def rot13(text):
++    rot13_text = []
++    #for line in text:
++    #    print('Processing line {}'.format(line))
++    for char in text:
++        print('Processing char {}'.format(char))
++        if char.islower():
++            number = (ANLOWER.index(char) + 13) % 26
++            char = ANLOWER[char]
++        elif char.isupper():
++            number = (ANUPPER.index(char) + 13) % 26
++            char = ANUPPER[char]
++        rot13_text.append(char)
++    return ''.join(rot13_text)
+
+# 2017-04-10 16:17:54.745000
++rot13('this is a test')
+
+# 2017-04-10 16:19:29.595000
++def rot13(text):
++    rot13_text = []
++    #for line in text:
++    #    print('Processing line {}'.format(line))
++    for char in text:
++        print('Processing char {}'.format(char))
++        if char.islower():
++            number = (ANLOWER.index(char) + 13) % 26
++            char = ANLOWER[number]
++        elif char.isupper():
++            number = (ANUPPER.index(char) + 13) % 26
++            char = ANUPPER[number]
++        rot13_text.append(char)
++    return ''.join(rot13_text)
+
+# 2017-04-10 16:19:34.510000
++rot13('this is a test')
+
+# 2017-04-10 16:19:47.299000
++rot13('guvf vf n grfg')
+
+# 2017-04-10 16:20:29.537000
++rot13("This is a harder test--let's see what happens...\nI can't wait.\nCan you?")
+
+# 2017-04-10 16:20:50.639000
++ANUPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+# 2017-04-10 16:20:54.514000
++rot13("This is a harder test--let's see what happens...\nI can't wait.\nCan you?")
+
+# 2017-04-10 16:21:05.119000
++rot13("Guvf vf n uneqre grfg--yrg'f frr jung unccraf...\nV pna'g jnvg.\nPna lbh?")
+
+# 2017-04-10 17:31:31.863000
++import re
+
+# 2017-04-10 17:31:41.457000
++USER_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
+
+# 2017-04-10 17:31:58.660000
++USER_RE.match('bad username')
+
+# 2017-04-10 17:32:02.616000
++USER_RE.match('bad_username')
+
+# 2017-04-11 07:18:24.648000
++VLD_USERNAME = re.compile(r'^[a-zA-Z0-9_-]{3,20}$')
+
+# 2017-04-11 07:18:32.018000
++def valid_username(username):
++    return VLD_USERNAME.match(username)
+
+# 2017-04-11 07:18:43.082000
++username='bad1 bad2'
+
+# 2017-04-11 07:18:53.680000
++valid_username(username)
+
+# 2017-04-11 07:19:01.861000
++print valid_username(username)
+
+# 2017-04-11 07:19:16.746000
++if not valid_username(username):
++            username_error = 'Invalid username - Must be from 3-20 characters consisting of a-a, A-Z, 0-9, _, -'
+
+# 2017-04-11 07:19:22.994000
++username_error
+
+# 2017-04-11 07:23:28.587000
++verify_error = ''
+
+# 2017-04-11 07:23:45.294000
++if verify_error:
++    print('yes')
++else:
++    print('no')
+
+# 2017-04-11 07:24:07.634000
++email_error = 'bad!'
+
+# 2017-04-11 07:24:20.117000
++if email_error:
++    print('yes')
++else:
++    print('no')
+
+# 2017-04-11 07:24:27.586000
++if email_error:
++    print('yes')
++else:
++    print('no')
++    
+
+# 2017-04-11 07:24:29.239000
++if email_error:
++    print('yes')
++else:
++    print('no')
+
+# 2017-04-11 07:24:39.754000
++if verify_error:
++    print('yes')
++else:
++    print('no')
+
+# 2017-04-11 07:24:43.960000
++verify_error
+
+# 2017-04-11 07:24:46.010000
++email_error
+
+# 2017-04-11 07:28:25.146000
++VLD_EMAIL = re.compile(r'^[\S]+@[\S]+.[\S]+$')
+
+# 2017-04-11 07:28:34.779000
++email='bad@bad1'
+
+# 2017-04-11 07:28:51.947000
++def valid_email(email):
++    # Email optional - only validate if submitted
++    if email is None or email == '':
++        return True
++    else:
++        return VLD_EMAIL.match(email)
+
+# 2017-04-11 07:29:00.597000
++print(valid_email(email))
+
+# 2017-04-11 07:29:42.518000
++email = "bad1 bad2"
+
+# 2017-04-11 07:29:44.530000
++print(valid_email(email))
+
+# 2017-04-11 07:29:51.155000
++print(valid_email(''))
+
+# 2017-04-11 07:33:01.918000
++VLD_EMAIL = re.compile("^[\S]+@[\S]+.[\S]+$")
+
+# 2017-04-11 07:33:06.201000
++print(valid_email(''))
+
+# 2017-04-11 07:33:13.108000
++print(valid_email('bad1 bad2'))
+
+# 2017-04-11 07:33:20.366000
++print(valid_email('bad1@bad2'))
+
+# 2017-04-12 07:07:02.331000
++dir()
+
+# 2017-04-12 07:07:07.634000
++VLD_EMAIL
+
+# 2017-04-12 07:07:15.773000
++dir(VLD_EMAIL)
+
+# 2017-04-12 07:07:22.155000
++pdir(VLD_EMAIL)
+
+# 2017-04-12 07:07:25.119000
++import pdir2
+
+# 2017-04-12 07:07:27.957000
++import pdir
+
+# 2017-04-12 07:07:33.202000
++pdir(VLD_EMAIL)
+
+# 2017-04-12 07:08:58.417000
++VLD_EMAIL.__str__
+
+# 2017-04-12 07:09:04.445000
++VLD_EMAIL.__repr__
+
+# 2017-04-12 07:09:07.131000
++VLD_EMAIL.__repr__()
+
+# 2017-04-12 07:09:12.079000
++VLD_EMAIL.__str__()
+
+# 2017-04-12 07:21:20.676000
++re.findall(r'^[\S]+@[\S]+.[\S]+$', 'bad@bad1')
+
+# 2017-04-12 07:22:22.100000
++re.findall(r'^[\S]+@[\S]+\.[\S]+$', 'bad@bad1')
+
+# 2017-04-12 07:22:33.985000
++re.findall(r'^[\S]+@[\S]+\.[\S]+$', 'bad@bad1.')
+
+# 2017-04-12 07:22:36.423000
++re.findall(r'^[\S]+@[\S]+\.[\S]+$', 'bad@bad1.a')
+
+# 2017-04-12 10:41:40.754000
++import antigravity
+
+# 2017-04-12 13:32:16.562000
++s1 = 'Date=2017/03/30 16:07:04,Action=profileIn,Priority=warning,ManagedDevice=24:da:9b:61:89:ab,Domain=Fabric,Profile=Unknown Devices,SystemProfile=false,Segment=WWTP-125,IP=172.16.163.178'
+
+# 2017-04-12 13:32:17.966000
++s1
+
+# 2017-04-12 13:32:22.874000
++len(s1)
+
+# 2017-04-12 13:32:35.190000
++s1.find(',Domain=Fabric,')
+
+# 2017-04-12 13:32:45.069000
++s1[:90]
+
+# 2017-04-12 13:33:12.353000
++len(',domain=fabric,')
+
+# 2017-04-12 13:33:22.178000
++s1[:(90+15)]
+
+# 2017-04-12 13:34:15.247000
++s1[105:]
+
+# 2017-04-12 13:55:07.036000
++emdat = [['Date=2017/03/30 16:07:04', 'Action=profileIn', 'Priority=warning', 'ManagedDevice=24:da:9b:61:89:ab', 'Domain=Fabric', 'Profile=Unknown Devices', 'SystemProfile=false', 'Segment=WWTP-125', 'IP=172.16.163.178']]
+
+# 2017-04-12 13:55:09.423000
++emdat
+
+# 2017-04-12 13:55:15.204000
++emdat[0]
+
+# 2017-04-12 13:56:15.623000
++emdat[0][:3]
+
+# 2017-04-12 13:56:28.783000
++emdat[0][:4]
+
+# 2017-04-12 13:56:35.579000
++emdat[0][4:]
+
+# 2017-04-12 14:06:19.177000
++import datetime
+
+# 2017-04-12 14:06:25.763000
++datetime.dateime.now()
+
+# 2017-04-12 14:06:32.178000
++dir(datetime)
+
+# 2017-04-12 14:06:42.778000
++dir(datetime.datetime)
+
+# 2017-04-12 14:06:48.655000
++pdir(datetime.datetime)
+
+# 2017-04-12 14:07:06.613000
++datetime.datetime.now
+
+# 2017-04-12 14:07:08.428000
++datetime.datetime.now()
+
+# 2017-04-12 14:07:24.797000
++help(datetime.datetime.now)
+
+# 2017-04-12 14:07:56.506000
++a = datetime.datetime.now()
+
+# 2017-04-12 14:07:56.850000
++a
+
+# 2017-04-12 14:08:03.569000
++print(a)
+
+# 2017-04-12 14:08:28.421000
++print('{:40}'.format(a))
+
+# 2017-04-12 14:08:42.028000
++print(a)
+
+# 2017-04-12 14:17:31.380000
++format = "%a %b %d %H:%M:%S %Y"
+
+# 2017-04-12 14:17:52.514000
++b = a.strftime(format)
+
+# 2017-04-12 14:17:53.045000
++b
+
+# 2017-04-12 14:17:54.823000
++a
+
+# 2017-04-12 14:17:56.430000
++b
+
+# 2017-04-12 14:18:51.050000
++format = "%a %b %d %H:%M:%S %Y %z"
+
+# 2017-04-12 14:18:55.285000
++b = a.strftime(format)
+
+# 2017-04-12 14:18:55.831000
++b
+
+# 2017-04-12 14:19:11.028000
++print('{:40}'.format(b))
+
+# 2017-04-12 14:20:11.183000
++dir(datetime)
+
+# 2017-04-12 14:20:14.610000
++dir(datetime.datetime)
+
+# 2017-04-12 16:42:46.181000
++dir(str)
+
+# 2017-04-12 16:42:49.713000
++pdir(str)
+
+# 2017-04-12 16:42:59.802000
++dir(str.encode)
+
+# 2017-04-12 16:43:05.948000
++pdir(str.encode)
+
+# 2017-04-12 16:43:10.228000
++help(str.encode)
+
+# 2017-04-12 17:08:45.177000
++d1 = dict(username='Ralph', email='ralph@bad.com')
+
+# 2017-04-12 17:08:46.682000
++d1
+
+# 2017-04-12 17:09:04.442000
++d1['error'] = 'Bad Password'
+
+# 2017-04-12 17:09:05.111000
++d1
+
+# 2017-04-12 17:09:08.854000
++d1 = dict(username='Ralph', email='ralph@bad.com')
+
+# 2017-04-12 17:09:09.492000
++d1
+
+# 2017-04-12 17:14:28.122000
++dir()
+
+# 2017-04-12 17:14:30.072000
++pdir()
+
+# 2017-04-12 17:14:45.281000
++email=''
+
+# 2017-04-12 17:14:52.017000
++valid_email(email)
+
+# 2017-04-12 17:14:58.089000
++username=''
+
+# 2017-04-12 17:15:05.191000
++valid_username(username)
+
+# 2017-04-12 17:15:21.504000
++print(valid_username(username))
+
+# 2017-04-12 17:16:29.551000
++'Geoff' and valid_username('Tracy')
+
+# 2017-04-12 17:16:43.280000
++print('Geoff' and valid_username('Tracy'))
+
+# 2017-04-12 18:12:27.292000
++from collections import namedtuple
++
++# make a basic Link class
++Link = namedtuple('Link', ['id', 'submitter_id', 'submitted_time', 'votes',
++                           'title', 'url'])
++
++# list of Links to work with
++links = [
++    Link(0, 60398, 1334014208.0, 109,
++         "C overtakes Java as the No. 1 programming language in the TIOBE index.",
++         "http://pixelstech.net/article/index.php?id=1333969280"),
++    Link(1, 60254, 1333962645.0, 891,
++         "This explains why technical books are all ridiculously thick and overpriced",
++         "http://prog21.dadgum.com/65.html"),
++    Link(23, 62945, 1333894106.0, 351,
++         "Learn Haskell Fast and Hard",
++         "http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/"),
++    Link(2, 6084, 1333996166.0, 81,
++         "Announcing Yesod 1.0- a robust, developer friendly, high performance web framework for Haskell",
++         "http://www.yesodweb.com/blog/2012/04/announcing-yesod-1-0"),
++    Link(3, 30305, 1333968061.0, 270,
++         "TIL about the Lisp Curse",
++         "http://www.winestockwebdesign.com/Essays/Lisp_Curse.html"),
++    Link(4, 59008, 1334016506.0, 19,
++         "The Downfall of Imperative Programming. Functional Programming and the Multicore Revolution",
++         "http://fpcomplete.com/the-downfall-of-imperative-programming/"),
++    Link(5, 8712, 1333993676.0, 26,
++         "Open Source - Twitter Stock Market Game - ",
++         "http://www.twitstreet.com/"),
++    Link(6, 48626, 1333975127.0, 63,
++         "First look: Qt 5 makes JavaScript a first-class citizen for app development",
++         "http://arstechnica.com/business/news/2012/04/an-in-depth-look-at-qt-5-making-javascript-a-first-class-citizen-for-native-cross-platform-developme.ars"),
++    Link(7, 30172, 1334017294.0, 5,
++         "Benchmark of Dictionary Structures", "http://lh3lh3.users.sourceforge.net/udb.shtml"),
++    Link(8, 678, 1334014446.0, 7,
++         "If It's Not on Prod, It Doesn't Count: The Value of Frequent Releases",
++         "http://bits.shutterstock.com/?p=165"),
++    Link(9, 29168, 1334006443.0, 18,
++         "Language proposal: dave",
++         "http://davelang.github.com/"),
++    Link(17, 48626, 1334020271.0, 1,
++         "LispNYC and EmacsNYC meetup Tuesday Night: Large Scale Development with Elisp ",
++         "http://www.meetup.com/LispNYC/events/47373722/"),
++    Link(101, 62443, 1334018620.0, 4,
++         "research!rsc: Zip Files All The Way Down",
++         "http://research.swtch.com/zip"),
++    Link(12, 10262, 1334018169.0, 5,
++         "The Tyranny of the Diff",
++         "http://michaelfeathers.typepad.com/michael_feathers_blog/2012/04/the-tyranny-of-the-diff.html"),
++    Link(13, 20831, 1333996529.0, 14,
++         "Understanding NIO.2 File Channels in Java 7",
++         "http://java.dzone.com/articles/understanding-nio2-file"),
++    Link(15, 62443, 1333900877.0, 1244,
++         "Why vector icons don't work",
++         "http://www.pushing-pixels.org/2011/11/04/about-those-vector-icons.html"),
++    Link(14, 30650, 1334013659.0, 3,
++         "Python - Getting Data Into Graphite - Code Examples",
++         "http://coreygoldberg.blogspot.com/2012/04/python-getting-data-into-graphite-code.html"),
++    Link(16, 15330, 1333985877.0, 9,
++         "Mozilla: The Web as the Platform and The Kilimanjaro Event",
++         "https://groups.google.com/forum/?fromgroups#!topic/mozilla.dev.planning/Y9v46wFeejA"),
++    Link(18, 62443, 1333939389.0, 104,
++         "github is making me feel stupid(er)",
++         "http://www.serpentine.com/blog/2012/04/08/github-is-making-me-feel-stupider/"),
++    Link(19, 6937, 1333949857.0, 39,
++         "BitC Retrospective: The Issues with Type Classes",
++         "http://www.bitc-lang.org/pipermail/bitc-dev/2012-April/003315.html"),
++    Link(20, 51067, 1333974585.0, 14,
++         "Object Oriented C: Class-like Structures",
++         "http://cecilsunkure.blogspot.com/2012/04/object-oriented-c-class-like-structures.html"),
++    Link(10, 23944, 1333943632.0, 188,
++         "The LOVE game framework version 0.8.0 has been released - with GLSL shader support!",
++         "https://love2d.org/forums/viewtopic.php?f=3&amp;t=8750"),
++    Link(22, 39191, 1334005674.0, 11,
++         "An open letter to language designers: Please kill your sacred cows. (megarant)",
++         "http://joshondesign.com/2012/03/09/open-letter-language-designers"),
++    Link(21, 3777, 1333996565.0, 2,
++         "Developers guide to Garage48 hackatron",
++         "http://martingryner.com/developers-guide-to-garage48-hackatron/"),
++    Link(24, 48626, 1333934004.0, 17,
++         "An R programmer looks at Julia",
++         "http://www.r-bloggers.com/an-r-programmer-looks-at-julia/")]
+
+# 2017-04-12 18:12:31.063000
++links
+
+# 2017-04-12 18:12:38.481000
++dir(Link)
+
+# 2017-04-12 18:12:42.368000
++pdir(Link)
+
+# 2017-04-12 18:12:59.003000
++links[0]
+
+# 2017-04-12 18:13:13.931000
++for link in links:
++    print(link)
+
+# 2017-04-12 18:13:47.512000
++for link in links:
++    print('{}:  {}'.format(link.title, link.url))
+
+# 2017-04-12 18:15:34.773000
++link[15].votes
+
+# 2017-04-12 18:15:44.227000
++links[15].votes
+
+# 2017-04-12 18:15:47.857000
++links[15]
+
+# 2017-04-12 18:20:46.678000
++user_links = []
+
+# 2017-04-12 18:22:05.130000
++for link in links:
++    if link.submitter_id == 62443:
++        user_links.append(link)
+
+# 2017-04-12 18:22:09.045000
++user_links
+
+# 2017-04-12 18:22:22.639000
++for link in user_links:
++    print link
+
+# 2017-04-12 18:22:58.909000
++for link in links:
++    if link.submitter_id == 62443:
++        user_links.append(link)
+
+# 2017-04-12 18:24:26.002000
++def query():
++    user_links = []
++    for link in links:
++        if link.submitter_id == 62443:
++            user_links.append(link)
+
+# 2017-04-12 18:24:33.968000
++user_links = query()
+
+# 2017-04-12 18:24:39.364000
++len(user_links)
+
+# 2017-04-12 18:24:56.789000
++def query():
++    user_links = []
++    for link in links:
++        if link.submitter_id == 62443:
++            user_links.append(link)
++    return user_links
+
+# 2017-04-12 18:25:02.006000
++user_links = query()
+
+# 2017-04-12 18:25:05.027000
++len(user_links)
+
+# 2017-04-12 18:25:14.646000
++pdir(list)
+
+# 2017-04-12 18:25:28.448000
++help(list.sort)
+
+# 2017-04-12 18:25:50.161000
++user_links
+
+# 2017-04-12 18:25:59.979000
++from pprint import pprint
+
+# 2017-04-12 18:26:03.576000
++pprint(user_links)
+
+# 2017-04-12 18:26:32.747000
++user_links.sort(key=submitted_time)
+
+# 2017-04-12 18:31:58.918000
++def query():
++    user_links = []
++    for link in links:
++        if link.submitter_id == 62443:
++            user_links.append(link)
++    user_links.sort(key=lambda x: x[2])
++    return user_links
+
+# 2017-04-12 18:32:06.926000
++pprint(user_links)
+
+# 2017-04-12 18:32:13.101000
++user_links2 = query()
+
+# 2017-04-12 18:32:19.204000
++pprint(user_links2)
+
+# 2017-04-13 07:32:17.134000
++from collections import namedtuple
++import sqlite3
++
++# make a basic Link class
++Link = namedtuple('Link', ['id', 'submitter_id', 'submitted_time', 'votes',
++                           'title', 'url'])
++
++# list of Links to work with
++links = [
++    Link(0, 60398, 1334014208.0, 109,
++         "C overtakes Java as the No. 1 programming language in the TIOBE index.",
++         "http://pixelstech.net/article/index.php?id=1333969280"),
++    Link(1, 60254, 1333962645.0, 891,
++         "This explains why technical books are all ridiculously thick and overpriced",
++         "http://prog21.dadgum.com/65.html"),
++    Link(23, 62945, 1333894106.0, 351,
++         "Learn Haskell Fast and Hard",
++         "http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/"),
++    Link(2, 6084, 1333996166.0, 81,
++         "Announcing Yesod 1.0- a robust, developer friendly, high performance web framework for Haskell",
++         "http://www.yesodweb.com/blog/2012/04/announcing-yesod-1-0"),
++    Link(3, 30305, 1333968061.0, 270,
++         "TIL about the Lisp Curse",
++         "http://www.winestockwebdesign.com/Essays/Lisp_Curse.html"),
++    Link(4, 59008, 1334016506.0, 19,
++         "The Downfall of Imperative Programming. Functional Programming and the Multicore Revolution",
++         "http://fpcomplete.com/the-downfall-of-imperative-programming/"),
++    Link(5, 8712, 1333993676.0, 26,
++         "Open Source - Twitter Stock Market Game - ",
++         "http://www.twitstreet.com/"),
++    Link(6, 48626, 1333975127.0, 63,
++         "First look: Qt 5 makes JavaScript a first-class citizen for app development",
++         "http://arstechnica.com/business/news/2012/04/an-in-depth-look-at-qt-5-making-javascript-a-first-class-citizen-for-native-cross-platform-developme.ars"),
++    Link(7, 30172, 1334017294.0, 5,
++         "Benchmark of Dictionary Structures", "http://lh3lh3.users.sourceforge.net/udb.shtml"),
++    Link(8, 678, 1334014446.0, 7,
++         "If It's Not on Prod, It Doesn't Count: The Value of Frequent Releases",
++         "http://bits.shutterstock.com/?p=165"),
++    Link(9, 29168, 1334006443.0, 18,
++         "Language proposal: dave",
++         "http://davelang.github.com/"),
++    Link(17, 48626, 1334020271.0, 1,
++         "LispNYC and EmacsNYC meetup Tuesday Night: Large Scale Development with Elisp ",
++         "http://www.meetup.com/LispNYC/events/47373722/"),
++    Link(101, 62443, 1334018620.0, 4,
++         "research!rsc: Zip Files All The Way Down",
++         "http://research.swtch.com/zip"),
++    Link(12, 10262, 1334018169.0, 5,
++         "The Tyranny of the Diff",
++         "http://michaelfeathers.typepad.com/michael_feathers_blog/2012/04/the-tyranny-of-the-diff.html"),
++    Link(13, 20831, 1333996529.0, 14,
++         "Understanding NIO.2 File Channels in Java 7",
++         "http://java.dzone.com/articles/understanding-nio2-file"),
++    Link(15, 62443, 1333900877.0, 1244,
++         "Why vector icons don't work",
++         "http://www.pushing-pixels.org/2011/11/04/about-those-vector-icons.html"),
++    Link(14, 30650, 1334013659.0, 3,
++         "Python - Getting Data Into Graphite - Code Examples",
++         "http://coreygoldberg.blogspot.com/2012/04/python-getting-data-into-graphite-code.html"),
++    Link(16, 15330, 1333985877.0, 9,
++         "Mozilla: The Web as the Platform and The Kilimanjaro Event",
++         "https://groups.google.com/forum/?fromgroups#!topic/mozilla.dev.planning/Y9v46wFeejA"),
++    Link(18, 62443, 1333939389.0, 104,
++         "github is making me feel stupid(er)",
++         "http://www.serpentine.com/blog/2012/04/08/github-is-making-me-feel-stupider/"),
++    Link(19, 6937, 1333949857.0, 39,
++         "BitC Retrospective: The Issues with Type Classes",
++         "http://www.bitc-lang.org/pipermail/bitc-dev/2012-April/003315.html"),
++    Link(20, 51067, 1333974585.0, 14,
++         "Object Oriented C: Class-like Structures",
++         "http://cecilsunkure.blogspot.com/2012/04/object-oriented-c-class-like-structures.html"),
++    Link(10, 23944, 1333943632.0, 188,
++         "The LOVE game framework version 0.8.0 has been released - with GLSL shader support!",
++         "https://love2d.org/forums/viewtopic.php?f=3&amp;t=8750"),
++    Link(22, 39191, 1334005674.0, 11,
++         "An open letter to language designers: Please kill your sacred cows. (megarant)",
++         "http://joshondesign.com/2012/03/09/open-letter-language-designers"),
++    Link(21, 3777, 1333996565.0, 2,
++         "Developers guide to Garage48 hackatron",
++         "http://martingryner.com/developers-guide-to-garage48-hackatron/"),
++    Link(24, 48626, 1333934004.0, 17,
++         "An R programmer looks at Julia",
++         "http://www.r-bloggers.com/an-r-programmer-looks-at-julia/")]
++
++# links is a list of Link objects. Links have a handful of properties. For
++# example, a Link's number of votes can be accessed by link.votes if "link" is a
++# Link.
++
++# make and populate a table
++db = sqlite3.connect(':memory:')
++db.execute('create table links ' +
++          '(id integer, submitter_id integer, submitted_time integer, ' +
++          'votes integer, title text, url text)')
++for l in links:
++    db.execute('insert into links values (?, ?, ?, ?, ?, ?)', l)
++
++# db is an in-memory sqlite database that can respond to sql queries using the
++# execute() function.
++#
++# For example. If you run
++#
++# c = db.execute("select * from links")
+
+# 2017-04-13 07:32:35.499000
++dir()
+
+# 2017-04-13 07:32:38.313000
++len(links)
+
+# 2017-04-13 07:33:34.031000
++dir(db)
+
+# 2017-04-13 07:33:35.233000
++db
+
+# 2017-04-13 07:33:41.119000
++pdir(db)
+
+# 2017-04-13 07:34:10.910000
++c = db.execute("select * from links")
+
+# 2017-04-13 07:34:14.756000
++c
+
+# 2017-04-13 07:34:31.976000
++dir(c)
+
+# 2017-04-13 07:34:35.138000
++pdir(c)
+
+# 2017-04-13 07:35:05.168000
++c.fetchone()
+
+# 2017-04-13 07:35:29.480000
++c.fetchall()
+
+# 2017-04-13 07:35:53.127000
++c = db.execute("select url, title from links")
+
+# 2017-04-13 07:35:57.076000
++c.fetchall()
+
+# 2017-04-13 07:36:07.320000
++c = db.execute("select url, title from links")
+
+# 2017-04-13 07:36:13.290000
++pprint(c.fetchall())
+
+# 2017-04-13 07:38:27.352000
++c = db.execute("select votes from links where id = 5")
+
+# 2017-04-13 07:38:32.717000
++c.fetchall()
+
+# 2017-04-13 07:39:14.432000
++c = db.execute("select votes from links where id = 5")
+
+# 2017-04-13 07:39:17.109000
++c.fetchone()
+
+# 2017-04-13 07:39:53.954000
++c = db.execute("select votes from links where id = 2")
+
+# 2017-04-13 07:39:57.377000
++c.fetchall()
+
+# 2017-04-13 11:06:30.343000
++type(1)
+
+# 2017-04-13 11:06:32.903000
++type(1.0)
+
+# 2017-04-13 11:07:07.821000
++type(3+4j)
+
+# 2017-04-13 11:07:27.753000
++type({1,2,3})
+
+# 2017-04-13 11:07:42.406000
++type(Decimal('1.0'))
+
+# 2017-04-13 11:16:06.001000
++hex(25)
+
+# 2017-04-13 11:16:09.376000
++oct(25)
+
+# 2017-04-13 11:16:11.780000
++bin(25)
+
+# 2017-04-13 11:16:22.070000
++int(98,32)
+
+# 2017-04-13 11:16:31.990000
++int('98', 32)
+
+# 2017-04-13 11:17:43.638000
++int('f', 10)
+
+# 2017-04-13 11:18:01.240000
++int('f', 16)
+
+# 2017-04-13 11:19:52.216000
++from decimal import Decimal
+
+# 2017-04-13 11:19:57.245000
++Decimal('1.0')
+
+# 2017-04-13 11:20:01.365000
++from fractions import Fraction
+
+# 2017-04-13 11:20:05.468000
++Fraction(1,2)
+
+# 2017-04-13 12:29:12.707000
++d1
+
+# 2017-04-13 12:29:27.390000
++print('--{}--{}--'.format(**d1))
+
+# 2017-04-13 12:30:09.391000
++dir(d1)
+
+# 2017-04-13 12:30:12.017000
++pdir(d1)
+
+# 2017-04-13 13:00:48.932000
++type({})
+
+# 2017-04-13 13:00:59.927000
++type(set())
+
+# 2017-04-13 13:26:18.168000
++from collections import namedtuple
+
+# 2017-04-13 13:26:28.759000
++emrec = namedtuple('emrec', ['dtobj', 'dtobj_hr', 'action', 'priority', 'devtype',
++                                     'devkey', 'domain', 'proftype', 'statgrp', 'restricted',
++                                     'sysprof', 'segment', 'devip'])
+
+# 2017-04-13 13:26:30.495000
++emrec
+
+# 2017-04-13 13:26:37.642000
++dir(emrec)
+
+# 2017-04-13 13:27:01.898000
++emrec.domain = 'Test 1'
+
+# 2017-04-13 13:27:03.614000
++emrec
+
+# 2017-04-13 13:27:09.833000
++print(emrec)
+
+# 2017-04-13 13:27:23.926000
++emrec.__str__()
+
+# 2017-04-13 13:27:32.470000
++emrec.__str__
+
+# 2017-04-13 13:27:37.575000
++emrec.__repr__
+
+# 2017-04-13 13:27:39.182000
++emrec.__repr__()
+
+# 2017-04-13 13:27:49.280000
++emrec.__repr__(emrec)
+
+# 2017-04-13 13:28:03.518000
++emrec.domain
+
+# 2017-04-13 21:26:00.856000
++dir(list)
+
+# 2017-04-13 21:26:04.017000
++pdir(list)
+
+# 2017-04-13 21:26:17.485000
++help(list.index)
+
+# 2017-04-13 21:26:43.520000
++links
+
+# 2017-04-13 21:26:53.125000
++links.index(17)
+
+# 2017-04-13 21:27:06.441000
++links[0]
+
+# 2017-04-13 21:27:29.657000
++type(links[0])
+
+# 2017-04-13 21:28:07.085000
++len(links)
+
+# 2017-04-13 21:28:21.784000
++links[0].id
+
+# 2017-04-13 21:28:25.754000
++links[1].id
+
+# 2017-04-13 21:28:28.424000
++links[5].id
+
+# 2017-04-13 21:29:24.689000
++[l for l in links if l.id == 5]
+
+# 2017-04-13 21:29:58.017000
++[l for l in links if l.id == 5][0]
+
+# 2017-04-13 21:31:47.320000
++id = 5
+
+# 2017-04-13 21:31:52.825000
++[l for l in links if l.id == id][0]
+
+# 2017-04-14 08:29:50.151000
++links
+
+# 2017-04-14 08:29:52.337000
++links[0]
+
+# 2017-04-14 08:29:55.867000
++links[0].id
+
+# 2017-04-14 08:29:59.846000
++type(links[0].id)
+
+# 2017-04-14 08:30:13.426000
++{5: 'five'}
+
+# 2017-04-14 08:31:15.537000
++d1
+
+# 2017-04-14 08:31:17.027000
++d2
+
+# 2017-04-14 08:31:30.461000
++d2 = {link.id: link for link in links}
+
+# 2017-04-14 08:31:31.359000
++d2
+
+# 2017-04-16 22:36:43.824000
++dir()
+
+# 2017-04-16 22:36:46.371000
++pdir()
+
+# 2017-04-16 22:37:32.074000
++import pdir2
+
+# 2017-04-16 22:37:35.203000
++import pdir
+
+# 2017-04-16 22:38:45.705000
++from google.appengine.ext import db
+
+# 2017-04-16 22:38:59.549000
++import webapp2
+
+# 2017-04-16 22:40:38.532000
++import os
+
+# 2017-04-16 22:40:39.864000
++import sys
+
+# 2017-04-16 22:40:49.160000
++import bootstrapping.bootstrapping as bootstrapping
++from googlecloudsdk.api_lib.app import wrapper_util
++from googlecloudsdk.core import metrics
++from googlecloudsdk.core.updater import update_manager
+
+# 2017-04-17 10:51:30.491000
++def tuple_test(x, y):
++    x += 1
++    y += 1
++    return x, y
+
+# 2017-04-17 10:51:42.678000
++t1 = (1, 2)
+
+# 2017-04-17 10:51:48.003000
++tuple_test(t1)
+
+# 2017-04-17 10:51:55.569000
++tuple_test(*t1)
+
+# 2017-04-17 10:52:01.812000
++t1
+
+# 2017-04-17 10:52:30.675000
++d1 = {'x': 3, 'y': 4}
+
+# 2017-04-17 10:52:45.740000
++tuple_test(*d1)
+
+# 2017-04-17 10:52:56.083000
++tuple_test(**d1)
+
+# 2017-04-17 10:53:22.313000
++def foo(*args, **kwargs):
++    return args if args else kwargs
+
+# 2017-04-17 10:53:33.569000
++foo(1, 2)
+
+# 2017-04-17 10:53:42.729000
++foo(x=1, y=2)
+
+# 2017-04-17 11:55:35.982000
++pdir()
+
+# 2017-04-17 11:55:45.877000
++dir()
+
+# 2017-04-17 11:55:52.421000
++locals()
+
+# 2017-04-17 11:56:29.915000
++globals()
+
+# 2017-04-17 12:10:57.426000
++import builtins
+
+# 2017-04-17 12:10:58.954000
++pdir
+
+# 2017-04-17 12:11:01.499000
++pdir()
+
+# 2017-04-17 12:11:08.001000
++dir()
+
+# 2017-04-17 12:11:14.402000
++pdir(builtins)
+
+# 2017-04-17 16:09:28.455000
++`'spam'`
+
+# 2017-04-17 16:09:34.589000
++repr('spam')
+
+# 2017-04-17 16:09:39.007000
++str('spam')
+
+# 2017-04-19 12:15:09.753000
++2 - 3j
+
+# 2017-04-19 12:15:20.096000
++type(2-3j)
+
+# 2017-04-19 12:23:26.313000
++int(0x40)
+
+# 2017-04-19 12:23:39.708000
++int(feee)
+
+# 2017-04-19 12:23:46.988000
++int('feed', 16)
+
+# 2017-04-19 12:29:18.948000
++01
+
+# 2017-04-19 12:29:20.713000
++010
+
+# 2017-04-20 13:53:56.930000
++0.1 + 0.1 + 0.1 - 0.3
+
+# 2017-04-20 13:54:09.590000
++from decimal import Decimal
+
+# 2017-04-20 13:54:26.462000
++Decimal(0.1) + Decimal(0.1) + Decimal(0.1) - Decimal(0.3)
+
+# 2017-04-20 13:56:46.826000
++Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
+
+# 2017-04-22 15:15:45.992000
++import hashlib
+
+# 2017-04-22 15:15:50.368000
++pdir(hashlib)
+
+# 2017-04-22 15:17:01.382000
++a = hashlib.sha256('hello')
+
+# 2017-04-22 15:17:02.106000
++a
+
+# 2017-04-22 15:17:05.155000
++pdir(a)
+
+# 2017-04-22 15:17:12.515000
++a.digest()
+
+# 2017-04-22 15:17:27.560000
++a.hexdigest()
+
+# 2017-04-22 15:17:33.911000
++len(a.digest())
+
+# 2017-04-22 15:17:37.996000
++len(a.hexdigest())
+
+# 2017-04-22 15:18:01.127000
++8 * 32
+
+# 2017-04-22 15:19:27.117000
++pdir()
+
+# 2017-04-22 15:19:42.590000
++hashlib.sha256('hello').hexdigest()
+
+# 2017-04-22 15:20:04.347000
++hashlib.sha256('udacity').hexdigest()
+
+# 2017-04-22 15:25:33.164000
++hashlib.sha256('udacitY').hexdigest()
+
+# 2017-04-22 15:35:47.301000
++s1h = hashlib.md5(5).hexdigest()
+
+# 2017-04-22 15:35:52.467000
++s1h = hashlib.md5('5').hexdigest()
+
+# 2017-04-22 15:35:53.937000
++s1h
+
+# 2017-04-22 15:36:08.301000
++s1 = "{},{}".format('5', s1h)
+
+# 2017-04-22 15:36:08.880000
++s1
+
+# 2017-04-22 15:54:15.461000
++dir(s1)
+
+# 2017-04-22 15:54:31.457000
++help(str.partition)
+
+# 2017-04-22 15:54:38.799000
++help(str.split)
+
+# 2017-04-22 15:55:31.859000
++s2f, _, s2e = s1.partition(',')
+
+# 2017-04-22 15:55:33.295000
++s2f
+
+# 2017-04-22 15:55:35.131000
++s2e
+
+# 2017-04-22 16:00:56.082000
++if hashlib.md5(s2f).hexdigest() == s2e:
++    print True
++else:
++    print False
+
+# 2017-04-22 16:35:32.083000
++import hmac
+
+# 2017-04-22 16:35:35.363000
++pdir(hmac)
+
+# 2017-04-22 16:38:28.739000
++s1 = hmac.new('secretkey', 'hello', hashlib.sha256)
+
+# 2017-04-22 16:38:29.613000
++s1
+
+# 2017-04-22 16:38:34.934000
++print(s1)
+
+# 2017-04-22 16:38:50.248000
++s1 = hmac.new('secretkey', 'hello', hashlib.sha256).hexdigest()
+
+# 2017-04-22 16:38:51.418000
++s1
+
+# 2017-04-22 17:30:52.724000
++hashlib.md5('1001').hexdigest()
+
+# 2017-04-22 23:10:38.185000
++import random
+
+# 2017-04-22 23:10:41.101000
++pdir(random)
+
+# 2017-04-23 13:54:17.628000
++import string
+
+# 2017-04-23 13:54:21.191000
++pdir(string)
+
+# 2017-04-23 13:54:39.503000
++string.letters
+
+# 2017-04-23 13:54:51.050000
++string.digits
+
+# 2017-04-23 13:54:59.666000
++dir(string)
+
+# 2017-04-23 13:55:41.206000
++strings.punctuation
+
+# 2017-04-23 13:56:05.239000
++string.punctuation
+
+# 2017-04-23 13:57:25.528000
++dir()
+
+# 2017-04-23 13:57:51.653000
++myset = string.letters + string.digits + string.punctuation
+
+# 2017-04-23 13:57:52.745000
++myset
+
+# 2017-04-23 13:58:12.532000
++help(random.choice)
+
+# 2017-04-23 13:58:24.356000
++random.choice(myset)
+
+# 2017-04-23 13:59:45.914000
++str([random.choice(myset) for i in range(5)])
+
+# 2017-04-23 13:59:55.752000
++[random.choice(myset) for i in range(5)]
+
+# 2017-04-23 14:12:13.327000
++''.join([random.choice(myset) for i in range(5)])
+
+# 2017-04-23 19:29:32.657000
++''.join(random.choice(myset) for i in range(5))
+
+# 2017-04-23 19:29:41.893000
++(random.choice(myset) for i in range(5))
+
+# 2017-04-23 19:31:46.081000
++hashlib.sha256('hello'+'salt').hexdigest()
+
+# 2017-04-23 20:55:35.213000
++import bcrypt
+
+# 2017-04-23 20:55:38.080000
++import pdir2
+
+# 2017-04-23 20:55:40.613000
++import pdir
+
+# 2017-04-23 20:55:44.235000
++pdir(bcrypt)
+
+# 2017-04-23 20:56:50.617000
++bcrypt.hashpw('secret', bcrypt.gensalt())
+
+# 2017-04-23 20:57:06.357000
++help(bcrypt)
+
+# 2017-04-24 15:28:11.342000
++x = set('abcdefg')
+
+# 2017-04-24 15:28:12.247000
++x
+
+# 2017-04-24 15:28:43.776000
++y = {'g', 'h', 'i', 'j', 'k', 'l'}
+
+# 2017-04-24 15:28:44.588000
++y
+
+# 2017-04-24 15:36:16.655000
++dir(set)
+
+# 2017-04-24 15:41:43.004000
++{1,2,3,4}
+
+# 2017-04-24 15:42:55.065000
++import pdir
+
+# 2017-04-24 19:52:37.081000
++s1='1001|longhash|salt1'
+
+# 2017-04-24 19:52:49.763000
++s1='1001|longhash|salt1'.split('|')
+
+# 2017-04-24 19:52:50.777000
++s1
+
+# 2017-04-24 19:53:02.968000
++a, b, c = s1
+
+# 2017-04-24 19:53:05.069000
++a
+
+# 2017-04-24 19:53:05.849000
++b
+
+# 2017-04-24 19:53:06.535000
++c
+
+# 2017-04-24 19:53:15.268000
++a, b, c, d = s1
+
+# 2017-04-24 19:53:21.182000
++a, b = s1
+
+# 2017-04-25 07:08:41.890000
++uid=1001
+
+# 2017-04-25 07:09:13.053000
++def make_pw_hash(name, pw, salt=None):
++    if not salt:
++        salt = make_salt()
++    # Secure if SECRET secured
++    #h = hmac.new(SECRET, name+pw+salt, hashlib.sha256).hexdigest()
++    # Not secure, is user figures out algorithm can easily replicate
++    h = hashlib.sha256(name + pw + salt).hexdigest()
++    logging.info('make_pw_hash - for name={}, pw={}, salt={}, created hash={}'.format(name, pw,
++                 salt, h))
++    return '%s|%s' % (h, salt)
++
++def validate_pw(name, pw, h):
++    _, _, salt = h.partition('|')
++    chkh = make_pw_hash(name, pw, salt)
++    logging.info('validate_pw - for name={}, pw={}, hash={}, salt={}'.format(name, pw, h, salt))
++    logging.info('    passed_hash = {}\ncalculated_hash = {}'.format(h, chkh))
++    return chkh == h
+
+# 2017-04-25 07:09:16.017000
++dir()
+
+# 2017-04-25 07:09:27.350000
++import hashlib
+
+# 2017-04-25 07:09:44.593000
++def make_pw_hash(name, pw, salt=None):
++    if not salt:
++        salt = make_salt()
++    h = hashlib.sha256(name + pw + salt).hexdigest()
++    return '%s|%s' % (h, salt)
+
+# 2017-04-25 07:09:57.478000
++def validate_pw(name, pw, h):
++    _, _, salt = h.partition('|')
++    chkh = make_pw_hash(name, pw, salt)
++    return chkh == h
+
+# 2017-04-25 07:10:03.516000
++uid
+
+# 2017-04-25 07:10:06.528000
++name='user1'
+
+# 2017-04-25 07:10:34.863000
++import string
+
+# 2017-04-25 07:10:39.591000
++SALT_SET = string.letters + string.digits
+
+# 2017-04-25 07:10:45.105000
++def make_salt():
++    return ''.join(random.choice(SALT_SET) for i in range(5))
+
+# 2017-04-25 07:11:01.643000
++h1 = make_pw_hash(name, uid)
+
+# 2017-04-25 07:11:07.404000
++import random
+
+# 2017-04-25 07:11:08.918000
++h1 = make_pw_hash(name, uid)
+
+# 2017-04-25 07:11:15.217000
++h1 = make_pw_hash(name, str(uid))
+
+# 2017-04-25 07:11:16.638000
++h1
+
+# 2017-04-25 07:12:44.659000
++validate_pw(name, str(uid), h1)
+
+# 2017-04-25 07:16:29.944000
++uid_hash = '1fc5c90fdf71bbc6df952980f146dc12cd7b4857d47fb75f0d28da3dc0267009|wUEhR'
+
+# 2017-04-25 07:16:32.717000
++uid_hash
+
+# 2017-04-25 07:16:51.991000
++if uid_hash:
++    print 'yes'
+
+# 2017-04-25 07:17:08.784000
++if uid_hash and validate_pw(name, str(uid), h1):
++    print 'yes'
+
+# 2017-04-25 07:31:23.008000
++h2 = '1002|147c4fd7892a43612cf99356247c64b2835334c3e6728696df4e688a7e40ed64|2nvF4'
+
+# 2017-04-25 07:31:44.578000
++h1 = make_ps_hash('user2', '1002', '2nvF4')
+
+# 2017-04-25 07:31:50.448000
++h1 = make_pw_hash('user2', '1002', '2nvF4')
+
+# 2017-04-25 07:31:51.839000
++h1
+
+# 2017-04-25 07:31:56.164000
++h1 == h2
+
+# 2017-04-25 07:31:58.287000
++h1
+
+# 2017-04-25 07:31:58.772000
++h2
+
+# 2017-04-25 07:32:18.935000
++_, _, h3 = h2.partition('|')
+
+# 2017-04-25 07:32:19.403000
++h3
+
+# 2017-04-25 07:32:22.777000
++h1 == h3
+
+# 2017-04-25 07:41:58.216000
++sleep(0.100)
+
+# 2017-04-25 07:42:01.934000
++import time
+
+# 2017-04-25 07:42:05.464000
++time.sleep(0.100)
+
+# 2017-04-25 08:05:23.058000
++h1 = '1004|42354904ad99f821debeae5fd2336738465d9604e5346fe4af5fe04188d57c92|rtTRA'
+
+# 2017-04-25 08:05:43.135000
++h2 = make_pw_hash('user4', '1004', 'rtTRA')
+
+# 2017-04-25 08:05:43.846000
++h2
+
+# 2017-04-25 09:57:35.742000
++type({})
+
+# 2017-04-25 09:57:41.680000
++type(set())
+
+# 2017-04-25 10:04:08.213000
++dir()
+
+# 2017-04-25 10:04:12.845000
++dir(__builtins__)
+
+# 2017-04-25 10:04:27.509000
++help(__builtins__.frozenset)
+
+# 2017-04-25 10:20:19.283000
++s1 = {1,2,3,4}
+
+# 2017-04-25 10:20:20.080000
++s1
+
+# 2017-04-25 10:20:22.844000
++s1[0]
+
+# 2017-04-25 10:20:28.700000
++dir(s1)
+
+# 2017-04-25 10:20:46.747000
++s1.pop()
+
+# 2017-04-25 10:20:48.575000
++s1
+
+# 2017-04-25 10:21:14.042000
++s1.next()
+
+# 2017-04-25 10:21:45.444000
++for i in s1:
++    print(i)
++    
+
+# 2017-04-26 17:05:01.570000
++import logging
+
+# 2017-04-26 17:05:04.192000
++pdir(logging)
+
+# 2017-04-26 17:05:23.255000
++help(logging)
+
+# 2017-04-29 14:21:44.174000
++quit
+
+# 2017-05-01 13:29:27.880000
++type(5)
+
+# 2017-05-01 13:29:33.406000
++dir(5)
+
+# 2017-05-01 13:29:56.856000
++dir('a')
+
+# 2017-05-01 21:32:51.873000
++dir()
+
+# 2017-05-01 21:33:00.290000
++__dict__
+
+# 2017-05-01 21:33:09.293000
++__name__
+
+# 2017-05-01 21:33:20.256000
++__builtins__
+
+# 2017-05-01 21:33:26.038000
++dir(__builtins__)
+
+# 2017-05-01 22:00:06.523000
++class MyClass:
++    '''A simple class.'''
++    i = 12345
++    def f(self):
++        return 'hello world'
+
+# 2017-05-01 22:00:11.834000
++x = MyClass()
+
+# 2017-05-01 22:00:12.286000
++x
+
+# 2017-05-01 22:00:14.799000
++x.f
+
+# 2017-05-01 22:00:17.656000
++type(x.f)
+
+# 2017-05-01 22:00:28.759000
++type(MyClass.f)
+
+# 2017-05-02 07:52:40.344000
++class MyTest1(object):
++    def MyMethod1(self):
++        return 'Hello'
+
+# 2017-05-02 07:52:48.677000
++a = MyTest1()
+
+# 2017-05-02 07:52:49.317000
++a
+
+# 2017-05-02 07:52:53.445000
++type(a)
+
+# 2017-05-02 07:52:59.733000
++dir(a)
+
+# 2017-05-02 07:53:10.395000
++a.__class__
+
+# 2017-05-02 07:55:11
++a.__dict__
+
+# 2017-05-02 07:55:39.492000
++class MyTest1(object):
++    a = 1
++    self.b = 2
+
+# 2017-05-02 07:56:57.565000
++class MyTest1(object):
++    '''My example class.'''
++    a = 1
++    self.b = 2
++    def MyMeth1(self, arg1):
++        return 'Hello ' + str(arg1) + '!'
+
+# 2017-05-02 07:57:06.375000
++class MyTest1(object):
++    '''My example class.'''
++    a = 1
++    b = 2
++    def MyMeth1(self, arg1):
++        return 'Hello ' + str(arg1) + '!'
+
+# 2017-05-02 07:57:13.893000
++a = MyTest1()
+
+# 2017-05-02 07:57:16.457000
++dir(a)
+
+# 2017-05-02 07:57:20.998000
++a.__dict__
+
+# 2017-05-02 07:57:26.109000
++a.a
+
+# 2017-05-02 07:57:27.403000
++a.b
+
+# 2017-05-02 07:57:28.230000
++a.c
+
+# 2017-05-02 07:57:31.357000
++a.c = 5
+
+# 2017-05-02 07:57:34.150000
++dir(a)
+
+# 2017-05-02 07:57:42.477000
++a.__dict__
+
+# 2017-05-02 07:57:53.384000
++a.__doc__
+
+# 2017-05-02 07:58:06.308000
++a.__weakref__
+
+# 2017-05-02 12:07:55.770000
++type(int)
+
+# 2017-05-02 12:07:59.001000
++type(unicode)
+
+# 2017-05-02 12:08:03.088000
++type(str)
+
+# 2017-05-03 11:36:24.920000
++'a' 'b' 'c'
+
+# 2017-05-03 11:38:21.473000
++print('a ' 'and b ' 'and c')
+
+# 2017-05-04 09:46:20.851000
++myjob = 'hacker'
+
+# 2017-05-04 09:47:08.626000
++from __future__ import print_function
+
+# 2017-05-04 09:47:23.427000
++for c in myjob: print(c, end=' ')
+
+# 2017-05-05 13:38:27.055000
++n = 'Dan'
+
+# 2017-05-05 13:38:46.507000
++print('Hello, ' + n + '!')
+
+# 2017-05-05 13:38:50.003000
++print('Hello, ' '!')
+
+# 2017-05-05 13:39:15.954000
++def greet(n):
++    return 'Hello, ' + n + '!'
+
+# 2017-05-05 13:39:21.854000
++greet('Dan')
+
+# 2017-05-05 13:39:26.943000
++import dis
+
+# 2017-05-05 13:39:34.532000
++dis.dis(greet)
+
+# 2017-05-06 17:09:14.373000
++import string
+
+# 2017-05-06 17:09:16.916000
++pdir(string)
+
+# 2017-05-06 17:09:21.362000
++dir(string)
+
+# 2017-05-06 17:10:00.281000
++string.punctuation
+
+# 2017-05-06 17:10:02.330000
++string.printable
+
+# 2017-05-06 17:11:30.397000
++import hmac
+
+# 2017-05-06 17:11:33.752000
++dir(hmac)
+
+# 2017-05-06 17:11:46.961000
++help(hmc.new)
+
+# 2017-05-06 17:11:51.775000
++help(hmac.new)
+
+# 2017-05-08 11:26:05.845000
++print('1','2')
+
+# 2017-05-08 12:13:41.982000
++pwd
+
+# 2017-05-08 12:14:16.107000
++c
+
+# 2017-05-08 12:14:30.073000
++cd /apps/working/python/udacity
+
+# 2017-05-08 12:15:10.180000
++pwd
+
+# 2017-05-08 12:15:34.969000
++?
+
+# 2017-05-08 12:17:35.687000
++cd
+
+# 2017-05-08 12:17:38.266000
++ls
+
+# 2017-05-08 12:17:51.093000
++?cd
+
+# 2017-05-08 12:18:18.997000
++pwd
+
+# 2017-05-08 12:21:07.105000
++%cd '/apps/working/python'
+
+# 2017-05-08 12:21:18.964000
++%ls r'\'
+
+# 2017-05-08 12:21:28.749000
++%cd '..'
+
+# 2017-05-08 12:21:34.296000
++%cd ".."
+
+# 2017-05-08 12:21:43.576000
++%cd "/apps"
+
+# 2017-05-08 12:21:52.818000
++%cd "/apps/working/python/udacity/"
+
+# 2017-05-08 12:21:53.272000
++ls
+
+# 2017-05-08 12:22:02.607000
++%cd "/apps/working/udacity"
+
+# 2017-05-08 12:22:03.683000
++ls
+
+# 2017-05-08 12:22:10.755000
++%cd "nd004"
+
+# 2017-05-08 12:22:11.192000
++ls
+
+# 2017-05-08 12:22:20.316000
++%cd "backend"
+
+# 2017-05-08 12:22:21.426000
++ls
+
+# 2017-05-08 12:22:27.971000
++%cd "Project2"
+
+# 2017-05-08 12:22:29.506000
++pwd
+
+# 2017-05-08 12:22:30.582000
++ls
+
+# 2017-05-08 12:22:50.432000
++import ConfigParser
+
+# 2017-05-08 12:23:02.862000
++config = ConfigParser.ConfigParser()
+
+# 2017-05-08 12:23:20.187000
++config.read("static/cfg/environment.cfg")
+
+# 2017-05-08 12:24:35.872000
++secret_key = config.get('seed', 'key')
+
+# 2017-05-08 12:24:39.850000
++secret_key
+
+# 2017-05-08 12:25:49.650000
++import configparser
+
+# 2017-05-08 12:25:59.962000
++config = configparser.ConfigParser()
+
+# 2017-05-08 12:26:13.304000
++config.read('static/cfg/environment.cfg')
+
+# 2017-05-08 12:26:44.436000
++config.read(u'static/cfg/environment.cfg')
+
+# 2017-05-08 12:27:00.678000
++secret_key = config.get('seed', 'key')
+
+# 2017-05-08 12:27:03.704000
++secret_key
+
+# 2017-05-08 15:36:45.529000
++def testf1(*args, **kwargs):
++    print('args:  {}', args)
++    print('kwargs:  {}', kwargs)
+
+# 2017-05-08 15:36:51.272000
++testf1()
+
+# 2017-05-08 15:37:30.272000
++def testf1(*args, **kwargs):
++    print('args:  {}'.format(args))
++    print('kwargs:  {}'.format(kwargs))
+
+# 2017-05-08 15:37:35.888000
++testf1()
+
+# 2017-05-08 15:37:44.392000
++testf1(1,2,3)
+
+# 2017-05-08 15:37:50.908000
++testf1(1,2,3,a=4)
+
+# 2017-05-08 15:37:59.870000
++testf1(1,2,3,a=4,b=5,c=6)
+
+# 2017-05-08 15:45:33.108000
++d1 = dict(username='george', password='secret')
+
+# 2017-05-08 15:45:42.751000
++d1.get('username')
+
+# 2017-05-08 15:45:48.559000
++d1.get('email')
+
+# 2017-05-08 15:45:56.343000
++print(d1.get('email'))
+
+# 2017-05-08 16:25:13.087000
++with open('C:\\apps\\working\\udacity\\nd004\\backend\\Project2\\static\\cfg\\environment.cfg','r') as f1:
++    print(f1.readlines())
+
+# 2017-05-11 07:55:17.719000
++params = dict(username='bad', password='secret', email='bad@bad.com')
+
+# 2017-05-11 07:55:19.123000
++params
+
+# 2017-05-11 07:55:40.122000
++params.get(email)
+
+# 2017-05-11 07:55:45.419000
++params.get('email')
+
+# 2017-05-12 08:11:02.767000
++help(str.isalpha())
+
+# 2017-05-12 08:11:16.742000
++quit()
+
+# 2017-05-12 08:11:33.425000
++help(str.isalpha)
+
+# 2017-05-12 09:42:09.331000
++import itertools
+
+# 2017-05-12 09:42:57.756000
++for i in itertools.permutations('01234abcdEF'): print(p)
+
+# 2017-05-12 09:43:09.905000
++for i in itertools.permutations('01234abcdEF'): print(i)
+
+# 2017-05-12 09:43:19.105000
++for i in itertools.permutations('01abEF'): print(i)
+
+# 2017-05-12 16:49:19.850000
++raise ValueError
+
+# 2017-05-12 16:49:40.700000
++help(ValueError)
+
+# 2017-05-12 16:49:55.941000
++help(BaseException)
+
+# 2017-05-12 17:06:55.050000
++d1 = dict(username='test', password='secret')
+
+# 2017-05-12 17:06:55.739000
++d1
+
+# 2017-05-12 17:07:06.737000
++d1['have_error'] = False
+
+# 2017-05-12 17:07:07.174000
++d1
+
+# 2017-05-12 17:07:36.020000
++def change_dict(**params):
++    params['have_error'] = True
+
+# 2017-05-12 17:07:37.455000
++d1
+
+# 2017-05-12 17:07:59.124000
++change_dict(**d1)
+
+# 2017-05-12 17:07:59.874000
++d1
+
+# 2017-05-12 17:08:30.563000
++def change_dict(mydict):
++    mydict['have_error'] = True
+
+# 2017-05-12 17:08:32.716000
++d1
+
+# 2017-05-12 17:08:36.917000
++change_dict(d1)
+
+# 2017-05-12 17:08:37.682000
++d1
+
+# 2017-05-12 19:04:48.269000
++print('Creating account username={}, password_hash={}, email={}, entity_key={}, '
++      'uid={}'.format('George', 'secrethash', None, 'asldkfjasdlfjks', 123413424))
+
+# 2017-05-12 19:26:46.466000
++import logging
+
+# 2017-05-12 19:27:47.937000
++logging.debug('Creating account username={}, password_hash={}, email={}, entity_key={}, '
++              'uid={}'.format('George', 'password', None, 'asldfkjasdfjk', 23492834729))
+
+# 2017-05-12 22:27:50.434000
++import sys
+
+# 2017-05-12 22:28:03.142000
++logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+
+# 2017-05-12 22:28:07.635000
++logging.debug('Creating account username={}, password_hash={}, email={}, entity_key={}, '
++              'uid={}'.format('George', 'password', None, 'asldfkjasdfjk', 23492834729))
+
+# 2017-05-12 22:28:48.139000
++import logging, sys
+
+# 2017-05-12 22:29:02.469000
++logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+
+# 2017-05-12 22:29:08.057000
++logging.debug('Test')
+
+# 2017-05-12 22:29:30.933000
++logging.debug('Creating account username={}, password_hash={}, email={}, entity_key={}, '
++              'uid={}'.format('George', 'password', None, 'asldfkjasdfjk', 23492834729))
+
+# 2017-05-12 22:41:26.739000
++import string
+
+# 2017-05-12 22:41:29.734000
++dir(string)
+
+# 2017-05-12 22:41:40.188000
++string.punctuation
+
+# 2017-05-12 22:42:37.112000
++help(string.replace)
+
+# 2017-05-12 22:42:56.866000
++help(str.replace)
+
+# 2017-05-12 22:44:09.383000
++string.punctuation
+
+# 2017-05-12 22:44:15.880000
++a = string.punctuation
+
+# 2017-05-12 22:44:47.577000
++dir(str)
+
+# 2017-05-12 22:45:14.302000
++help(str.strip)
+
+# 2017-05-12 22:45:57.401000
++string.punctuation.strip(r"'")
+
+# 2017-05-12 22:46:21.078000
++string.punctuation[0:1]
+
+# 2017-05-12 22:46:38.868000
++string.punctuation[6]
+
+# 2017-05-12 22:46:42.191000
++string.punctuation[5]
+
+# 2017-05-12 22:47:10.901000
++string.punctuation.strip("'")
+
+# 2017-05-12 22:47:33.661000
++string.punctuation.strip("!")
+
+# 2017-05-12 22:47:40.829000
++string.punctuation.strip("#")
+
+# 2017-05-12 22:48:02.846000
++string.punctuation.replace("'", "")
+
+# 2017-05-12 22:48:35.979000
++string.punctuation.replace("'", "").replace('\\', '')
+
+# 2017-05-12 22:49:10.926000
++string.punctuation.replace("'", "").replace('\\', '').replace('"', '')
+
+# 2017-05-12 22:50:24.331000
++string.letters
+
+# 2017-05-12 22:50:32.273000
++string.letters + string.numbers
+
+# 2017-05-12 22:50:35.488000
++string.letters + string.number
+
+# 2017-05-12 22:50:39.534000
++string.letters + string.digits
+
+# 2017-05-16 07:27:12.142000
++s1 = set()
+
+# 2017-05-16 07:27:13.001000
++s1
+
+# 2017-05-16 07:27:17.698000
++dir(s1)
+
+# 2017-05-16 07:28:10.840000
++help(s1)
+
+# 2017-05-16 07:30:26.520000
++s1
+
+# 2017-05-16 07:30:41.959000
++s1.update('george')
+
+# 2017-05-16 07:30:42.614000
++s1
+
+# 2017-05-16 07:31:16.719000
++import pdir2
+
+# 2017-05-16 07:31:19.418000
++import pdir
+
+# 2017-05-16 07:31:26.032000
++pdir(set)
+
+# 2017-05-16 07:31:41.814000
++help(set.add)
+
+# 2017-05-16 07:31:44.871000
++s
+
+# 2017-05-16 07:31:45.745000
++s1
+
+# 2017-05-16 07:31:49.083000
++s1 = set()
+
+# 2017-05-16 07:31:49.645000
++s1
+
+# 2017-05-16 07:31:53.674000
++s1.add('george')
+
+# 2017-05-16 07:31:54.282000
++s1
+
+# 2017-05-16 07:32:02.732000
++s1.add('bob')
+
+# 2017-05-16 07:32:03.434000
++s1
+
+# 2017-05-16 07:32:08.902000
++'bob' in s1
+
+# 2017-05-16 07:32:13.553000
++'frank' in s1
+
+# 2017-05-16 07:32:19.216000
++pdir(set)
+
+# 2017-05-16 07:32:35.495000
++help(set.discard)
+
+# 2017-05-16 07:32:43.219000
++help(set.remove)
+
+# 2017-05-16 07:33:25.970000
++import pickle
+
+# 2017-05-16 07:33:29.246000
++dir(pickle)
+
+# 2017-05-16 07:33:38.728000
++pdir(pickle)
+
+# 2017-05-16 07:47:24.250000
++s1
+
+# 2017-05-16 07:47:28.494000
++s1.add('bob')
+
+# 2017-05-16 07:47:29.180000
++s1
+
+# 2017-05-16 10:27:58.415000
++vars()
+
+# 2017-05-16 10:28:09.412000
++vars
+
+# 2017-05-16 10:28:11.925000
++vars()
+
+# 2017-05-16 13:20:17.234000
++s2 = '''
++1z8e80a40601439625
++1za69v989016144752
++'''
++s2
+
+# 2017-05-16 13:20:19.560000
++s2
+
+# 2017-05-16 13:20:30.552000
++s2 = '''
++1z8e80a40601439625
++1za69v989016144752
++'''
+
+# 2017-05-16 13:20:31.725000
++s2
+
+# 2017-05-16 13:20:37.344000
++dir(s2)
+
+# 2017-05-16 13:20:45.083000
++s2.upper()
+
+# 2017-05-16 13:20:52.355000
++s2.upper().str()
+
+# 2017-05-16 13:20:58.552000
++str(s2.upper())
+
+# 2017-05-16 13:21:02.999000
++print(s2.upper())
+
+# 2017-05-16 19:55:12.976000
++s1
+
+# 2017-05-16 19:55:17.866000
++s1=set()
+
+# 2017-05-16 19:55:18.412000
++s1
+
+# 2017-05-17 07:57:39.552000
++quit()
+
+# 2017-05-19 20:30:11.960000
++dir(datetime)
+
+# 2017-05-19 20:30:13.867000
++import datetime
+
+# 2017-05-19 20:30:21.999000
++datetime.datetime.now()
+
+# 2017-05-19 20:30:26.505000
++datetime.datetime.now() + 30
+
+# 2017-05-19 20:33:02.327000
++datetime.datetime.today()
+
+# 2017-05-19 20:33:06.539000
++datetime.datetime.now()
+
+# 2017-05-19 20:33:19.983000
++datetime.datetime.now() + datetime.timedelta(days=30)
+
+# 2017-05-19 22:22:47.653000
++h1 = 'localhost:8080'
+
+# 2017-05-19 22:22:58.739000
++str(h1).split(':')
+
+# 2017-05-19 22:23:01.394000
++str(h1).split(':')[0]
+
+# 2017-05-21 15:37:10.395000
++import sys
+
+# 2017-05-21 15:37:11.877000
++sys.path
+
+# 2017-05-21 15:37:18.374000
++from pprint import pprint
+
+# 2017-05-21 15:37:21.329000
++pprint(sys.path)
+
+# 2017-05-21 15:47:57.232000
++dir()
+
+# 2017-05-21 15:48:10.675000
++dir(_)
+
+# 2017-05-21 15:48:15.690000
++type(_)
+
+# 2017-05-21 15:48:21.281000
++dir(_10)
+
+# 2017-05-21 15:48:24.323000
++type(_10)
+
+# 2017-05-21 15:48:29.068000
++_10
+
+# 2017-05-21 15:48:42.589000
++dir(__builtins__)
+
+# 2017-05-23 20:26:33.980000
++import string
+
+# 2017-05-23 20:26:37.180000
++dir(string)
+
+# 2017-05-23 20:26:40.962000
++string.punctuation
+
+# 2017-05-23 20:28:04.160000
++dir(str)
+
+# 2017-05-23 20:28:27.299000
++help(str.strip)
+
+# 2017-05-23 20:28:57.394000
++string.punctuation.strip('\'"\\|')
+
+# 2017-05-23 20:29:34.009000
++string.punctuation.strip(r'\'"\|')
+
+# 2017-05-23 20:29:50.529000
++string.punctuation
+
+# 2017-05-23 20:29:59.481000
++string.punctuation.strip('"')
+
+# 2017-05-23 20:31:17.440000
++string.punctuation
+
+# 2017-05-23 20:31:35.918000
++s1 = string.punctuation
+
+# 2017-05-23 20:31:36.768000
++s1
+
+# 2017-05-23 20:31:49.536000
++s1 = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+
+# 2017-05-23 20:31:51.018000
++s1
+
+# 2017-05-23 20:31:57.015000
++s1 = '!#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+
+# 2017-05-23 20:31:57.701000
++s
+
+# 2017-05-23 20:31:59.841000
++s1
+
+# 2017-05-23 20:32:20.278000
++s1 = '!#$%&()*+,-./:;<=>?@[]^_`{}~'
+
+# 2017-05-23 20:32:21.198000
++s1
+
+# 2017-05-25 19:50:18.659000
++d1 = {'present': True}
+
+# 2017-05-25 19:50:24.376000
++d1['present']
+
+# 2017-05-25 19:50:30.403000
++d1.get('present')
+
+# 2017-05-25 19:50:34.462000
++d1.get('not_present')
+
+# 2017-05-25 19:50:41.004000
++print(d1.get('not_present'))
+
+# 2017-05-25 20:08:51.055000
++title = u''
+
+# 2017-05-25 20:09:04.302000
++if not title:
++    print True
++else:
++    print False
+
+# 2017-05-25 20:09:17.008000
++if title:
++    print True
++else:
++    print False
+
+# 2017-05-25 20:09:36.416000
++params['title'] = u''
+
+# 2017-05-25 20:09:40.715000
++params = {}
+
+# 2017-05-25 20:09:42.167000
++params['title'] = u''
+
+# 2017-05-25 20:09:54.903000
++params
+
+# 2017-05-25 20:10:10.614000
++if not params['title']:
++    print True
++else:
++    print False
+
+# 2017-05-25 20:10:25.286000
++if params['title']:
++    print True
++else:
++    print False
+
+# 2017-05-25 20:11:03.574000
++params
+
+# 2017-05-26 17:25:20.893000
++import urllib
+
+# 2017-05-26 17:25:22.063000
++import urllib2
+
+# 2017-05-26 17:25:45.752000
++p = urllib2.urlopen('http://www.google.com')
+
+# 2017-05-26 17:25:47.919000
++p
+
+# 2017-05-26 17:25:51.030000
++dir(p)
+
+# 2017-05-26 17:25:59.202000
++import pdir
+
+# 2017-05-26 17:26:01.557000
++pdir(p)
+
+# 2017-05-26 17:26:13.321000
++p.getcode
+
+# 2017-05-26 17:26:15.320000
++p.getcode()
+
+# 2017-05-26 17:26:19.475000
++p.geturl()
+
+# 2017-05-26 17:26:24.469000
++p.info()
+
+# 2017-05-26 17:26:36.860000
++c = p.read()
+
+# 2017-05-26 17:26:46.225000
++p.url
+
+# 2017-05-26 17:26:48.333000
++p.headers
+
+# 2017-05-26 17:26:57.185000
++p.headers.items
+
+# 2017-05-26 17:26:59.624000
++p.headers.items()
+
+# 2017-05-26 17:27:21.907000
++p.headers['content-type']
+
+# 2017-05-26 17:27:30.358000
++dir(c)
+
+# 2017-05-26 17:27:33.827000
++pdir(c)
+
+# 2017-05-26 17:27:37.379000
++c
+
+# 2017-05-26 17:28:17.520000
++p = urllib2.urlopen('www.example.com')
+
+# 2017-05-26 17:28:25.035000
++p = urllib2.urlopen('http://www.example.com')
+
+# 2017-05-26 17:28:36.140000
++p.headers
+
+# 2017-05-26 17:28:37.705000
++p.headers()
+
+# 2017-05-26 17:28:49.007000
++p.headers.items()
+
+# 2017-05-26 17:28:58.148000
++from pprint import pprint
+
+# 2017-05-26 17:29:02.526000
++pprint(p.headers.items())
+
+# 2017-05-26 17:50:40.121000
++from xml.dom import minidom
+
+# 2017-05-26 17:50:51.545000
++dir(minidom)
+
+# 2017-05-26 17:53:10.970000
++help(minidom.parseString)
+
+# 2017-05-27 16:05:38.480000
++exit()
+
+# 2017-05-28 20:51:26.553000
++import sqlite3
+
+# 2017-05-28 20:53:21.539000
++conn = sqlite3.connect('Databases.db')
+
+# 2017-05-28 20:53:39.780000
++cursor = conn.cursor()
+
+# 2017-05-28 20:54:06.709000
++cursor.execute('select * from cookies limit 10')
+
+# 2017-05-28 20:55:02.522000
++conn.close()
+
+# 2017-05-28 20:55:14.667000
++conn = sqlite3.connect('Cookies')
+
+# 2017-05-28 20:55:23.833000
++cursor = conn.cursor()
+
+# 2017-05-28 20:55:32.739000
++cursor.execute('select * from cookies')
+
+# 2017-05-28 21:19:55.770000
++import sqlite3
+
+# 2017-05-28 21:27:42.435000
++conn = sqlite3.connect('%localappdata%\google\chrome\user data\default\Cookies')
+
+# 2017-05-28 21:29:30.760000
++import sqlite3
+
+# 2017-05-28 21:29:40.115000
++conn = sqlite3.connect(r'%localappdata%\google\chrome\user data\default\Cookies')
+
+# 2017-05-28 21:29:58.764000
++conn = sqlite3.connect(r'C:\Users\js646y\AppData\Local\Google\Chrome\User Data\Default\Cookies')
+
+# 2017-05-28 21:30:15.804000
++cursor = conn.cursor()
+
+# 2017-05-28 21:30:31.434000
++cursor.execute('select * from cookies limit 10')
+
+# 2017-05-28 21:30:47.533000
++results = cursor.fetchall()
+
+# 2017-05-28 21:30:53.184000
++print(results)
+
+# 2017-05-28 21:30:57.878000
++from pprint import pprint
+
+# 2017-05-28 21:31:00.113000
++pprint(results)
+
+# 2017-05-28 21:31:20.708000
++conn.close()
+
+# 2017-05-29 15:33:35.295000
++"insert into garden values (%s)", ('troublesome',)
+
+# 2017-05-30 10:36:13.673000
++L = ['spam', 'Spam', 'SPAM!']
+
+# 2017-05-30 10:36:17.576000
++type(L)
+
+# 2017-05-30 10:36:22.870000
++l[2]
+
+# 2017-05-30 10:36:25.631000
++L[2]
+
+# 2017-05-30 10:36:30.429000
++type(L[2])
+
+# 2017-05-31 08:48:09.879000
++l1 = [1, 2, 3, 4]
+
+# 2017-05-31 08:48:10.336000
++l1
+
+# 2017-05-31 08:48:37.115000
++l1[0,2] = ['a', 'b', 'c', 'd']
+
+# 2017-05-31 08:49:03.142000
++l1[0:2] = ['a', 'b', 'c', 'd']
+
+# 2017-05-31 08:49:04.400000
++l1
+
+# 2017-05-31 08:59:15.126000
++l1 = [1,2,3]
+
+# 2017-05-31 08:59:15.676000
++l1
+
+# 2017-05-31 08:59:17.523000
++id(l1)
+
+# 2017-05-31 08:59:31.974000
++l2 = l1 + 4
+
+# 2017-05-31 08:59:40.193000
++l2 = l1 + [4]
+
+# 2017-05-31 08:59:41.885000
++l2
+
+# 2017-05-31 08:59:45.167000
++id(l2)
+
+# 2017-05-31 09:00:00.868000
++l1.append(4)
+
+# 2017-05-31 09:00:01.798000
++l1
+
+# 2017-05-31 09:00:05.017000
++id(l1)
+
+# 2017-05-31 09:01:02.091000
++l1
+
+# 2017-05-31 09:01:08.363000
++l1 = l1 + [5]
+
+# 2017-05-31 09:01:10.913000
++id(l1)
+
+# 2017-06-02 07:44:05.356000
++import datetime
+
+# 2017-06-02 07:44:33.578000
++help(datetime.date)
+
+# 2017-06-02 07:45:17.191000
++datetime.date.today() - datetime.date(2017, 02, 10)
+
+# 2017-06-02 07:45:24.614000
++112/7
+
+# 2017-06-02 07:45:31.224000
++112//7
+
+# 2017-06-02 07:45:37.337000
++112.0/7
+
+# 2017-06-02 07:45:40.777000
++113.0/7
+
+# 2017-06-02 07:46:02.353000
++17*12.25
+
+# 2017-06-02 12:10:44.059000
++import sys
+
+# 2017-06-02 12:10:45.320000
++sys.version
+
+# 2017-06-02 12:11:04.410000
++class ManglingTest:
++    def __init__(self):
++        self.__mangled = 'hello'
++
++    def get_mangled(self):
++        return self.__mangled
+
+# 2017-06-02 12:11:22.358000
++ManglingTest().get_mangled()
+
+# 2017-06-02 12:12:16.986000
++dir(ManglingTest())
+
+# 2017-06-05 15:06:18.908000
++help(dict)
+
+# 2017-06-05 15:06:58.979000
++dict()
+
+# 2017-06-05 15:07:14.262000
++dict(one=red)
+
+# 2017-06-05 15:07:18.166000
++dict(one='red')
+
+# 2017-06-05 15:07:50.700000
++d1 = dict(one='red', two='orange', three='yellow', four='green', five='blue')
+
+# 2017-06-05 15:08:14.709000
++d2 = dict(five='indigo', six='violet', seven='black')
+
+# 2017-06-05 15:08:17.099000
++d1, d2
+
+# 2017-06-05 15:08:18.925000
++d1
+
+# 2017-06-05 15:08:19.540000
++d2
+
+# 2017-06-05 15:08:37.443000
++d1.update(d2)
+
+# 2017-06-05 15:08:38.199000
++d1
+
+# 2017-06-05 15:08:55.088000
++d1['five']
+
+# 2017-06-05 15:09:06.342000
++d1 = dict(one='red', two='orange', three='yellow', four='green', five='blue')
+
+# 2017-06-05 15:09:09.835000
++d2 = dict(five='indigo', six='violet', seven='black')
+
+# 2017-06-05 15:09:14.690000
++d1['five']
+
+# 2017-06-05 15:09:17.918000
++d1.update(d2)
+
+# 2017-06-05 15:09:23.541000
++d1['five']
+
+# 2017-06-05 15:09:28.692000
++d1.get('five')
+
+# 2017-06-13 11:51:43.728000
++s1 = 'abc'
+
+# 2017-06-13 11:51:47.276000
++t1= 1,2,3
+
+# 2017-06-13 11:51:51.749000
++l1 = [1,2,3]
+
+# 2017-06-13 11:51:57.605000
++s1,t1,l1
+
+# 2017-06-13 11:52:03.265000
++s1+t1
+
+# 2017-06-13 11:52:06.770000
++t1+l1
+
+# 2017-06-13 11:52:14.577000
++l1+t1
+
+# 2017-06-17 12:42:19.239093
++import pdir
+
+# 2017-06-17 12:42:25.335867
++import requests
+
+# 2017-06-17 12:42:29.169354
++dir(requests)
+
+# 2017-06-17 12:42:33.390390
++pdir(requests)
+
+# 2017-06-17 12:45:20.788647
++r = requests.get('api.github.com/events')
+
+# 2017-06-17 12:45:38.049338
++r = requests.get('https://api.github.com/events')
+
+# 2017-06-17 12:45:41.185737
++r.content
+
+# 2017-06-17 12:45:48.030606
++dir(r)
+
+# 2017-06-17 12:45:50.114370
++pdir(r)
+
+# 2017-06-17 12:46:36.197722
++r.content
+
+# 2017-06-17 12:46:39.439134
++len(r.content)
+
+# 2017-06-17 12:46:45.135357
++dir(r.content)
+
+# 2017-06-17 12:46:50.123991
++type(r.content)
+
+# 2017-06-17 12:46:55.691698
++pdir(r.content)
+
+# 2017-06-17 12:47:16.285313
++from pprint import pprint
+
+# 2017-06-17 12:47:25.240950
++pprint(r.content)
+
+# 2017-06-17 12:49:11.933998
++r.status_code
+
+# 2017-06-17 12:57:23.335398
++r.headers
+
+# 2017-06-17 12:57:28.936610
++pprint(r.headers)
+
+# 2017-06-17 13:03:16.980806
++r = requests.get('http://localhost:8008')
+
+# 2017-06-17 13:03:19.897676
++r.status_code
+
+# 2017-06-17 13:03:22.243474
++r.text
+
+# 2017-06-17 13:03:30.203985
++pprint(r.text)
+
+# 2017-06-17 13:04:23.917305
++type(r)
+
+# 2017-06-17 13:05:35.367378
++r.text
+
+# 2017-06-17 13:05:37.475646
++r.content
+
+# 2017-06-17 13:06:25.499744
++r = requests.get('http://bad.example.com')
+
+# 2017-06-17 13:08:03.970249
++quit()
+
+# 2017-06-17 13:08:39.895311
++import requests
+
+# 2017-06-17 13:08:51.850829
++r = requests.get('bad.example.com')
+
+# 2017-06-17 13:09:16.665980
++r = requests.get('http://bad.example.com:81')
+
+# 2017-06-17 13:10:03.594439
++r = requests.get('http://google.com:81')
+
+# 2017-06-17 13:10:30.226821
++r = requests.get('http://google.com/dne')
+
+# 2017-06-17 13:10:33.366220
++r.text
+
+# 2017-06-17 13:10:37.544250
++r.status_code
+
+# 2017-06-17 13:11:10.925989
++r = requests.get('http://bad.example.com:81')
+
+# 2017-06-17 13:11:13.752348
++r.status_code
+
+# 2017-06-17 13:11:22.970018
++r.text
+
+# 2017-06-17 13:11:45.602392
++r = ''
+
+# 2017-06-17 13:11:47.983195
++del r
+
+# 2017-06-17 13:11:48.458755
++r
+
+# 2017-06-17 13:11:56.335755
++r = requests.get('http://bad.example.com:81')
+
+# 2017-06-17 13:12:01.153867
++r.status_code
+
+# 2017-06-17 13:22:11.480369
++r = requests.get('http://swapi.co/api/people/1/')
+
+# 2017-06-17 13:22:13.280597
++r.text
+
+# 2017-06-17 13:22:17.614148
++pprint(r.text)
+
+# 2017-06-17 13:22:23.183355
++from pprint import pprint
+
+# 2017-06-17 13:22:27.148858
++pprint(r.text)
+
+# 2017-06-17 13:22:39.255396
++r.json
+
+# 2017-06-17 13:22:42.285781
++r.json()
+
+# 2017-06-17 13:22:49.304172
++pprint(r.json())
+
+# 2017-06-17 13:23:57.191792
++a.json().get('name')
+
+# 2017-06-17 13:24:01.642858
++r.json().get('name')
+
+# 2017-06-17 13:24:10.150938
++r.json()['name']
+
+# 2017-06-17 13:24:39.164622
++u = requests.get('http://udacity.com')
+
+# 2017-06-17 13:24:42.949603
++u.json()
+
+# 2017-06-17 13:25:01.778494
++u.status_code
+
+# 2017-06-17 13:25:06.892143
++u.text
+
+# 2017-06-17 13:25:18.017056
++u.json()
+
+# 2017-06-17 13:32:44.393238
++import requests
+
+# 2017-06-17 13:34:00.703429
++r = requests.get('http://uinames.com/api?ext&region=Poland', timeout=2.0)
+
+# 2017-06-17 13:34:05.146493
++r.json()
+
+# 2017-06-17 13:34:14.992743
++from pprint import pprint
+
+# 2017-06-17 13:34:20.830985
++pprint(r.json())
+
+# 2017-06-17 13:36:17.573809
++import UINames
+
+# 2017-06-17 13:36:28.816237
++print(SampleRecord)
+
+# 2017-06-17 13:36:39.514095
++print(UINames.SampleRecord())
+
+# 2017-06-17 13:59:04.308862
++import requests
+
+# 2017-06-17 13:59:18.097613
++r = requests.get('http://google.com')
+
+# 2017-06-17 13:59:20.875966
++r.status_code
+
+# 2017-06-17 13:59:26.530684
++type(r.status_code)
+
+# 2017-06-17 14:02:21.085350
++True if requests.get('http://google.com').status_code == '200' else False
+
+# 2017-06-17 14:02:41.760475
++requests.get('http://google.com').status_code
+
+# 2017-06-17 14:02:49.643476
++True if requests.get('http://google.com').status_code == 200 else False
+
+# 2017-06-17 14:07:14.800147
++memory[1] = 'one'
+
+# 2017-06-17 14:08:12.400961
++help(dict)
+
+# 2017-06-17 14:08:16.934537
++dict
+
+# 2017-06-17 14:08:38.545281
++memory = {}
+
+# 2017-06-17 14:09:36.556648
++memory = dict(one=1, two=2)
+
+# 2017-06-17 14:09:38.434886
++memory
+
+# 2017-06-17 14:11:51.317760
++known = '\n'.join('{} : {}'.format(key, memory[key]) for key in sorted(memory.keys()))
+
+# 2017-06-17 14:11:53.110988
++known
+
+# 2017-06-17 14:12:39.696903
++known = '\n'.join('{} : {}'.format(key, memory[key]) for key in sorted(memory.keys()) )
+
+# 2017-06-17 14:12:42.520262
++known
+
+# 2017-06-17 14:26:18.370862
++import requests
+
+# 2017-06-17 14:26:56.122156
++try:
++    r = requests.get('bad.com')
++except Exception as e:
++    r = None
+
+# 2017-06-17 14:26:57.771365
++r
+
+# 2017-06-17 14:27:00.479209
++print(r)
+
+# 2017-06-20 18:32:13.456000
++from collections import namedtuple
+
+# 2017-06-20 18:32:48.443000
++rec = namedtuple('rec', ['count', quote, 'header1', 'header2'])
+
+# 2017-06-20 18:32:54.887000
++rec = namedtuple('rec', ['count', 'quote', 'header1', 'header2'])
+
+# 2017-06-20 18:33:06.845000
++data =rec(quote=False)
+
+# 2017-06-20 18:33:28.467000
++data =rec(2, False, 'Article', 'Views')
+
+# 2017-06-20 18:33:29.757000
++data
+
+# 2017-06-20 18:33:31.963000
++data.quote
+
+# 2017-06-20 18:44:48.661000
++import datetime
+
+# 2017-06-20 18:44:51.989000
++import psycopg2
+
+# 2017-06-27 06:50:13.972861
++col = 0
+
+# 2017-06-27 06:50:46.259461
++for q in q1:
++    print(q.name, end='')
++    if col < 10:
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:50:55.703660
++q1 = session.query(Puppy).order_by('name').all()
+
+# 2017-06-27 06:50:59.520144
++for q in q1:
++    print(q.name, end='')
++    if col < 10:
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:51:27.132651
++for q in q1:
++    print(q.name, end='')
++    if col < 9:
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:51:30.607092
++col = 0
+
+# 2017-06-27 06:51:33.431951
++for q in q1:
++    print(q.name, end='')
++    if col < 9:
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:52:18.124126
++for q in q1:
++    print(q.name, end='')
++    if col < 10:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:52:21.783091
++col = 0
+
+# 2017-06-27 06:52:24.091384
++for q in q1:
++    print(q.name, end='')
++    if col < 10:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:53:22.317277
++col = 0
+
+# 2017-06-27 06:53:50.355338
++for q in q1:
++    print(q.name, end='')
++    if col < 10:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        break
++        col = 0
++        print('')
+
+# 2017-06-27 06:53:57.451239
++col = 0
+
+# 2017-06-27 06:54:07.916068
++for q in q1:
++    print(q.name, end='')
++    if col < 9:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        break
++        col = 0
++        print('')
+
+# 2017-06-27 06:54:17.688309
++col = 0
+
+# 2017-06-27 06:54:35.801609
++for q in q1:
++    print(q.name, end='')
++    if col < 9:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
++        break
+
+# 2017-06-27 06:54:44.242681
++col = 0
+
+# 2017-06-27 06:54:50.130428
++for q in q1:
++    print(q.name, end='')
++    if col < 9:
++        col += 1 
++        print('\t\t', end='')
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:56:49.793624
++for q in q1:
++    print('{:<20}'.format(q.name), end='')
++    if col < 9:
++        col += 1
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:57:02.443730
++for q in q1:
++    print('{:<12}'.format(q.name), end='')
++    if col < 9:
++        col += 1
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:57:11.317357
++for q in q1:
++    print('{:<12}'.format(q.name), end='')
++    if col < 10:
++        col += 1
++    else:
++        col = 0
++        print('')
+
+# 2017-06-27 06:57:35.379412
++for q in q1:
++    print('{:<12}'.format(q.name), end='')
++    if col < 10:
++        col += 1
++    else:
++        col = 0
++        print('')
++print('')
+
+# 2017-06-27 06:57:58.520351
++col = 0
+
+# 2017-06-27 06:58:00.924656
++for q in q1:
++    print('{:<12}'.format(q.name), end='')
++    if col < 10:
++        col += 1
++    else:
++        col = 0
++        print('')
++print('')
+
+# 2017-06-27 07:01:29.592653
++import dateutil
+
+# 2017-06-27 07:01:46.424291
++d1 = datetime.date.today() - datetime.timedelta(days=(365.25/12*6))
+
+# 2017-06-27 07:01:49.812721
++import datetime
+
+# 2017-06-27 07:04:00.827358
++d1 = datetime.date.today() - datetime.timedelta(days=(365.25/12*6))
+
+# 2017-06-27 07:04:02.082517
++d1
+
+# 2017-06-27 07:04:20.778391
++del d1
+
+# 2017-06-27 07:04:24.965923
++d1a = datetime.date.today() - datetime.timedelta(days=(365.25/12*6))
+
+# 2017-06-27 07:04:36.615402
++d1b = datetime.date.today() - dateutil.relativedelta.relativedelta(months=6)
+
+# 2017-06-27 07:06:36.278598
++dir()
+
+# 2017-06-27 07:06:42.031328
++dir(dateutil)
+
+# 2017-06-27 07:07:23.772629
++import dateutil.relativedelta as relativedelta
+
+# 2017-06-27 07:07:27.563610
++dir()
+
+# 2017-06-27 07:07:52.228742
++d1b = datetime.date.today() - relativedelta(months=6)
+
+# 2017-06-27 07:08:11.081636
++d1b = datetime.date.today() - relativedelta.relativedelta(months=6)
+
+# 2017-06-27 07:08:25.909519
++d1a
+
+# 2017-06-27 07:08:27.771755
++d1b
+
+# 2017-06-27 07:09:19.554831
++d1 = d1a
+
+# 2017-06-27 07:09:31.964407
++q1 = session.query(Puppy).filter(Puppy.dateOfBirth <= d1).order_by('dateOfBirth').all()
+
+# 2017-06-27 07:09:33.687126
++q1
+
+# 2017-06-27 07:13:35.932887
++def print_query(query, max_cols=10):
++    # Keep track of current "column"
++    cur_col = 0
++
++    for element in query:
++        print('{:<12}'.format(element.name), end='')
++        # Stay on current row
++        if cur_col < max_cols:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:13:38.386199
++dir()
+
+# 2017-06-27 07:13:40.547473
++q
+
+# 2017-06-27 07:13:51.065309
++dir(q)
+
+# 2017-06-27 07:13:52.768525
++q.name
+
+# 2017-06-27 07:14:02.862807
++q.__dict__
+
+# 2017-06-27 07:14:49.592741
++dir()
+
+# 2017-06-27 07:14:54.789901
++del q
+
+# 2017-06-27 07:15:03.262476
++del q1, d1, d1a, d1b
+
+# 2017-06-27 07:15:04.609648
++dir()
+
+# 2017-06-27 07:15:13.671298
++del col
+
+# 2017-06-27 07:15:25.400788
++d2 = datetime.date.today() - datetime.timedelta(days=(365.25/12*6))
+
+# 2017-06-27 07:15:27.546560
++d2
+
+# 2017-06-27 07:15:35.364553
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth <= d2).order_by('dateOfBirth').all()
+
+# 2017-06-27 07:15:37.506825
++q2
+
+# 2017-06-27 07:15:44.458708
++print_query(q2)
+
+# 2017-06-27 07:16:23.440158
++q2
+
+# 2017-06-27 07:16:30.881603
++type(q2)
+
+# 2017-06-27 07:16:34.048005
++q2[0]
+
+# 2017-06-27 07:16:38.622586
++dir(q2[0])
+
+# 2017-06-27 07:16:50.951651
++q2[0].__dict__
+
+# 2017-06-27 07:17:21.428521
++d2
+
+# 2017-06-27 07:19:40.937737
++print('{%m %d, %Y}'.format(q2[0].dateOfBirth))
+
+# 2017-06-27 07:19:50.567960
++print('{:%m %d, %Y}'.format(q2[0].dateOfBirth))
+
+# 2017-06-27 07:19:56.713740
++print('{:%M %d, %Y}'.format(q2[0].dateOfBirth))
+
+# 2017-06-27 07:21:36.670933
++print('{:%b %d, %Y}'.format(q2[0].dateOfBirth))
+
+# 2017-06-27 07:25:42.226615
++print('{:%m/%d/%y}'.format(q2[0].dateOfBirth))
+
+# 2017-06-27 07:26:21.838645
++type(q2[0].name)
+
+# 2017-06-27 07:26:28.258460
++type(q2[0].dateOfBirth)
+
+# 2017-06-27 07:26:46.975337
++isinstance(q2[0].name, str)
+
+# 2017-06-27 07:26:58.048243
++isinstance(q2[0].dateOfBirth, datetime.date)
+
+# 2017-06-27 07:36:10.641913
++def print_query(query, attrs=[name], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_width = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            if isinstance(element.sub_elmt, str):
++                print('{:<{width}}'.format(element.sub_elmt, width=col_len), end='')
++            elif isinstance(element.sub_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(element.sub_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(element.sub_elmt,
++                                 type(element.sub_elmt)))
++        # Stay on current row
++        if (cur_col * col_width) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
++
++
+
+# 2017-06-27 07:36:41.100781
++def print_query(query, attrs=[name], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_width = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            if isinstance(element.sub_elmt, str):
++                print('{:<{width}}'.format(element.sub_elmt, width=col_len), end='')
++            elif isinstance(element.sub_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(element.sub_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(element.sub_elmt,
++                                 type(element.sub_elmt)))
++        # Stay on current row
++        if (cur_col * col_width) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:37:11.215105
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_width = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            if isinstance(element.sub_elmt, str):
++                print('{:<{width}}'.format(element.sub_elmt, width=col_len), end='')
++            elif isinstance(element.sub_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(element.sub_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(element.sub_elmt,
++                                 type(element.sub_elmt)))
++        # Stay on current row
++        if (cur_col * col_width) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:37:24.698817
++q2
+
+# 2017-06-27 07:37:34.988124
++dir()
+
+# 2017-06-27 07:37:42.122030
++print_query(q2)
+
+# 2017-06-27 07:38:41.982131
++attrs = ['name']
+
+# 2017-06-27 07:38:53.789130
++sub_elmt = attrs[0]
+
+# 2017-06-27 07:38:55.646866
++sub_elmt
+
+# 2017-06-27 07:39:11.432871
++q = q2[0]
+
+# 2017-06-27 07:39:12.138960
++q
+
+# 2017-06-27 07:39:44.699595
++q.name
+
+# 2017-06-27 07:39:48.510079
++q.sub_elmt
+
+# 2017-06-27 07:39:55.071912
++dir[q]
+
+# 2017-06-27 07:39:58.646366
++dir(q)
+
+# 2017-06-27 07:41:08.176195
++getattr(q, sub_elmt)
+
+# 2017-06-27 07:43:05.860639
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_width = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(cur_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if (cur_col * col_width) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:43:12.618497
++print_query(q)
+
+# 2017-06-27 07:43:34.102225
++print_query(q2)
+
+# 2017-06-27 07:44:12.237068
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_len = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(cur_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if (cur_col * col_width) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:44:29.161717
++print_query(q2)
+
+# 2017-06-27 07:44:42.969971
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    col_len = 12
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}  '.format(cur_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if (cur_col * col_len) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:44:49.812840
++print_query(q2)
+
+# 2017-06-27 07:45:06.908010
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 07:50:39.229710
++x = 1 if True else 2
+
+# 2017-06-27 07:50:40.325849
++x
+
+# 2017-06-27 07:50:47.034701
++x = 1 if False else 2
+
+# 2017-06-27 07:50:47.762793
++x
+
+# 2017-06-27 07:50:49.429505
++del x
+
+# 2017-06-27 07:53:26.375435
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:53:32.868259
++print_query(q2)
+
+# 2017-06-27 07:53:49.422861
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 07:55:03.173726
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth >= d2).order_by('dateOfBirth').all()
+
+# 2017-06-27 07:55:18.538177
++import datetime, dateutil
+
+# 2017-06-27 07:55:26.891738
++import dateutil.relativedelta as relativedelta
+
+# 2017-06-27 07:55:36.716986
++d2 = datetime.date.today() - datetime.timedelta(days=(365.25/12*6))
+
+# 2017-06-27 07:55:52.297464
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth >= d2).order_by('dateOfBirth').all()
+
+# 2017-06-27 07:56:12.225495
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 07:59:27.499792
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 07:59:35.698833
++d2
+
+# 2017-06-27 16:21:36.598689
++dir(session.query)
+
+# 2017-06-27 16:21:47.006689
++dir(session)
+
+# 2017-06-27 16:22:07.564189
++import pdir2
+
+# 2017-06-27 16:22:09.832689
++import pdir
+
+# 2017-06-27 16:22:14.802189
++pdir(session)
+
+# 2017-06-27 16:22:50.610189
++dir(session)
+
+# 2017-06-27 16:23:02.220689
++dir(session.query)
+
+# 2017-06-27 16:23:15.307689
++dir(session.filter)
+
+# 2017-06-27 16:23:26.149689
++help(session.query)
+
+# 2017-06-27 16:24:14.181689
++dir(sqlalchemy.orm.session.Session)
+
+# 2017-06-27 16:24:18.668689
++dir()
+
+# 2017-06-27 16:24:37.822189
++help(session)
+
+# 2017-06-27 16:24:40.471189
++dir(session)
+
+# 2017-06-27 16:24:52.917689
++help(session.query)
+
+# 2017-06-27 16:53:57.004957
++dir()
+
+# 2017-06-27 16:54:04.223401
++import sqlalchemy
+
+# 2017-06-27 16:54:12.677091
++sqlalchemy.__version__
+
+# 2017-06-27 18:54:17.056679
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth >= d2).order_by('dateOfBirth'.desc()).all()
+
+# 2017-06-27 18:54:54.758718
++dir()
+
+# 2017-06-27 18:54:58.464459
++dir(Puppy)
+
+# 2017-06-27 18:55:08.025370
++dir(Puppy.dateOfBirth)
+
+# 2017-06-27 18:55:26.594083
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth >= d2).order_by(Puppy.dateOfBirth.desc()).all()
+
+# 2017-06-27 18:55:28.797524
++q2
+
+# 2017-06-27 18:55:46.177499
++print_query(q2, attrs['name', 'dateOfBirth'])
+
+# 2017-06-27 18:56:04.151093
++dir(print_query)
+
+# 2017-06-27 18:56:30.025267
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 18:57:14.200100
++q2[0].__dict__
+
+# 2017-06-27 18:58:31.310519
++q2 = session.query(Puppy).order_by(Puppy.weight).all()
+
+# 2017-06-27 18:59:16.325020
++print_query(q2, attrs['name', 'weight'])
+
+# 2017-06-27 18:59:35.833421
++q2 = session.query(Puppy).filter(Puppy.dateOfBirth >= d2).order_by(Puppy.dateOfBirth.desc()).all()
+
+# 2017-06-27 18:59:39.621679
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 18:59:46.404035
++q2 = session.query(Puppy).order_by(Puppy.weight).all()
+
+# 2017-06-27 18:59:50.228800
++print_query(q2, attrs['name', 'weight'])
+
+# 2017-06-27 18:59:58.831520
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:00:58.339419
++q2[0].weight
+
+# 2017-06-27 19:01:06.167485
++type(q2[0].weight)
+
+# 2017-06-27 19:01:12.269205
++dir(decimal)
+
+# 2017-06-27 19:01:17.716294
++import decimal
+
+# 2017-06-27 19:01:21.836618
++dir(decimal)
+
+# 2017-06-27 19:01:38.662982
++help(decimal.Decimal)
+
+# 2017-06-27 19:01:42.792308
++type(q2[0].weight)
+
+# 2017-06-27 19:03:15.280802
++from print_query import print_query
+
+# 2017-06-27 19:03:26.494544
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:03:56.003445
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:{width}.2f}'.format(cur_elmt, width=(col_len - 2), end=''))
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:04:02.398224
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:06:14.473633
++print_query(q2, attrs=['name'])
+
+# 2017-06-27 19:06:23.711981
++print_query(q2, attrs=['name', 'dateOfBirth'])
+
+# 2017-06-27 19:06:33.882514
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:07:04.366610
++dir()
+
+# 2017-06-27 19:07:18.833003
++d1 = decimal.Decimal(12.2341332421)
+
+# 2017-06-27 19:07:19.532643
++d1
+
+# 2017-06-27 19:07:25.259788
++print(d1)
+
+# 2017-06-27 19:08:02.143163
++print('{:{width}.2f'.format(d1, width=8))
+
+# 2017-06-27 19:08:14.365607
++print('{:{width}.2f}'.format(d1, width=8))
+
+# 2017-06-27 19:08:27.735781
++print('{:{width}.2f}'.format(d1, width=10))
+
+# 2017-06-27 19:08:43.518436
++print('{:{width}.2f}'.format(d1, width=10), end='')
+
+# 2017-06-27 19:09:00.221276
++dir()
+
+# 2017-06-27 19:09:02.962324
++del print_query
+
+# 2017-06-27 19:09:04.967725
++dir()
+
+# 2017-06-27 19:09:08.825997
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:{width}.2f}'.format(cur_elmt, width=col_len, end=''))
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:09:23.710473
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:10:29.454619
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:{width}.2f}'.format(cur_elmt, width=col_len, end=''))
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:10:45.834895
++q2 = session.query(Puppy).order_by(Puppy.weight).all()
+
+# 2017-06-27 19:11:05.342296
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:11:11.179963
++import datetime
+
+# 2017-06-27 19:11:12.823792
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:11:22.088144
++import decimal
+
+# 2017-06-27 19:11:39.838693
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:12:30.460316
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:{width}.2f}'.format(cur_elmt, width=col_len), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:12:40.652354
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:13:13.920006
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:<{width}.2f}'.format(cur_elmt, width=col_len), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:13:18.905003
++print_query(q2, attrs=['name', 'weight'])
+
+# 2017-06-27 19:14:01.891598
++q2[0].__dict__
+
+# 2017-06-27 19:18:02.372685
++q2 = session.query(Puppy).group_by(Puppy.shelter_id).all()
+
+# 2017-06-27 19:18:16.048420
++print_query(q2, attrs=['name', 'shelter_id'])
+
+# 2017-06-27 19:19:02.537716
++import datetime
++import decimal
++
++def print_query(query, attrs=['name'], line_length=100):
++    # Keep track of current "column"
++    cur_col = 0
++    # How wide is each column
++    col_len = 10
++    # How many elements make up a column
++    col_elmt = len(attrs)
++    # Add padding if more than one column element
++    multi_elmt_pad = 0 if col_elmt < 2 else 4
++
++    for element in query:
++        # For each sub-element in the passed attribute list:
++        for sub_elmt in attrs:
++            cur_elmt = getattr(element, sub_elmt)
++            if isinstance(cur_elmt, str) or isinstance(cur_elmt, int):
++                print('{:<{width}}'.format(cur_elmt, width=col_len), end='')
++            elif isinstance(cur_elmt, datetime.date):
++                print('- {:%m/%d/%y}    '.format(cur_elmt), end='')
++            elif isinstance(cur_elmt, decimal.Decimal):
++                print('{:<{width}.2f}'.format(cur_elmt, width=col_len), end='')
++            else:
++                raise ValueError('Unexpected value:  {} ({})'.format(cur_elmt,
++                                 type(cur_elmt)))
++        # Stay on current row
++        if ((cur_col * col_len * col_elmt) + (cur_col * multi_elmt_pad)) < line_length:
++            cur_col += 1
++        # Advance to new row
++        else:
++            cur_col = 0
++            print('')
++    # Terminate final row
++    print('')
+
+# 2017-06-27 19:19:06.686545
++print_query(q2, attrs=['name', 'shelter_id'])
+
+# 2017-06-27 19:20:21.830571
++q2 = session.query(Puppy).order_by(Puppy.shelter_id).all()
+
+# 2017-06-27 19:20:25.686342
++print_query(q2, attrs=['name', 'shelter_id'])
+
+# 2017-06-28 06:26:31.988776
++import puppy_query
+
+# 2017-07-03 10:53:51.443000
++import sys
+
+# 2017-07-03 10:53:52.532000
++sys.version
+
+# 2017-07-03 10:54:04.259000
++@property
++def test(): print('Test!')
+
+# 2017-07-03 10:54:06.178000
++test()
+
+# 2017-07-03 10:54:13.941000
++test
+
+# 2017-07-03 10:54:20.545000
++dir(test)
+
+# 2017-07-03 10:54:32.579000
++test.__dict__
+
+# 2017-07-03 10:54:37.642000
++test.__repr__
+
+# 2017-07-03 10:54:43.973000
++test.__str__
+
+# 2017-07-03 10:54:47.237000
++print(test)
+
+# 2017-07-03 10:54:58.412000
++test.getter
+
+# 2017-07-03 10:55:01.799000
++test.getter()
+
+# 2017-07-03 10:55:10.832000
++test.getter(1)
+
+# 2017-07-03 11:20:13.408000
++import sys
+
+# 2017-07-03 11:20:18.497000
++sys.getsizeof('a')
+
+# 2017-07-03 11:20:24.956000
++sys.getsizeof('abcd')
+
+# 2017-07-03 11:20:29.614000
++sys.getsizeof(1)
+
+# 2017-07-03 11:20:35.951000
++sys.getsizeof(2**30 - 1)
+
+# 2017-07-03 11:20:41.174000
++sys.getsizeof(2**30)
+
+# 2017-07-03 11:20:48.334000
++sys.getsizeof(2**48)
+
+# 2017-07-03 11:24:41.325000
++dir()
+
+# 2017-07-03 12:12:08.051000
++sys.getrefcount(12345)
+
+# 2017-07-03 12:12:12.896000
++sys.getrefcount(1)
+
+# 2017-07-03 12:12:16.471000
++sys.getrefcount(20)
+
+# 2017-07-03 12:12:21.056000
++sys.getrefcount(object)
+
+# 2017-07-03 12:12:25.674000
++sys.getrefcount(None)
+
+# 2017-07-03 12:12:34.845000
++sentinel = object()
+
+# 2017-07-03 12:12:42.525000
++sys.getrefcount(sentinel)
+
+# 2017-07-03 12:12:51.063000
++sentinel == object()
+
+# 2017-07-03 12:19:08.455000
++def add(a, b):
++    return a + b
+
+# 2017-07-03 12:19:10.191000
++add
+
+# 2017-07-03 12:19:16.020000
++dir(add)
+
+# 2017-07-03 12:24:58.131000
++def f(*args, **kwargs):
++    print('args: {!r}\nkwargs: {!r}'.format(args, kwargs))
+
+# 2017-07-03 12:25:01.381000
++f(1)
+
+# 2017-07-03 12:25:05.771000
++f(1, 2)
+
+# 2017-07-03 12:25:12.281000
++f(1, a=3, b=4)
+
+# 2017-07-03 12:25:19.542000
++t = 1, 2
+
+# 2017-07-03 12:25:20.234000
++t
+
+# 2017-07-03 12:25:48.769000
++d = dict(a=3, b=4)
+
+# 2017-07-03 12:25:49.142000
++d
+
+# 2017-07-03 12:25:52.924000
++list(d)
+
+# 2017-07-03 12:25:55.944000
++f(t)
+
+# 2017-07-03 12:31:38.120000
++f(d)
+
+# 2017-07-03 12:31:43.093000
++f(*t)
+
+# 2017-07-03 12:31:46.744000
++f(*d)
+
+# 2017-07-03 12:32:09.411000
++f(**t)
+
+# 2017-07-03 12:32:13.939000
++f(**d)
+
+# 2017-07-03 12:36:05.295000
++dir()
+
+# 2017-07-03 12:36:16.664000
++dir(__doc__)
+
+# 2017-07-03 12:36:22.306000
++dir(__name__)
+
+# 2017-07-03 12:36:39.385000
++dir(__package__)
+
+# 2017-07-03 12:36:46.061000
++dir(__builtins__)
+
+# 2017-07-03 12:38:07.811000
++\
+
+# 2017-07-03 12:38:16.261000
++from __future__ import print_function
+
+# 2017-07-03 12:38:43.015000
++for item in dir(__builtins__):
++    print('{}\t'.format(item), end='')
+
+# 2017-07-03 12:45:12.200000
++from pprint import pprint
+
+# 2017-07-03 12:45:14.959000
++dir(pprint)
+
+# 2017-07-03 12:45:18.890000
++help(pprint)
+
+# 2017-07-03 12:45:32.073000
++pprint(dir(__builtins__))
+
+# 2017-07-03 12:45:38.672000
++help(pprint)
+
+# 2017-07-03 12:46:02.602000
++pprint(dir(__builtins__), indent=4, depth=4)
+
+# 2017-07-03 12:46:48.105000
++col = 1
+
+# 2017-07-03 12:47:32.401000
++for item in dir(__builtins__):
++    print('{}\t\t'.format(item), end='')
++    col += 1
++    if col > 10:
++        col = 1
++        print()
+
+# 2017-07-03 12:47:43.740000
++col = 1
+
+# 2017-07-03 12:47:51.976000
++for item in dir(__builtins__):
++    print('{}\t\t'.format(item), end='')
++    col += 1
++    if col > 8:
++        col = 1
++        print()
+
+# 2017-07-03 12:47:56.845000
++col = 1
+
+# 2017-07-03 12:48:02.484000
++for item in dir(__builtins__):
++    print('{}\t\t'.format(item), end='')
++    col += 1
++    if col > 6:
++        col = 1
++        print()
+
+# 2017-07-03 12:49:10.905000
++for item in dir(__builtins__):
++    print('{:<25}'.format(item), end='')
++    col += 1
++    if col > 6:
++        col = 1
++        print()
+
+# 2017-07-03 12:49:19.475000
++for item in dir(__builtins__):
++    print('{:<28}'.format(item), end='')
++    col += 1
++    if col > 6:
++        col = 1
++        print()
+
+# 2017-07-03 12:49:27.199000
++for item in dir(__builtins__):
++    print('{:<28}'.format(item), end='')
++    col += 1
++    if col > 5:
++        col = 1
++        print()
+
+# 2017-07-03 13:08:35.050000
++import keyword
+
+# 2017-07-03 13:08:38.175000
++dir(keyword)
+
+# 2017-07-03 13:08:45.516000
++help(keyword)
+
+# 2017-07-03 13:09:09.842000
++keyword.kwlist
+
+# 2017-07-03 13:15:05.172000
++x = 1
+
+# 2017-07-03 13:15:13.218000
++def test_unbound_local():
++    print(x)
++    x = 3
+
+# 2017-07-03 13:15:16.936000
++test_unbound_local()
+
+# 2017-07-03 13:16:19.312000
++test_unbound_local
+
+# 2017-07-03 13:16:25.142000
++test_unbound_local.__dict__
+
+# 2017-07-03 13:16:31.017000
++dir(test_unbound_local)
+
+# 2017-07-03 13:16:38.339000
++test_unbound_local.__code__
+
+# 2017-07-03 13:16:45.230000
++dir(test_unbound_local.__code__)
+
+# 2017-07-03 18:53:14.848000
++import random
+
+# 2017-07-03 18:53:17.154000
++dir(random)
+
+# 2017-07-03 18:53:36.879000
++help(random.randint)
+
+# 2017-07-03 18:53:51.596000
++random.randint(1, 50)
+
+# 2017-07-03 19:07:38.447000
++import requests
+
+# 2017-07-03 19:07:51.424000
++dir(requests)
+
+# 2017-07-03 19:26:49.957000
++URLS = [
++        ['/', 0, 1],
++        ['/restaurants/', 0, 1],
++        ['/restaurant/new/', 0, 2],
++        ['/restaurant/{}/edit/', 1, 3],
++        ['/restaurant/{}/delete/', 1, 4],
++        ['/restaurant/{}/', 1, 5],
++        ['/restaurant/{}/menu/', 1, 5],
++        ['/restaurant/{}/menu/new/', 1, 6],
++        ['/restaurant/{}/menu/{}/edit/', 2, 7],
++        ['/restaurant/{}/menu/{}/delete/', 2, 8],
++    ]
++OUTPUT = [
++        ['This page will show all of my restaurants', 1],
++        ['This page will show all of my restaurants', 1],
++        ['This page will be for making a new restaurant', 2],
++        ['This page will be for editing restaurant {}', 3],
++        ['This page will be for deleting restaurant {}', 4],
++        ['This page is the menu for restaurant {}', 5],
++        ['This page is the menu for restaurant {}', 5],
++        ['This page is for making a new menu item for restaurant {}', 6],
++        ['This page is for editing menu item {}', 7],
++        ['This page is for deleting menu item {}', 8],
++    ]
+
+# 2017-07-03 19:26:52.278000
++URLS
+
+# 2017-07-03 19:26:54.100000
++OUTPUT
+
+# 2017-07-03 19:27:22.311000
++for url in URLS:
++    print('URL:  {}, type:  {}'.format(url, type(url)))
+
+# 2017-07-03 19:28:21.376000
++for url, output in (URLS, OUTPUT):
++    print(url, output)
++    
++
++    
+
+# 2017-07-03 19:28:32.045000
++(URLS, OUTPUT)
+
+# 2017-07-03 19:28:37.271000
++URLS
+
+# 2017-07-03 19:28:39.660000
++(URLS)
+
+# 2017-07-03 19:29:23.123000
++type(URLS, OUTPUT)
+
+# 2017-07-03 19:29:43.277000
++a = (URLS, OUTPUT)
+
+# 2017-07-03 19:29:44.662000
++type(a)
+
+# 2017-07-03 19:29:47.044000
++a
+
+# 2017-07-03 19:29:53.735000
++a[0]
+
+# 2017-07-03 19:29:57.776000
++a[1]
+
+# 2017-07-03 19:30:34.567000
++a[2]
+
+# 2017-07-03 19:31:54.126000
++help(zip)
+
+# 2017-07-03 19:32:06.921000
++a = zip(URLS, OUTPUT)
+
+# 2017-07-03 19:32:07.631000
++a
+
+# 2017-07-03 19:32:14.853000
++type(a)
+
+# 2017-07-03 19:32:20.535000
++len(a)
+
+# 2017-07-03 19:32:23.263000
++a[0]
+
+# 2017-07-03 19:32:28.383000
++a[1]
+
+# 2017-07-03 19:33:19.829000
++for a, b in zip(URLS, OUTPUT):
++    print(a, b)
+
+# 2017-07-03 19:35:05.415000
++import requests
+
+# 2017-07-03 19:35:29.760000
++target = 'http://localhost:5005/'
+
+# 2017-07-03 19:36:44.376000
++r = requests.get(target)
+
+# 2017-07-03 19:38:46.031000
++r.status_code
+
+# 2017-07-03 19:38:48.015000
++r.text
+
+# 2017-07-03 19:39:05.740000
++r = requests.get(target)
+
+# 2017-07-03 19:39:12.027000
++r.connection()
+
+# 2017-07-03 19:39:16.210000
++r.connection
+
+# 2017-07-03 19:39:20.673000
++r.text
+
+# 2017-07-03 19:39:23.476000
++r.headers
+
+# 2017-07-03 19:39:38.517000
++r.elapsed
+
+# 2017-07-03 19:39:52.785000
++r.reason
+
+# 2017-07-03 19:39:57.165000
++r.url
+
+# 2017-07-05 10:03:32.087000
++import flask
+
+# 2017-07-05 10:03:35.213000
++dir(flask)
+
+# 2017-07-05 10:03:46.418000
++help(flask.render_template)
+
+# 2017-07-05 10:22:10.251000
++app = Flask('__name__')
+
+# 2017-07-05 10:22:23.317000
++app = flask.Flask('__name__')
+
+# 2017-07-05 10:22:25.727000
++dir(app)
+
+# 2017-07-05 10:22:35.147000
++import pdir
+
+# 2017-07-05 10:22:39.372000
++pdir(app)
+
+# 2017-07-05 10:23:24.111000
++dir(app.jinja_env)
+
+# 2017-07-05 10:23:30.559000
++pdir(app.jinja_env)
+
+# 2017-07-05 10:24:28.385000
++pdir(app.jinja_env.add_extension)
+
+# 2017-07-05 10:24:33.166000
++help(app.jinja_env.add_extension)
+
+# 2017-07-05 10:26:48.669000
++pdir(app.jinja_env)
+
+# 2017-07-05 10:27:21.287000
++dir(app)
+
+# 2017-07-05 10:27:46.526000
++app.extensions
+
+# 2017-07-05 10:28:00.974000
++app.jinja_env
+
+# 2017-07-05 10:28:03.695000
++app.jinja_env()
+
+# 2017-07-05 10:28:13.080000
++dir(app.jinja_env)
+
+# 2017-07-05 10:28:29.590000
++app.jinja_env.extensions
+
+# 2017-07-05 10:29:10.147000
++app.jinja_env.add_extension(jinja2.ext.loopcontrols)
+
+# 2017-07-05 10:29:18.956000
++app.jinja_env.add_extension('jinja2.ext.loopcontrols')
+
+# 2017-07-05 10:29:23.038000
++app.jinja_env.extensions
+
+# 2017-07-05 14:01:47.815000
++import keyword
+
+# 2017-07-05 14:01:51.227000
++dir(keyword)
+
+# 2017-07-05 14:01:56.931000
++keyword.kwlist
+
+# 2017-07-05 14:01:58.985000
++keyword.kwlist()
+
+# 2017-07-05 14:03:37.605000
++for elmt in keyword.kwlist:
++    print('{:<10}'.format(elmt), end='')
++    col += 1
++    if col > 5:
++        print()
+
+# 2017-07-05 14:03:40.593000
++col = 1
+
+# 2017-07-05 14:03:43.051000
++for elmt in keyword.kwlist:
++    print('{:<10}'.format(elmt), end='')
++    col += 1
++    if col > 5:
++        print()
+
+# 2017-07-05 14:04:00.307000
++for elmt in keyword.kwlist:
++    print('{:<10}'.format(elmt), end='')
++    col += 1
++    if col > 5:
++        print()
++        col = 1
+
+# 2017-07-05 14:04:02.405000
++col = 1
+
+# 2017-07-05 14:04:04.571000
++for elmt in keyword.kwlist:
++    print('{:<10}'.format(elmt), end='')
++    col += 1
++    if col > 5:
++        print()
++        col = 1
+
+# 2017-07-05 14:04:30.840000
++for elmt in keyword.kwlist:
++    print(elmt)
+
+# 2017-07-05 14:11:04.406000
++dir()
+
+# 2017-07-05 14:11:09.539000
++dir(__builtins__)
+
+# 2017-07-05 14:11:44.377000
++for elmt in dir(__builtins__):
++    print(elmt)
+
+# 2017-07-05 19:18:45.568000
++help(print)
+
+# 2017-07-05 20:35:45.883665
++def test_nonlocal():
++    x = 5
++    def assign_6():
++        nonlocal x
++        print('B', x)
++        x = 6
++        print('C', x)
++    print('A', x)
++    assign_6()
++    print('D', x)
+
+# 2017-07-05 20:35:50.856296
++x = 1
+
+# 2017-07-05 20:35:51.371362
++x
+
+# 2017-07-05 20:35:56.981074
++test_nonlocal()
+
+# 2017-07-05 20:36:44.703634
++x
+
+# 2017-07-05 21:02:49.584849
++import csv
+
+# 2017-07-05 21:02:52.112170
++import importlib
+
+# 2017-07-05 21:02:58.483979
++help(importlib.reload)
+
+# 2017-07-05 21:03:05.709896
++del csv
+
+# 2017-07-05 21:03:10.317481
++importlib.reload(csv)
+
+# 2017-07-05 21:03:16.466762
++importlib.reload('csv')
+
+# 2017-07-05 21:03:44.741853
++import csv
+
+# 2017-07-05 21:03:51.216175
++importlib.reload('csv')
+
+# 2017-07-05 21:03:58.304075
++importlib.reload(csv)
+
+# 2017-07-05 21:19:56.343000
++import sys
+
+# 2017-07-05 21:19:57.579000
++sys.version
+
+# 2017-07-07 09:58:01.570000
++type('a')
+
+# 2017-07-07 10:28:08.287000
++sys.version
+
+# 2017-07-07 10:28:17.097000
++L = ['grail']
+
+# 2017-07-07 10:28:24.325000
++L += L
+
+# 2017-07-07 10:28:25.634000
++L
+
+# 2017-07-07 10:28:29.149000
++L *= L
+
+# 2017-07-07 10:28:37.355000
++L *= 2
+
+# 2017-07-07 10:28:38.215000
++L
+
+# 2017-07-07 10:28:46.230000
++L.extend(L)
+
+# 2017-07-07 10:28:47.035000
++L
+
+# 2017-07-07 10:28:53.312000
++L.append(L)
+
+# 2017-07-07 10:28:54.218000
++L
+
+# 2017-07-07 10:29:03.122000
++help(list.append)
+
+# 2017-07-07 10:35:15.506000
++L = ['grail']
+
+# 2017-07-07 10:35:19.746000
++L += L
+
+# 2017-07-07 10:35:20.713000
++L
+
+# 2017-07-07 10:35:25.546000
++L += [L]
+
+# 2017-07-07 10:35:26.277000
++L
+
+# 2017-07-07 10:52:55.816000
++2**16
+
+# 2017-07-07 10:53:02.199000
++2/5, 2/5.0
+
+# 2017-07-07 10:53:10.525000
++'spam' + 'eggs'
+
+# 2017-07-07 10:53:16.779000
++S = 'ham'
+
+# 2017-07-07 10:53:23.310000
++'eggs' + S
+
+# 2017-07-07 10:53:30.921000
++S * 5
+
+# 2017-07-07 10:53:42.650000
++S[:0]
+
+# 2017-07-07 10:54:03.300000
++'green %s and %s' % ('eggs', S)
+
+# 2017-07-07 10:54:20.796000
++'green {0} and {1}'.format('eggs', S)
+
+# 2017-07-07 10:54:38.048000
++('x',)[0]
+
+# 2017-07-07 10:54:47.126000
++('x', 'y')[1]
+
+# 2017-07-07 10:54:58.959000
++L = [1,2,3] + [4,5,6]
+
+# 2017-07-07 10:54:59.820000
++L
+
+# 2017-07-07 10:55:52.917000
++L, L[:], L[:0], L[-2], L[-2:]
+
+# 2017-07-07 10:56:30.304000
++([1,2,3] + [4,5,6])[2:4]
+
+# 2017-07-07 10:56:53.528000
++[L[2], L[3]]
+
+# 2017-07-07 10:57:04.784000
++L.reverse(); L
+
+# 2017-07-07 10:57:09.727000
++L
+
+# 2017-07-07 10:57:15.473000
++L.reverse(); L
+
+# 2017-07-07 10:58:04.100000
++L.sort()
+
+# 2017-07-07 10:58:04.907000
++L
+
+# 2017-07-07 10:58:15.728000
++L.index(4)
+
+# 2017-07-07 10:58:31.805000
++L.index(0)
+
+# 2017-07-07 10:59:01.625000
++{'a':1, 'b':2}['b']
+
+# 2017-07-07 10:59:19.661000
++D = {'x':1, 'y':2, 'z':3}
+
+# 2017-07-07 10:59:26.656000
++D['w'] = 0
+
+# 2017-07-07 10:59:48.043000
++D['x'] + D['w']
+
+# 2017-07-07 11:00:05.305000
++D[(1,2,3)] = 4
+
+# 2017-07-07 11:00:06.312000
++D
+
+# 2017-07-07 11:00:48.328000
++list(D.keys()), list(D.values()), (1,2,3) in D
+
+# 2017-07-07 11:01:16.416000
++[[]], ["",[],(),{},None]
+
+# 2017-07-11 17:26:54.033000
++sys.version
+
+# 2017-07-11 17:27:05.132000
++import random
+
+# 2017-07-11 17:27:06.954000
++import string
+
+# 2017-07-11 17:27:40.847000
++''.join(random.choice(string.ascii_uppercase + string.digits) for x in xrange(32))
+
+# 2017-07-11 17:27:58.851000
++(random.choice(string.ascii_uppercase + string.digits) for x in xrange(32))
+
+# 2017-07-11 17:28:03.028000
++list(random.choice(string.ascii_uppercase + string.digits) for x in xrange(32))
+
+# 2017-07-11 17:28:11.688000
++''.join(random.choice(string.ascii_uppercase + string.digits) for x in xrange(32))
+
+# 2017-07-12 08:59:27.153000
++L = [0,1,2,3]
+
+# 2017-07-12 08:59:27.799000
++L
+
+# 2017-07-12 08:59:47.430000
++L[4]
+
+# 2017-07-12 08:59:59.038000
++L[-1000:100]
+
+# 2017-07-12 09:00:13.996000
++L[:]
+
+# 2017-07-12 09:00:20.545000
++L[1:500]
+
+# 2017-07-12 09:00:26.890000
++L[-1:]
+
+# 2017-07-12 09:00:34.515000
++L[-10:10]
+
+# 2017-07-12 09:00:54.193000
++L[3:1]
+
+# 2017-07-12 09:02:04.066000
++L[3:1] = ['?']
+
+# 2017-07-12 09:02:04.747000
++L
+
+# 2017-07-12 09:17:44.684000
++L = [0,1,2,3]
+
+# 2017-07-12 09:17:59.811000
++L[5:1] = ['?']
+
+# 2017-07-12 09:18:00.969000
++L
+
+# 2017-07-12 09:18:31.744000
++L = [0,1,2,3]
+
+# 2017-07-12 10:01:55.638000
++x = 1; y = 2; z = 3
+
+# 2017-07-12 10:01:57.090000
++dir()
+
+# 2017-07-12 10:02:04.675000
++__dict__
+
+# 2017-07-12 10:02:20.775000
++().__dict__
+
+# 2017-07-12 10:02:30.487000
++globals
+
+# 2017-07-12 10:02:34.088000
++globals()
+
+# 2017-07-12 10:02:41.631000
++locals()
+
+# 2017-07-12 10:26:54.505000
++eval(2+2)
+
+# 2017-07-12 10:27:07.210000
++help(eval)
+
+# 2017-07-12 11:00:08.725000
++eval("1 + 1")
+
+# 2017-07-12 11:02:24.603000
++exec("print hello")
+
+# 2017-07-12 11:02:33.189000
++import sys
+
+# 2017-07-12 11:02:34.559000
++sys.version
+
+# 2017-07-12 11:02:46.531000
++exec("print('hello')")
+
+# 2017-07-13 06:09:29.173000
++from pprint import pprint
+
+# 2017-07-13 06:09:32.072000
++help(pprint)
+
+# 2017-07-13 06:09:41.678000
++import json
+
+# 2017-07-13 06:11:02.156000
++CLIENT_ID = {"web":{"client_id":"449793358261-je2pugo34plsjoo96r05v8qm3rhfji4m.apps.googleusercontent.com","project_id":"restaurant-menu-app-173411","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"QlUW1Ai2fUZVI2kKlLQonl13","redirect_uris":["http://localhost:5000/login","http://localhost:5000/gconnect"],"javascript_origins":["http://localhost:5000"]}}
+
+# 2017-07-13 06:11:05.432000
++CLIENT_ID
+
+# 2017-07-13 06:11:21.395000
++pprint('CLIENT_ID:  {}'.format(CLIENT_ID))
+
+# 2017-07-13 06:11:36.697000
++pprint(CLIENT_ID)
+
+# 2017-07-13 07:12:19.093000
++globals()
+
+# 2017-07-13 07:12:25.169000
++pprint(globals())
+
+# 2017-07-13 07:12:53.682000
++globals()
+
+# 2017-07-13 07:19:53.287000
++exclude = ['function', 'module', 'class', '__', 'engine', 'flask', 'sqlalchemy']
+
+# 2017-07-13 07:23:39.668000
++for element in globals():
++    any(good in element for good in exclude)
+
+# 2017-07-13 07:23:47.832000
++exclude
+
+# 2017-07-13 07:24:39.176000
++good = ['a', 'b', 'c']
+
+# 2017-07-13 07:25:13.206000
++test = 'a123'
+
+# 2017-07-13 07:25:31.701000
++any(x in test for x in good)
+
+# 2017-07-13 07:25:39.178000
++(x in test for x in good)
+
+# 2017-07-13 07:25:43.133000
++list(x in test for x in good)
+
+# 2017-07-13 07:28:57.340000
++for element in globals():
++    if not any(check in element for check in exclude):
++        print(element)
+
+# 2017-07-13 07:29:12.738000
++exclude
+
+# 2017-07-13 07:29:20.325000
++exclude.append('_')
+
+# 2017-07-13 07:29:21.547000
++exclude
+
+# 2017-07-13 07:29:24.915000
++for element in globals():
++    if not any(check in element for check in exclude):
++        print(element)
+
+# 2017-07-13 07:29:41.554000
++locals()
+
+# 2017-07-13 07:29:53.603000
++locals()[exclude]
+
+# 2017-07-13 07:30:05.489000
++locals()['exclude']
+
+# 2017-07-13 07:32:34.432000
++globals()
+
+# 2017-07-13 07:32:42.755000
++pprint(globals())
+
+# 2017-07-13 07:33:00.758000
++globals()
+
+# 2017-07-13 07:33:09.411000
++globals()['CLIENT_ID']
+
+# 2017-07-13 07:34:26.831000
++globals()
+
+# 2017-07-13 07:34:36.418000
++for key, value in globals():
++    print key, value
+
+# 2017-07-13 07:35:04.998000
++for key in globals():
++    print key,
+
+# 2017-07-13 07:35:31.979000
++globals()
+
+# 2017-07-13 07:35:45.834000
++temp = globals()
+
+# 2017-07-13 07:35:52.142000
++for key in temp:
++    print key,
+
+# 2017-07-13 07:36:04.249000
++for key, value in temp:
++    print key, value,
+
+# 2017-07-13 07:36:12.259000
++temp
+
+# 2017-07-13 07:37:01.770000
++for key, value in temp.items():
++    print key, '-', value, ', ',
+
+# 2017-07-13 07:37:13.450000
++temp
+
+# 2017-07-13 07:37:35.919000
++temp.items()
+
+# 2017-07-13 07:37:43.908000
++temp.keys()
+
+# 2017-07-13 07:37:53.031000
++temp.values()
+
+# 2017-07-13 07:37:59.085000
++locals()
+
+# 2017-07-13 07:38:35.687000
++globals()
+
+# 2017-07-13 07:40:26.843000
++for key, value in globals(), globals()[key]:
++    print key, ' - ', value, ', ',
+
+# 2017-07-13 07:40:54.858000
++for key in globals():
++    print key, ' - ', globals()[key], ', ',
+
+# 2017-07-13 07:41:03.212000
++globals()
+
+# 2017-07-13 07:41:53.120000
++temp = globals()
+
+# 2017-07-13 07:42:20.639000
++for key, value in temp.items():
++    print key, '--', value, ',  ',
+
+# 2017-07-13 07:43:05.686000
++dir(dict)
+
+# 2017-07-13 07:43:13.196000
++temp
+
+# 2017-07-13 07:43:35.229000
++g1 = globals().copy()
+
+# 2017-07-13 07:43:36.032000
++g1
+
+# 2017-07-13 07:43:39.215000
++globasl()
+
+# 2017-07-13 07:43:42.713000
++globals()
+
+# 2017-07-13 07:44:11.920000
++g1
+
+# 2017-07-13 07:44:28.989000
++for key, value in g1.items():
++    print key, '--', value, ',  ',
+
+# 2017-07-13 07:44:41.316000
++for key, value in g1.items():
++    print key, '--', value
+
+# 2017-07-13 07:44:53.220000
++g1
+
+# 2017-07-13 07:44:57.954000
++globals()
+
+# 2017-07-13 07:45:06.240000
++from pprint import pprint
+
+# 2017-07-13 07:45:09.067000
++pprint(globals())
+
+# 2017-07-13 07:46:17.367000
++exclude = ['_', 'function']
+
+# 2017-07-13 07:46:23.321000
++g1
+
+# 2017-07-13 07:48:51.983000
++for ekey, evalue in g1.items():
++    if not any(check in evalue for check in exclude):
++        print('{}:  {}'.format(ekey, evalue))
+
+# 2017-07-13 07:49:21.472000
++g1.items()
+
+# 2017-07-13 07:52:02.018000
++del g1
+
+# 2017-07-13 07:52:04.883000
++locals()
+
+# 2017-07-13 07:52:16.563000
++globals()
+
+# 2017-07-13 07:53:02.291000
++g1 = set(globals())
+
+# 2017-07-13 07:53:22.611000
++new = {1:1, 2:2}
+
+# 2017-07-13 07:53:27.285000
++g2 = set(globals())
+
+# 2017-07-13 07:53:28.182000
++g1
+
+# 2017-07-13 07:53:30.159000
++g2
+
+# 2017-07-13 07:53:38.090000
++g2 - g1
+
+# 2017-07-13 07:54:35.458000
++for key in (g2 - g1):
++    print('{}:  {}'.format(key, globals()[key]))
+
+# 2017-07-13 07:55:01.347000
++globals()
+
+# 2017-07-13 07:55:13.043000
++from pprint import pprint
+
+# 2017-07-13 07:55:17.417000
++pprint(globals())
+
+# 2017-07-13 16:41:02.043000
++from flask import Flask, url_for
+
+# 2017-07-13 16:41:09.969000
++app = Flask(__name__)
+
+# 2017-07-13 16:41:40.524000
++@app.route('/')
++def index():
++    print('Index...')
+
+# 2017-07-13 16:41:58.013000
++print(url_for(index))
+
+# 2017-07-13 16:42:35.681000
++with app.test_request_context():
++    print(url_for('index'))
+
+# 2017-07-13 17:54:41.233000
++import os
+
+# 2017-07-13 17:54:45.989000
++os.urandom(24)
+
+# 2017-07-14 06:05:19.930000
++x = 12
+
+# 2017-07-14 06:07:11.818000
++login_session = {}
+
+# 2017-07-14 06:08:16.389000
++def start_login():
++    state = '123abc'
++    login_session['state'] = state
+
+# 2017-07-14 06:08:50.585000
++login_session
+
+# 2017-07-14 06:08:56.672000
++start_login
+
+# 2017-07-14 06:08:59.674000
++start_login()
+
+# 2017-07-14 06:09:03.870000
++login_session
+
+# 2017-07-15 13:29:31.742000
++d1 = dict(a=1,b=2,c=3)
+
+# 2017-07-15 13:29:32.784000
++d1
+
+# 2017-07-15 13:29:39.702000
++help(d1)
+
+# 2017-07-15 13:29:42.002000
++dir(d1)
+
+# 2017-07-15 13:29:50.463000
++d1
+
+# 2017-07-15 13:29:56.737000
++sorted(d1.keys())
+
+# 2017-07-15 13:32:58.436000
++help(sorted)
+
+# 2017-07-15 13:34:42.020000
++type(sorted(d1))
+
+# 2017-07-15 13:34:44.978000
++sorted(d1)
+
+# 2017-07-15 13:35:30.725000
++[k + ': ' + d1[k] for k in sorted(d1)]
+
+# 2017-07-15 13:35:44.795000
++[k + ': ' + str(d1[k]) for k in sorted(d1)]
+
+# 2017-07-15 13:36:35.222000
++d1
+
+# 2017-07-15 13:36:37.958000
++sorted(d1)
+
+# 2017-07-15 13:37:54.128000
++def dictDiff(d1, d2):
++    # Convert the dictionaries to lists - need to combine sorted keys and values:
++    l1 = [str(k) + ': ' + str(d1[k]) for k in sorted(d1.keys())]
++    l2 = [str(k) + ': ' + str(d2[k]) for k in sorted(d2.keys())]
++
++    # Find the difference with sets
++    return list(set(l1) - set(l2))
+
+# 2017-07-15 13:37:56.264000
++d1
+
+# 2017-07-15 13:38:11.915000
++d2=dict(a=1,c=4,d=5)
+
+# 2017-07-15 13:38:18.304000
++dictDiff(d1,d2)
+
+# 2017-07-15 13:38:27.004000
++d1
+
+# 2017-07-15 13:38:27.439000
++d2
+
+# 2017-07-15 13:40:09.904000
++def dictDiff(d1, d2):
++    # Convert the dictionaries to lists - need to combine sorted keys and values:
++    l1 = [str(k) + ': ' + str(d1[k]) for k in sorted(d1.keys())]
++    l2 = [str(k) + ': ' + str(d2[k]) for k in sorted(d2.keys())]
++
++    # Find the difference with sets
++    return list(set(l1).symmetric_difference(set(l2)))
+
+# 2017-07-15 13:40:12.383000
++d1, d2
+
+# 2017-07-15 13:40:17.980000
++d1
+
+# 2017-07-15 13:40:18.491000
++d2
+
+# 2017-07-15 13:40:24.894000
++dictDiff(d1,d2)
+
+# 2017-07-15 13:41:35.091000
++def dictDiff(d1, d2):
++    # Convert the dictionaries to lists - need to combine sorted keys and values:
++    l1 = [str(k) + ': ' + str(d1[k]) for k in sorted(d1.keys())]
++    l2 = [str(k) + ': ' + str(d2[k]) for k in sorted(d2.keys())]
++
++    # Find the difference with sets
++    result = list(set(l1).symmetric_difference(set(l2)))
++
++    # Return sorted result
++    return sorted(result)
+
+# 2017-07-15 13:41:47.378000
++dictDiff(d1,d2)
+
+# 2017-07-15 13:44:00.328000
++d1=dict(a=1,b=2,c=3)
+
+# 2017-07-15 13:44:17.725000
++d2=dict(a=1,c=4,d=5)
+
+# 2017-07-15 13:44:39.305000
++def dictDiff(d1, d2):
++    # Convert the dictionaries to lists - need to combine sorted keys and values:
++    l1 = [str(k) + ': ' + str(d1[k]) for k in sorted(d1.keys())]
++    l2 = [str(k) + ': ' + str(d2[k]) for k in sorted(d2.keys())]
++
++    # Find the difference with sets
++    result = list(set(l1).symmetric_difference(set(l2)))
++
++    # Return sorted result
++    return sorted(result)
+
+# 2017-07-15 13:45:54.020000
++diffDict(d1,d2)
+
+# 2017-07-15 13:46:09.871000
++dictDiff(d1,d2)
+
+# 2017-07-15 13:46:31.812000
++from pprint import pprint
+
+# 2017-07-15 13:46:39.195000
++pprint(dictDiff(d1,d2))
+
+# 2017-07-15 13:47:48.126000
++def showDictDiff(d1, d2):
++    # Convert the dictionaries to lists - need to combine sorted keys and values:
++    l1 = [str(k) + ': ' + str(d1[k]) for k in sorted(d1.keys())]
++    l2 = [str(k) + ': ' + str(d2[k]) for k in sorted(d2.keys())]
++
++    # Find the difference with sets
++    result = list(set(l1).symmetric_difference(set(l2)))
++
++    # Display sorted result
++    for element in sorted(result):
++        print(element)
+
+# 2017-07-15 13:47:53.247000
++showDictDiff(d1,d2)
+
+# 2017-07-15 13:47:55.724000
++d1
+
+# 2017-07-15 13:47:56.220000
++d2
+
+# 2017-07-15 14:36:28.966000
++lsf = {'state': '123abc'}
+
+# 2017-07-15 14:36:52.946000
++lst = {'state': '321def', 'credentials': 'secrets'}
+
+# 2017-07-15 14:38:32.087000
++credentials = lsf.get(credentials)
+
+# 2017-07-15 14:38:49.741000
++credentials = lsf.get('credentials')
+
+# 2017-07-15 15:33:42.809000
++dir()
+
+# 2017-07-15 15:33:47.764000
++showDictDiff
+
+# 2017-07-15 15:33:55.514000
++showDictDiff.__dict__
+
+# 2017-07-15 15:34:01.829000
++dir(showDictDiff)
+
+# 2017-07-15 15:34:23.328000
++showDictDiff.func_code
+
+# 2017-07-15 15:34:26.425000
++showDictDiff.func_code()
+
+# 2017-07-15 15:34:32.364000
++showDictDiff.func_code
+
+# 2017-07-15 15:34:36.396000
++dir(showDictDiff.func_code)
+
+# 2017-07-15 15:35:42.292000
++class Number:
++    __version__ = '1.0'
++    def __init__(self, amount):
++        self.amount = amount
++    def add(self, value):
++        return self.amount + value
+
+# 2017-07-15 15:35:44.719000
++Number
+
+# 2017-07-15 15:35:50.352000
++dir(Number)
+
+# 2017-07-15 15:36:01.231000
++a = Number(5)
+
+# 2017-07-15 15:36:01.808000
++a
+
+# 2017-07-15 15:36:09.337000
++dir(a)
+
+# 2017-07-15 15:36:27.230000
++Number.__dict__
+
+# 2017-07-15 15:36:41.964000
++a.__class_
+
+# 2017-07-15 15:36:43.427000
++a.__class__
+
+# 2017-07-15 15:36:49.780000
++a.__class__.__name__
+
+# 2017-07-15 15:38:55.397000
++a.add
+
+# 2017-07-15 15:47:49.221000
++type(a)
+
+# 2017-07-15 15:47:56.922000
++a.__name__
+
+# 2017-07-15 15:48:01.628000
++a.__class__
+
+# 2017-07-15 15:48:08.507000
++type(a)
+
+# 2017-07-15 15:48:39.260000
++a.__class__
+
+# 2017-07-15 15:48:42.339000
++a.__dict__
+
+# 2017-07-15 15:48:52.850000
++a.amount
+
+# 2017-07-15 15:48:56.241000
++a.add(3)
+
+# 2017-07-15 15:48:58.468000
++a.amount
+
+# 2017-07-15 15:51:36.989000
++def return_spam(name, bases, namespace):
++    print('Called return_spam({!r})'.format((name, bases, namespace)))
++    return 'spam'
+
+# 2017-07-15 15:51:45.829000
++return_spam(None, None, None)
+
+# 2017-07-15 15:52:11.635000
++x = return_spam(None, None, None)
+
+# 2017-07-15 15:52:13.207000
++x
+
+# 2017-07-15 16:00:39.567000
++Number.__dict__
+
+# 2017-07-16 15:09:27.571000
++'''<script>
++                    function myFunction() {
++                        alert('You are not authorized to delete this restaurant.  Please'
++                              + ' create your own restaurant in order to delete.');
++                    }
++                  </script>
++                  <body onload="myFunction()">
++                    window.location.replace('/restaurant/{}/menu/')
++                  </body>'''.format(x)
+
+# 2017-07-16 15:09:31.254000
++x = 5
+
+# 2017-07-16 15:09:35.345000
++'''<script>
++                    function myFunction() {
++                        alert('You are not authorized to delete this restaurant.  Please'
++                              + ' create your own restaurant in order to delete.');
++                    }
++                  </script>
++                  <body onload="myFunction()">
++                    window.location.replace('/restaurant/{}/menu/')
++                  </body>'''.format(x)
+
+# 2017-07-16 15:10:44.220000
++'''<script>function myFunction() {
++               alert('You are not authorized to delete this restaurant.  Please'
++                     + ' create your own restaurant in order to delete.');
++           }
++   </script>
++   <body onload="myFunction()">
++       window.location.replace('/restaurant/{}/menu/')
++   </body>'''.format(x)
+
+# 2017-07-16 15:14:15.460000
++'''this is a {} test'''.format(x)
+
+# 2017-07-16 15:14:43.860000
++'''{
++    this is a {} test
++    }
++'''.format(x)
+
+# 2017-07-16 15:14:55.705000
++'''{{
++    this is a {} test
++    }}
++'''.format(x)
+
+# 2017-07-16 15:15:31.579000
++'''<script>function myFunction() {{
++               alert('You are not authorized to delete this restaurant.  Please'
++                     + ' create your own restaurant in order to delete.');
++           }}
++   </script>
++   <body onload="myFunction()">
++       window.location.replace('/restaurant/{}/menu/')
++   </body>'''.format(x)
+
+# 2017-07-19 07:35:51.966000
++l1 = [u'26401 Novi Rd',
++                                                                u'Novi, MI 48375',
++                                                                u'United States']
+
+# 2017-07-19 07:35:52.869000
++l1
+
+# 2017-07-19 07:36:17.563000
++' '.join(l1)
+
+# 2017-07-19 15:11:46.050000
++t1 = (1440,)
+
+# 2017-07-19 15:11:46.890000
++t1
+
+# 2017-07-19 15:11:49.330000
++type(t1)
+
+# 2017-07-19 15:11:52.869000
++t1[0]
+
+# 2017-07-19 15:11:57.007000
++t1[1]
+
+# 2017-07-19 15:12:16.280000
++str(t1)
+
+# 2017-07-19 15:12:25.689000
++''.joint(t1)
+
+# 2017-07-19 15:12:39.227000
++''.join(t1)
+
+# 2017-07-19 15:18:18.129000
++dir()
+
+# 2017-07-19 15:18:20.441000
++dir(sys)
+
+# 2017-07-19 15:18:22.968000
++import sys
+
+# 2017-07-19 15:18:25.365000
++sys.platform
+
+# 2017-07-19 15:20:01.456000
++sys.platform.startswith('win')
+
+# 2017-07-19 15:20:27.772000
++sys.version
+
+# 2017-07-19 15:20:31.496000
++dir(sys)
+
+# 2017-07-19 15:20:37.867000
++sys.api_version
+
+# 2017-07-19 15:20:49.249000
++sys.exc_info
+
+# 2017-07-19 15:20:56.061000
++sys.exc_type
+
+# 2017-07-19 15:21:12.772000
++sys.getwindowsversion
+
+# 2017-07-19 15:21:17.112000
++sys.getwindowsversion()
+
+# 2017-07-19 15:21:35.324000
++sys.subversion
+
+# 2017-07-19 15:21:41.156000
++sys.version_info
+
+# 2017-07-19 15:21:58.198000
++type(sys.version_info)
+
+# 2017-07-19 15:22:07.355000
++dir(sys.version_info)
+
+# 2017-07-19 15:22:19.171000
++sys.version_info.major
+
+# 2017-07-19 15:22:21.752000
++sys.version_info.minor
+
+# 2017-07-20 06:55:38.734000
++response = ['error']
+
+# 2017-07-20 06:55:56.422000
++if result['response']['photos']['count']:
++    print('yes')
++else:
++    print('no')
+
+# 2017-07-20 06:56:10.486000
++if response['response']['photos']['count']:
++    print('yes')
++else:
++    print('no')
+
+# 2017-07-20 06:56:42.864000
++response = {'error': 'lots!'}
+
+# 2017-07-20 06:56:45.690000
++if response['response']['photos']['count']:
++    print('yes')
++else:
++    print('no')
+
+# 2017-07-20 09:30:02.071000
++from __future__ import print_function
+
+# 2017-07-20 09:30:11.294000
++print('a', 'b')
+
+# 2017-07-20 09:30:20.535000
++print('a', 'b', sep='')
+
+# 2017-07-20 09:32:15.300000
++print()
+
+# 2017-07-20 09:32:19.102000
++'a'
+
+# 2017-07-20 09:32:26.510000
++print('a')
+
+# 2017-07-20 16:21:33.024000
++location = ''
+
+# 2017-07-20 16:21:43.172000
++if location:
++    print('yes')
++else:
++    print('no')
+
+# 2017-07-20 16:22:12.417000
++location = 'one two'
+
+# 2017-07-20 16:22:16.005000
++dir(location)
+
+# 2017-07-20 16:22:22.180000
++location.replace(' ', '+')
+
+# 2017-07-20 16:22:24.139000
++location
+
+# 2017-07-21 15:39:35.615000
++import itsdangerous
+
+# 2017-07-21 15:39:39.947000
++dir(itsdangerous)
+
+# 2017-07-21 15:41:43.779000
++help(itsdangerous.TimedJSONWebSignatureSerializer)
+
+# 2017-07-21 15:42:07.103000
++import itsdangerous
+
+# 2017-07-21 15:42:38
++s = itsdangerous.TimedJSONWebSignatureSerializer('asdflkjl1234134')
+
+# 2017-07-21 15:42:39.312000
++s
+
+# 2017-07-21 15:42:42.148000
++type(s)
+
+# 2017-07-21 15:42:47.022000
++s.__dict__
+
+# 2017-07-21 15:43:03.440000
++s
+
+# 2017-07-21 15:43:12.244000
++s.dumps()
+
+# 2017-07-21 15:43:57.737000
++help(itsdangerous.TimedJSONWebSignatureSerializer)
+
+# 2017-07-21 15:44:45.214000
++help(itsdangerous.Serializer)
+
+# 2017-07-21 15:44:57.936000
++s
+
+# 2017-07-21 15:45:25.554000
++s.dumps({'id': self.id})
+
+# 2017-07-21 15:45:49.560000
++s.dumps({'id': 5})
+
+# 2017-07-22 13:11:54.841000
++s
+
+# 2017-07-22 13:13:29.236000
++tjwss = itsdangerous.TimedJSONWebSignatureSerializer('aslfkjl23k421l4k1234', expires_in=300)
+
+# 2017-07-22 13:13:31.408000
++twjss
+
+# 2017-07-22 13:13:34.818000
++tjwss
+
+# 2017-07-22 13:13:59.710000
++tjwss.dumps()
+
+# 2017-07-22 13:14:20.659000
++help(tjwss.dumps)
+
+# 2017-07-22 13:15:00.389000
++help(itsdangerous.Serializer.dumps)
+
+# 2017-07-22 13:16:00.560000
++tjwss.dumps({'id': 501})
+
+# 2017-07-22 13:16:08.095000
++n1 = tjwss.dumps({'id': 501})
+
+# 2017-07-22 13:16:08.665000
++n1
+
+# 2017-07-22 13:16:11.265000
++type(n1)
+
+# 2017-07-22 13:16:21.146000
++import sys
+
+# 2017-07-22 13:16:22.304000
++sys.version
+
+# 2017-07-22 13:17:06.973000
++from flask import jsonify
+
+# 2017-07-22 13:17:29.991000
++n1
+
+# 2017-07-22 13:17:40.949000
++n1.decode('ascii')
+
+# 2017-07-22 13:17:51.820000
++help(n1.decode)
+
+# 2017-07-22 13:23:47.216000
++n2 = n1.decode('ascii')
+
+# 2017-07-22 13:23:51.468000
++n1 == n2
+
+# 2017-07-22 13:32:57.413000
++n2
+
+# 2017-07-22 13:32:59.492000
++n1
+
+# 2017-08-10 10:36:32.838000
++import sys
+
+# 2017-08-10 10:36:34.295000
++sys.version
+
+# 2017-08-10 18:16:15.495000
++d1 = dict(root='root')
+
+# 2017-08-10 18:16:16.546000
++d1
+
+# 2017-08-10 18:16:31.297000
++dir(d1)
+
+# 2017-08-10 18:16:44.661000
++d1.pop()
+
+# 2017-08-10 18:16:51.300000
++d1.pop(root)
+
+# 2017-08-10 18:16:56.096000
++d1.pop('root')
+
+# 2017-08-10 18:16:56.854000
++d1
+
+# 2017-08-10 18:17:07.535000
++d1['/'] = 'root'
+
+# 2017-08-10 18:17:08.248000
++d1
+
+# 2017-08-10 18:17:12.283000
++d1['/']
+
+# 2017-08-10 18:20:29.954000
++d1
+
+# 2017-08-10 18:20:49.010000
++d1['/'] = {'methods': ['GET']}
+
+# 2017-08-10 18:20:49.702000
++d1
+
+# 2017-08-10 18:20:53.939000
++d1['/']
+
+# 2017-08-10 18:21:00.568000
++d1['/']['methods'][0]
+
+# 2017-08-10 18:38:47.666000
++d1['/'].get(params)
+
+# 2017-08-10 18:38:54.540000
++d1['/'].get('params')
+
+# 2017-08-10 18:39:07.994000
++print(d1['/'].get('params'))
+
+# 2017-08-10 18:39:46.041000
++d1['/api'] = {'methods': ['POST'], params: [0]}
+
+# 2017-08-10 18:39:52.823000
++d1['/api'] = {'methods': ['POST'], 'params': [0]}
+
+# 2017-08-10 18:39:54.152000
++d1
+
+# 2017-08-10 18:40:00.764000
++d1['/api']
+
+# 2017-08-10 18:40:08.085000
++d1['/api'].get('params')
+
+# 2017-08-10 19:09:02.696000
++method = 'GET'
+
+# 2017-08-10 19:09:06.915000
++method.tolower()
+
+# 2017-08-10 19:09:11.511000
++dir(method)
+
+# 2017-08-10 19:09:16.431000
++method.lower()
+
+# 2017-08-10 19:27:43.181000
++import request
+
+# 2017-08-10 19:27:47.480000
++import requests
+
+# 2017-08-10 19:28:06.345000
++resp = requests.get('http://localhost:5000/', timeout=2)
+
+# 2017-08-10 19:28:08.631000
++resp
+
+# 2017-08-10 19:28:13.068000
++resp.__dict__
+
+# 2017-08-10 19:28:20.442000
++resp.text
+
+# 2017-08-10 19:28:29.817000
++len(resp.text)
+
+# 2017-08-10 19:28:36.291000
++type(resp.text)
+
+# 2017-08-10 19:28:51.798000
++resp.text[:79]
+
+# 2017-08-10 19:29:17.367000
++resp = requests.get('http://localhost:5000/api/v0/catalog', timeout=2)
+
+# 2017-08-10 19:29:20.986000
++resp.text
+
+# 2017-08-10 19:29:33.471000
++resp.headers['content-type']
+
+# 2017-08-10 19:29:46.338000
++resp.text[:79]
+
+# 2017-08-10 19:30:08.338000
++print resp.text[:79]
+
+# 2017-08-10 19:30:22.362000
++from __future__ import print_function
+
+# 2017-08-10 19:30:42.597000
++print('{!r}'.format(resp.text[:79]))
+
+# 2017-08-11 09:41:08.142000
++s1 = 'spam'
+
+# 2017-08-11 09:41:19.624000
++for item in s1: print(item, end=' ')
+
+# 2017-08-11 10:38:49.178000
++l1 = [1,2,3]
+
+# 2017-08-11 10:38:54.411000
++l2=[4,5,6]
+
+# 2017-08-11 10:38:57.643000
++zip(l1,l2)
+
+# 2017-08-11 10:39:09.004000
++t1 = 1,2,3
+
+# 2017-08-11 10:39:12.391000
++t2=4,5,6
+
+# 2017-08-11 10:39:12.933000
++t1
+
+# 2017-08-11 10:39:16.517000
++zip(t1,t2)
+
+# 2017-08-12 14:56:38.101000
++d1
+
+# 2017-08-12 14:56:40.030000
++d2
+
+# 2017-08-12 14:56:43.400000
++d2 = {}
+
+# 2017-08-12 14:57:26.395000
++d2['glove'] = dict(category='baseball')
+
+# 2017-08-12 14:57:27.053000
++d2
+
+# 2017-08-12 14:57:33.947000
++d2['glove']
+
+# 2017-08-12 14:57:44.829000
++d2['glove']['category']
+
+# 2017-08-12 14:58:08.031000
++d2['glove']['image'] = 'glove.jpg'
+
+# 2017-08-12 14:58:08.751000
++d2
+
+# 2017-08-12 14:59:30.053000
++d2.keys()
+
+# 2017-08-13 10:55:13.809000
++dir()
+
+# 2017-08-13 10:55:26.891000
++globals()
+
+# 2017-08-13 10:56:39.176000
++class Car(object):
++    def __init__(self, color, mileage):
++        self.color = color
++        self.mileage = mileage
++
++    def __repr__(self):
++       return '{}({!r}, {!r})'.format(
++           self.__class__.__name__,
++           self.color, self.mileage)
++
++    def __unicode__(self):
++        return u'a {self.color} car'.format(
++            self=self)
++
++    def __str__(self):
++        return unicode(self).encode('utf-8')
+
+# 2017-08-13 10:56:57.772000
++c1 = Car('red', '18729')
+
+# 2017-08-13 10:56:58.494000
++c1
+
+# 2017-08-13 10:57:03.987000
++dir(c1)
+
+# 2017-08-13 10:57:09.159000
++c1.__class__
+
+# 2017-08-13 10:57:21.219000
++c1.__class__.__name__
+
+# 2017-08-13 10:57:36.860000
++c1.__dict__
+
+# 2017-08-13 10:58:30.146000
++c1.__name__
+
+# 2017-08-13 10:59:37.408000
++c1.__format__
+
+# 2017-08-13 11:01:44.384000
++str(c1)
+
+# 2017-08-13 11:01:47.065000
++repr(c1)
+
+# 2017-08-13 11:07:24.162000
++c1.__doc__
+
+# 2017-08-13 11:08:41.169000
++class Number:
++   '''A number class'''
++   __version__ = '1.0'
++    
++   def __init__(self, amount):
++        self.amount = amount
++    
++   def add(self, value):
++        return self.amount + value
+
+# 2017-08-13 11:08:44.203000
++n1
+
+# 2017-08-13 11:08:49.140000
++n1 = Number(5)
+
+# 2017-08-13 11:08:49.883000
++n1
+
+# 2017-08-13 11:09:01.706000
++n1.amount
+
+# 2017-08-13 11:09:08.206000
++n1.__doc__
+
+# 2017-08-13 14:52:59.256000
++q1 = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-13 14:53:10.048000
++for i in q1:
++    print(i.name)
+
+# 2017-08-13 14:54:07.149000
++q1 = sesion.query(Item).join(Category)
+
+# 2017-08-13 14:54:13.963000
++q1 = session.query(Item).join(Category)
+
+# 2017-08-13 14:54:16.589000
++q1
+
+# 2017-08-13 14:55:15.082000
++q1 = q1.all()
+
+# 2017-08-13 14:55:16.352000
++q1
+
+# 2017-08-13 14:55:26.177000
++q1[0]
+
+# 2017-08-13 14:55:33.068000
++dir(q1[0])
+
+# 2017-08-13 14:55:59.136000
++q1[0].name
+
+# 2017-08-13 14:56:12.757000
++q1[0].category.name
+
+# 2017-08-13 16:49:15.908000
++map(ord, 'spam')
+
+# 2017-08-13 16:58:25.571000
++e = enumerate('spam')
+
+# 2017-08-13 16:58:27.959000
++e
+
+# 2017-08-13 16:58:33.288000
++next(e)
+
+# 2017-08-14 16:39:44.597000
++q1 = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 16:39:45.891000
++q1
+
+# 2017-08-14 16:40:41.148000
++for i in q1:
++    print(i)
+
+# 2017-08-14 16:40:58.914000
++for i in q1:
++    print(i.__dict__)
+
+# 2017-08-14 16:41:42.378000
++q1[i]
+
+# 2017-08-14 16:41:46.032000
++q1[0]
+
+# 2017-08-14 16:41:50.516000
++q1[0].__dict__
+
+# 2017-08-14 16:41:59.510000
++q1[0].name
+
+# 2017-08-14 16:42:04.071000
++q1[0].items
+
+# 2017-08-14 16:43:33.320000
++q = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 16:43:37.823000
++q[0].name
+
+# 2017-08-14 16:43:41.358000
++q[0].items
+
+# 2017-08-14 16:45:22.939000
++for i in q:
++    print(i.name)
+
+# 2017-08-14 16:45:28.190000
++len(i)
+
+# 2017-08-14 16:45:31.409000
++len(q)
+
+# 2017-08-14 16:45:39.071000
++q[9].name
+
+# 2017-08-14 16:45:42.957000
++q[9].items
+
+# 2017-08-14 16:46:51.634000
++q = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 16:46:53.665000
++q[9]
+
+# 2017-08-14 16:46:57.626000
++q[9].items
+
+# 2017-08-14 16:54:20.526000
++i = ['<One(name="a")>', '<Two(name="b")>', '<Three(name="c")>']
+
+# 2017-08-14 16:54:21.364000
++i
+
+# 2017-08-14 16:54:50.848000
++['\t' + j + '\n' for j in i]
+
+# 2017-08-14 16:54:59.928000
++print(['\t' + j + '\n' for j in i])
+
+# 2017-08-14 17:01:09.859000
++q1 = session.query(User).all()
+
+# 2017-08-14 17:01:27.083000
++q2 = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 17:01:31.664000
++q1
+
+# 2017-08-14 17:02:30.451000
++q1 = session.query(User).all()
+
+# 2017-08-14 17:02:34.699000
++q2 = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 17:02:36.393000
++q1
+
+# 2017-08-14 17:02:48.297000
++q2
+
+# 2017-08-14 17:03:03.592000
++for i in q2:
++    print(i)
+
+# 2017-08-14 17:04:06.664000
++q2 = session.query(Item).order_by(Item.name).all()
+
+# 2017-08-14 17:04:08.360000
++q2
+
+# 2017-08-14 17:04:21.487000
++for i in q2:
++    print(i)
+
+# 2017-08-14 17:05:36.130000
++q2 = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 17:05:37.519000
++q2
+
+# 2017-08-14 17:05:44.041000
++for i in q2:
++    print(i)
+
+# 2017-08-14 17:07:59.907000
++q = session.query(Category).order_by(Category.name).all()
+
+# 2017-08-14 17:08:01.393000
++q
+
+# 2017-08-14 17:08:10.314000
++for i in q:
++    print(i)
+
+# 2017-08-14 17:13:21.583000
++item = session.query(Item).join(Category).filter_by(iid=iid).one()
+
+# 2017-08-14 17:13:42.929000
++iid = 1
+
+# 2017-08-14 17:13:45.058000
++item = session.query(Item).join(Category).filter_by(iid=iid).one()
+
+# 2017-08-14 17:13:51.573000
++item = session.query(Item).join(Category).filter_by(iid=1).one()
+
+# 2017-08-14 17:13:59.350000
++item = session.query(Item).join(Category).all()
+
+# 2017-08-14 17:14:00.459000
++item
+
+# 2017-08-14 17:16:21.524000
++item = session.query(Item).join(Category).filter_by(iid=1).one()
+
+# 2017-08-14 17:17:00.092000
++item = session.query(Item).join(Category).filter_by(item_id=1).one()
+
+# 2017-08-14 17:17:35.489000
++item = session.query(Item).filter_by(iid=1).one()
+
+# 2017-08-14 17:17:36.842000
++item
+
+# 2017-08-14 17:18:35.366000
++item.category
+
+# 2017-08-14 17:18:52.071000
++item.category.name
+
+# 2017-08-16 17:26:02.790000
++d1 = {'submit-add': 'submit-add'}
+
+# 2017-08-16 17:26:03.982000
++d1
+
+# 2017-08-16 17:26:09.820000
++d1['submit-add']
+
+# 2017-08-17 06:53:41.007000
++q = session.query(Item).order_by(Item.name).all()
+
+# 2017-08-17 06:53:57.121000
++for i in q:
++    print(i)
+
+# 2017-08-17 06:54:53.509000
++q1 = session.query(Item).filter_by(name='test').one()
+
+# 2017-08-17 06:54:55.477000
++q1
+
+# 2017-08-17 06:55:20.123000
++q2 = session.query(Item).filter_by(name='not-there').one()
+
+# 2017-08-17 06:56:52.061000
++from sqlalchemy.orm.exc import NoResultFound
+
+# 2017-08-17 06:57:04.799000
++from sqlalchemy.orm import NoResultFound
+
+# 2017-08-17 06:57:12.528000
++from sqlalchemy.orm.exc import NoResultFound
+
+# 2017-08-17 06:58:07.852000
++try:
++    q2 = session.query(Item).filter_by(name='not-there').one()
++except NoResultFound as e:
++    print('No matching row...')
+
+# 2017-08-17 10:30:05.084000
++import os
+
+# 2017-08-17 10:30:10.921000
++os.system('dir')
+
+# 2017-08-17 10:30:18.591000
++os.system('syseminfo')
+
+# 2017-08-17 11:35:15.901000
++dir()
+
+# 2017-08-17 11:35:21.470000
++dir(d1)
+
+# 2017-08-17 11:35:27.767000
++d1.__class__
+
+# 2017-08-17 11:36:01.770000
++d1.__name_
+
+# 2017-08-17 11:36:03.177000
++d1.__name__
+
+# 2017-08-17 11:36:19.435000
++d1.__doc__
+
+# 2017-08-17 11:36:36.256000
++d1.__format__
+
+# 2017-08-17 11:37:05.071000
++d1.__mro__
+
+# 2017-08-19 11:40:27.100000
++import sys
+
+# 2017-08-19 11:40:28.227000
++sys.version
+
+# 2017-08-20 13:18:03.055000
++a = (x,y,z) = 1,2,3
+
+# 2017-08-20 13:18:03.602000
++a
+
+# 2017-08-20 13:18:04.967000
++x
+
+# 2017-08-20 13:18:05.533000
++y
+
+# 2017-08-20 13:18:05.845000
++z
+
+# 2017-08-23 07:50:14.341000
++'aBc'.lower()
+
+# 2017-08-23 07:50:29.774000
++''.lower()
+
+# 2017-08-23 07:50:35.897000
++None.lower()
+
+# 2017-08-23 09:47:10.429000
++l = [1,2,3]
+
+# 2017-08-23 09:47:15.204000
++type(l)
+
+# 2017-08-23 09:47:23.328000
++i = iterl(l)
+
+# 2017-08-23 09:47:28.757000
++i = iter(l)
+
+# 2017-08-23 09:47:30.343000
++i
+
+# 2017-08-23 09:47:35.701000
++type(i)
+
+# 2017-08-23 09:47:39.512000
++dir(i)
+
+# 2017-08-23 09:47:46.206000
++i.__iter__
+
+# 2017-08-23 09:47:57.188000
++i.next
+
+# 2017-08-23 09:48:38.666000
++help(i.next)
+
+# 2017-08-23 09:48:58.752000
++x = i.next
+
+# 2017-08-23 09:48:59.361000
++x
+
+# 2017-08-23 09:49:16.790000
++l
+
+# 2017-08-23 09:49:18.103000
++i
+
+# 2017-08-23 09:49:27.061000
++i = iter(l)
+
+# 2017-08-23 09:49:27.484000
++i
+
+# 2017-08-23 09:49:43.052000
++x = i.next
+
+# 2017-08-23 09:49:43.465000
++x
+
+# 2017-08-23 09:49:47.351000
++x = i.next()
+
+# 2017-08-23 09:49:49.025000
++x
+
+# 2017-08-23 09:50:01.263000
++i.next()
+
+# 2017-08-24 09:09:39.630000
++r1 = u'http://www.example.com/base/'
+
+# 2017-08-24 09:09:51.044000
++r2 = u'http://localhost:5000/base/'
+
+# 2017-08-24 09:09:53.567000
++r1
+
+# 2017-08-24 09:10:00.874000
++r1.split('/')
+
+# 2017-08-24 09:10:22.060000
++r2.split('/')
+
+# 2017-08-24 09:10:35.439000
++help(''.split)
+
+# 2017-08-24 09:10:45.536000
++r1.split('/')[2]
+
+# 2017-08-24 09:10:56.776000
++r2.split('/')[2]
+
+# 2017-08-24 09:40:28.572000
++d1 = dict(a=1,b=2,c=3)
+
+# 2017-08-24 09:40:29.292000
++d1
+
+# 2017-08-24 09:40:35.425000
++d1.keys()
+
+# 2017-08-24 09:40:42.791000
++dir(d1)
+
+# 2017-08-24 09:41:17.049000
++for k in d1:
++    print k
+
+# 2017-08-24 09:43:27.125000
++import os
+
+# 2017-08-24 09:43:39.231000
++p1 = os.open('dir')
+
+# 2017-08-24 09:43:47.009000
++p1 = os.popen('dir')
+
+# 2017-08-24 09:43:54.665000
++p1.next()
+
+# 2017-08-24 09:43:59.293000
++next(p1)
+
+# 2017-08-24 09:44:07.657000
++p1.next()
+
+# 2017-08-24 09:47:40.705000
++e1 = enumerate('spam')
+
+# 2017-08-24 09:47:41.417000
++e1
+
+# 2017-08-24 09:47:45.340000
++e1.next()
+
+# 2017-08-24 12:56:49.293000
++import ipaddress
+
+# 2017-08-24 12:56:52.022000
++dir(ipaddress)
+
+# 2017-08-24 12:57:21.115000
++help(ipaddress.IPv4Network)
+
+# 2017-08-24 12:57:53.875000
++i1 = ipaddress.IPv4Network('172.16.216.0/22')
+
+# 2017-08-24 12:58:15.318000
++i1 = ipaddress.IPv4Network(u'172.16.216.0/22')
+
+# 2017-08-24 12:58:19.948000
++i1
+
+# 2017-08-24 12:58:24.838000
++dir(i1)
+
+# 2017-08-24 12:58:31.159000
++i1.network_address
+
+# 2017-08-24 12:58:36.294000
++i1.broadcast_address
+
+# 2017-08-24 16:04:03.340000
++session.query(User).all()
+
+# 2017-08-24 17:09:09.971000
++u1 = session.query(User).filter_by(name='user').one()
+
+# 2017-08-24 17:09:10.743000
++u1
+
+# 2017-08-24 17:09:14.099000
++u1.serialize
+
+# 2017-08-24 20:05:49.915000
++il
+
+# 2017-08-24 20:05:53.108000
++i1
+
+# 2017-08-25 09:17:35.918000
++m1 = True
+
+# 2017-08-25 09:17:42.119000
++t1 = True if m1 else False
+
+# 2017-08-25 09:17:43.121000
++t1
+
+# 2017-08-25 09:17:47.108000
++m1 = False
+
+# 2017-08-25 09:17:48.957000
++t1 = True if m1 else False
+
+# 2017-08-25 09:17:49.939000
++t1
+
+# 2017-08-25 09:18:31.814000
++True if True else False
+
+# 2017-08-25 09:18:36.645000
++True if False else False
+
+# 2017-08-25 09:26:15.664000
++'_' < 'a'
+
+# 2017-08-25 09:26:22.201000
++'_' < 'A'
+
+# 2017-08-25 09:26:32.488000
++import string
+
+# 2017-08-25 09:26:34.274000
++dir(string)
+
+# 2017-08-25 09:26:44.887000
++string.ascii_letters
+
+# 2017-08-25 09:27:29.477000
++string.printable
+
+# 2017-08-26 21:50:48.561000
++x=1,2
+
+# 2017-08-26 21:50:49.014000
++x
+
+# 2017-08-26 21:50:51.852000
++y=3,4
+
+# 2017-08-26 21:50:56.080000
++zip(x,y)
+
+# 2017-08-29 07:35:37.476000
++sys.version
+
+# 2017-08-29 07:35:40.826000
++import sys
+
+# 2017-08-29 07:35:42.075000
++sys.version
+
+# 2017-08-29 07:35:44.227000
++os
+
+# 2017-08-29 07:35:52.364000
++r1 = os.urandom(32)
+
+# 2017-08-29 07:35:53.088000
++r1
+
+# 2017-08-29 07:35:57.270000
++s1 = 'ni'
+
+# 2017-08-29 07:36:02.385000
++s1.encode('utf8')
+
+# 2017-08-29 07:36:05.969000
++s1.encode('utf16')
+
+# 2017-08-29 07:40:40.390000
++r1
+
+# 2017-08-29 07:40:43.336000
++type(r1)
+
+# 2017-08-29 07:40:48.778000
++dir(r1)
+
+# 2017-08-29 07:41:06.217000
++r1.decode('ascii')
+
+# 2017-08-29 07:41:15.223000
++r1
+
+# 2017-08-29 07:41:53.689000
++r2 = bytes(r1)
+
+# 2017-08-29 07:41:54.280000
++r2
+
+# 2017-08-29 07:41:58.280000
++r1 == r2
+
+# 2017-08-29 07:42:02.484000
++type(r2)
+
+# 2017-08-29 07:42:07.400000
++del r2
+
+# 2017-08-29 07:42:09.072000
++dir()
+
+# 2017-08-29 07:42:11.309000
++r2
+
+# 2017-08-29 07:42:11.917000
++r1
+
+# 2017-08-29 07:42:18.763000
++hex(r1)
+
+# 2017-08-29 07:42:37.957000
++dir(r1)
+
+# 2017-08-29 07:47:23.843000
++r1.encode('hex')
+
+# 2017-08-29 07:48:05.439000
++r2 = r1.encode('hex')
+
+# 2017-08-29 07:48:12.795000
++r3 = r2.decode('hex')
+
+# 2017-08-29 07:48:13.753000
++r3
+
+# 2017-08-29 07:48:16.676000
++r1 == r3
+
+# 2017-08-29 07:48:19.097000
++r1
+
+# 2017-08-29 09:00:07.489000
++import base64
+
+# 2017-08-29 09:00:17.102000
++r2 = base64.urlsafe_b64encode(r1)
+
+# 2017-08-29 09:00:17.587000
++r2
+
+# 2017-08-29 09:02:36.219000
++type(r2)
+
+# 2017-08-29 09:02:47.468000
++r3 = base64.urlsafe_b64decode
+
+# 2017-08-29 09:02:50.522000
++r3 = base64.urlsafe_b64decode(r2)
+
+# 2017-08-29 09:02:53.189000
++r1 == r3
+
+# 2017-08-29 10:17:56.832000
++range(10)
+
+# 2017-08-29 10:18:03.045000
++xrange(10)
+
+# 2017-08-29 10:18:36.517000
++type(xrange(10))
+
+# 2017-08-29 10:18:45.040000
++x1 = xrange(10)
+
+# 2017-08-29 10:18:46.912000
++type(x1)
+
+# 2017-08-29 10:18:49.037000
++dir(x1)
+
+# 2017-08-29 10:18:59.112000
++next(x1)
+
+# 2017-08-29 10:19:07.288000
++i1 = iter(x1)
+
+# 2017-08-29 10:19:11.097000
++i1.next()
+
+# 2017-08-30 06:52:47.830000
++sys.verssion
+
+# 2017-08-30 06:52:49.826000
++sys.version
+
+# 2017-08-30 06:53:43.884000
++import os
+
+# 2017-08-30 06:53:45.293000
++dir(os)
+
+# 2017-08-30 06:55:13.771000
++os.system('pwd')
+
+# 2017-08-30 06:55:27.643000
++os.system('dir')
+
+# 2017-08-30 06:55:53.683000
++import ConfigParser
+
+# 2017-08-30 06:56:08.603000
++config = ConfigParser.ConfigParser()
+
+# 2017-08-30 06:56:21.379000
++config.read('environment.cfg')
+
+# 2017-08-30 06:56:50.500000
++sk = config.get('seed', 'key')
+
+# 2017-08-30 07:14:26.122000
++dir()
+
+# 2017-08-30 07:14:29.198000
++import json
+
+# 2017-08-30 07:14:31.465000
++dir(json)
+
+# 2017-08-30 07:14:46.977000
++import os
+
+# 2017-08-30 07:14:48.586000
++dir(os)
+
+# 2017-08-30 07:14:55.052000
++import base64
+
+# 2017-08-30 07:14:57.419000
++sk
+
+# 2017-08-30 07:15:07.141000
++r1
+
+# 2017-08-30 07:15:13.830000
++r1 = os.urandom(32)
+
+# 2017-08-30 07:15:14.522000
++r1
+
+# 2017-08-30 07:15:47.425000
++sk = base64.urlsafe_b64encode(r1)
+
+# 2017-08-30 07:15:48.096000
++sk
+
+# 2017-08-30 07:16:08.402000
++json.dumps(sk)
+
+# 2017-08-30 07:16:20.156000
++help(json.dumps)
+
+# 2017-08-30 07:16:53.816000
++json.dumps(sk)
+
+# 2017-08-30 07:18:38.035000
++sk
+
+# 2017-08-30 07:19:47.430000
++help(open)
+
+# 2017-08-30 07:20:38.920000
++help(file)
+
+# 2017-08-30 07:21:15.201000
++os.system('dir /w')
+
+# 2017-08-30 07:21:25.252000
++os.system('pwd')
+
+# 2017-08-30 07:21:37.559000
++f1 = open('flask_app.json', 'w')
+
+# 2017-08-30 07:22:02.973000
++json.dump(sk, f1)
+
+# 2017-08-30 07:22:06.958000
++f1.close()
+
+# 2017-08-30 07:23:18.479000
++f1 = open('flask_app2.json')
+
+# 2017-08-30 07:23:30.835000
++f1 = open('flask_app.json')
+
+# 2017-08-30 07:24:29.166000
++sk2 = json.load(f1)
+
+# 2017-08-30 07:24:30.628000
++sk2
+
+# 2017-08-30 07:24:33.338000
++sk
+
+# 2017-08-30 07:24:38.309000
++sk == sk2
+
+# 2017-08-30 07:25:05.064000
++f1.close()
+
+# 2017-08-30 07:25:35.566000
++f1 = open('flask_app.json')
+
+# 2017-08-30 07:25:41.753000
++sk3 = json.load(f1)
+
+# 2017-08-30 07:28:18.097000
++f1 = open('flask_app2.json')
+
+# 2017-08-30 07:28:20.275000
++f1
+
+# 2017-08-30 07:28:28.354000
++f1.close()
+
+# 2017-08-30 07:28:28.902000
++f1
+
+# 2017-08-30 07:28:32.026000
++del f1
+
+# 2017-08-30 07:28:35.091000
++f1 = open('flask_app2.json')
+
+# 2017-08-30 07:28:36.598000
++f1
+
+# 2017-08-30 07:28:43.829000
++if f1:
++    print yes
+
+# 2017-08-30 11:10:03.362000
++d1 = dict(a=1,b=2,c=3)
+
+# 2017-08-30 11:10:04.103000
++d1
+
+# 2017-08-30 11:10:27.580000
++d1.keys
+
+# 2017-08-30 11:10:29.037000
++d1.keys()
+
+# 2017-08-30 11:10:46.125000
++dir(d1)
+
+# 2017-08-30 11:10:54.933000
++d1.iterkeys()
+
+# 2017-08-30 11:11:10.178000
++d1.iterkeys().next()
+
+# 2017-08-30 11:11:23.586000
++d1.viewkeys()
+
+# 2017-08-30 11:11:54.718000
++d1.values()
+
+# 2017-08-30 11:11:57.940000
++d1.keyvalues()
+
+# 2017-08-30 11:12:04.620000
++d1.viewvalues()
+
+# 2017-08-30 11:12:09.083000
++d1.items()
+
+# 2017-08-30 11:12:12.061000
++d1.viewitems()
+
+# 2017-08-30 11:19:27.679000
++dir()
+
+# 2017-08-30 11:19:41.134000
++dir(__builtins__)
+
+# 2017-08-30 11:19:49.727000
++help(__builtins__.next)
+
+# 2017-08-30 11:20:00.462000
++help(__builtins__.iter)
+
+# 2017-08-31 09:37:45.178000
++dir([])
+
+# 2017-08-31 09:37:47.887000
++dir(list)
+
+# 2017-08-31 09:39:30.523000
++[x for x in dir(list) if not x.startswith('__') or not x[0] == '_']
+
+# 2017-08-31 09:39:41.894000
++dir(sys)
+
+# 2017-08-31 09:39:51.858000
++[x for x in dir(sys) if not x.startswith('__') or not x[0] == '_']
+
+# 2017-08-31 09:40:35.797000
++[x for x in dir(sys) if (not x.startswith('__') or not x[0] == '_')]
+
+# 2017-08-31 09:40:49.743000
++[x for x in dir(sys) if not x[0] == '_']
+
+# 2017-08-31 09:41:34.394000
++[x for x in dir() if not x[0] == '_']
+
+# 2017-08-31 09:41:41.708000
++dir()
+
+# 2017-08-31 09:43:30.721000
++def dir1(a):  [x for x in dir(a) if not x[0] == '_']
+
+# 2017-08-31 09:43:33.905000
++dir1(list)
+
+# 2017-08-31 09:43:42.299000
++def dir1(a):  return [x for x in dir(a) if not x[0] == '_']
+
+# 2017-08-31 09:43:44.734000
++dir1(list)
+
+# 2017-08-31 09:44:03.414000
++dir1(tuple)
+
+# 2017-09-01 12:24:39.464000
++import oauth2client
+
+# 2017-09-01 12:53:23.297000
++dir()
+
+# 2017-09-01 12:53:49.240000
++[x for x in dir() if x[0] != '_']
+
+# 2017-09-01 12:54:03.412000
++sys.__doc__
+
+# 2017-09-01 12:54:09.246000
++print sys.__doc__
+
+# 2017-09-01 12:54:29.356000
++help(sys)
+
+# 2017-09-01 12:54:33.895000
++ 
+
+# 2017-09-01 12:54:36.047000
++print sys.__doc__
+
+# 2017-09-01 13:00:10.673000
++help(re)
+
+# 2017-09-01 13:00:15.675000
++help('re')
+
+# 2017-09-01 13:05:25.945000
++help
+
+# 2017-09-01 13:05:31.185000
++help()
+
+# 2017-09-02 11:43:14.695000
++print None
+
+# 2017-09-02 11:54:40.419000
++dir()
+
+# 2017-09-02 11:54:49.911000
++import os
+
+# 2017-09-02 11:54:54.079000
++help(os.urandom)
+
+# 2017-09-02 11:55:09.449000
++import hashlib
+
+# 2017-09-02 11:55:19.567000
++dir(hashlib)
+
+# 2017-09-02 11:55:41.926000
++hashlib.sha256(os.urandom(1024)).hexdigest()
+
+# 2017-09-02 15:19:35.897000
++import os
+
+# 2017-09-02 15:19:37.876000
++import json
+
+# 2017-09-02 15:20:05.209000
++json.loads(open('client_secret_google.json').read())['web']
+
+# 2017-09-02 15:20:14.535000
++data = _
+
+# 2017-09-02 15:20:15.241000
++data
+
+# 2017-09-02 15:20:20.786000
++data['client_secret']
+
+# 2017-09-02 15:20:25.882000
++data['client_id']
+
+# 2017-09-05 10:49:54.227000
++dir()
+
+# 2017-09-05 10:51:25.337000
++def dir2(a): return [x for x in dir(a) if x[0] != '_']
+
+# 2017-09-05 10:51:27.705000
++dir2()
+
+# 2017-09-05 10:51:35.769000
++dir()
+
+# 2017-09-05 10:51:38.680000
++dir('')
+
+# 2017-09-05 10:51:49.895000
++dir(None)
+
+# 2017-09-05 10:52:25.792000
++dir()
+
+# 2017-09-05 10:54:18.594000
++def dir2(a): return [x for x in (dir(a) if a else dir()) if x[0] != '_']
+
+# 2017-09-05 10:54:23.918000
++dir()
+
+# 2017-09-05 10:54:40.703000
++dir2()
+
+# 2017-09-05 10:55:10.446000
++def dir2(a=None): return [x for x in (dir(a) if a else dir()) if x[0] != '_']
+
+# 2017-09-05 10:55:12.060000
++dir2()
+
+# 2017-09-05 10:55:39.056000
++dir()
+
+# 2017-09-05 10:55:58.107000
++dir2()
+
+# 2017-09-05 10:56:12.163000
++dir
+
+# 2017-09-05 10:56:14.408000
++dir2
+
+# 2017-09-05 10:56:35.921000
++def dir2(): return [x for x in dir() if x[0] != '_']
+
+# 2017-09-05 10:56:37.810000
++di2()
+
+# 2017-09-05 10:56:40.979000
++dir2()
+
+# 2017-09-05 10:56:46.790000
++dir()
+
+# 2017-09-05 10:57:02.012000
++dir2()
+
+# 2017-09-05 10:57:16.771000
++[x for x in dir()]
+
+# 2017-09-05 10:57:30.521000
++[x for x in dir() if x[0] != '_']
+
+# 2017-09-05 10:58:08.964000
++def dir2(): return [x for x in dir() if x[0] != '_']
+
+# 2017-09-05 10:58:10.556000
++dir2
+
+# 2017-09-05 10:58:12.276000
++dir2()
+
+# 2017-09-05 10:58:20.997000
++[x for x in dir() if x[0] != '_']
+
+# 2017-09-05 10:58:34.157000
++import sys
+
+# 2017-09-05 10:58:35.191000
++sys.path
+
+# 2017-09-05 10:59:15.235000
++[line for line in sys.path]
+
+# 2017-09-07 06:02:41.426000
++dir()
+
+# 2017-09-07 06:03:38.857000
++import oauth2client.client
+
+# 2017-09-07 06:03:44.847000
++import oauth2client
+
+# 2017-09-07 06:04:31.918000
++dir(oauth2client)
+
+# 2017-09-07 06:04:53.666000
++import oauth2client.client
+
+# 2017-09-07 06:04:55.992000
++import oauth2client.clientsecrets
+
+# 2017-09-07 06:05:03.267000
++dir(oauth2client.client)
+
+# 2017-09-07 06:05:59.654000
++dir(oauth2client.clientsecrets)
+
+# 2017-09-07 09:12:00.182000
++S = 'test1'
+
+# 2017-09-07 09:12:22.405000
++for c in S:
++    print ord(c)
+
+# 2017-09-07 09:12:42.305000
++s1 = 0
+
+# 2017-09-07 09:12:51.769000
++for c in S:
++    s1 += ord(c)
+
+# 2017-09-07 09:12:52.863000
++s1
+
+# 2017-09-07 09:13:08.095000
++l1 = []
+
+# 2017-09-07 09:13:25.467000
++for c in S:
++    l1.append(ord(c))
+
+# 2017-09-07 09:13:26.202000
++l1
+
+# 2017-09-07 09:13:45.679000
++map(ord, S)
+
+# 2017-09-07 09:14:01.687000
++[ord(c) for c in S]
+
+# 2017-09-07 09:15:25.762000
++for i in range(10): print('hello %d\n\a' % i)
+
+# 2017-09-07 09:15:52.566000
++d1 = dict(a=1,b=2,c=3)
+
+# 2017-09-07 09:15:53.023000
++d1
+
+# 2017-09-07 09:16:53.304000
++for key in sorted(d1): print('{}: {}'.format(key, d1[key]))
+
+# 2017-09-07 09:18:51.231000
++L = [1, 2, 4, 8, 16, 32, 64]
++X = 5
+
+# 2017-09-07 09:18:52.378000
++L
+
+# 2017-09-07 09:18:53.815000
++X
+
+# 2017-09-07 09:18:58.958000
++i = 0
+
+# 2017-09-07 09:21:43.956000
++while i < len(L):
++    if 2 ** X == L[i]:
++        break
++    else:
++        i += 1
++else:
++    print(X, 'not found')
+
+# 2017-09-07 09:21:51.098000
++i
+
+# 2017-09-07 09:21:53.958000
++i = 0
+
+# 2017-09-07 09:22:09.244000
++while i < len(L):
++    if 2 ** X == L[i]:
++        print('at index', i)
++        break
++    else:
++        i += 1
++else:
++    print(X, 'not found')
+
+# 2017-09-07 09:24:06.763000
++n
+
+# 2017-09-07 09:24:47.791000
++for i, n in enum(L):
++    if 2 ** X == n:
++        print('at index', i)
++        break
++else:
++    print(X, 'not found')
+
+# 2017-09-07 09:25:02.268000
++dir(__builtins__)
+
+# 2017-09-07 09:25:14.999000
++for i, n in enumerate(L):
++    if 2 ** X == n:
++        print('at index', i)
++        break
++else:
++    print(X, 'not found')
+
+# 2017-09-07 09:25:47.536000
++L.index(5)
+
+# 2017-09-07 09:25:49.226000
++L
+
+# 2017-09-07 09:25:54.347000
++L.index(64)
+
+# 2017-09-07 09:25:57.419000
++L.index(32)
+
+# 2017-09-07 09:26:03.908000
++L[5]
+
+# 2017-09-07 09:26:31.992000
++2 ** X
+
+# 2017-09-07 09:27:32.445000
++if 2 ** X in L:
++    print('at index', L.index(2 ** X))
++else:
++    print(X, 'not found')
+
+# 2017-09-07 09:28:19.328000
++L
+
+# 2017-09-07 09:28:29.401000
++len(L)
+
+# 2017-09-07 09:28:34.687000
++2 ** 6
+
+# 2017-09-07 09:29:07.649000
++L = [2 ** i for i in range(7)]
+
+# 2017-09-07 09:29:08.290000
++L
+
+# 2017-09-07 09:29:43.003000
++L = []
+
+# 2017-09-07 09:29:55.955000
++for i in range(7): L.append(2 ** i)
+
+# 2017-09-07 09:29:57
++L
+
+# 2017-09-07 09:31:30.957000
++map(lambda x: 2 ** x, range(7))
+
+# 2017-09-08 06:45:29.556000
++dir()
+
+# 2017-09-08 06:45:35.402000
++dir(Base)
+
+# 2017-09-08 06:45:43.987000
++dir(User)
+
+# 2017-09-08 09:12:35.008000
++nonlocal
+
+# 2017-09-08 09:12:45.882000
++dir(__builtins__)
+
+# 2017-09-08 09:13:06.310000
++dir()
+
+# 2017-09-08 09:13:27.451000
++help(keywords)
+
+# 2017-09-08 09:13:28.722000
++help
+
+# 2017-09-08 09:14:19.546000
++help()
+
+# 2017-09-08 09:14:20.971000
++keywords
+
+# 2017-09-08 09:14:29.652000
++help(keywords)
+
+# 2017-09-08 09:14:37.511000
++help()
+
+# 2017-09-08 16:45:49.332000
++type(dict)
+
+# 2017-09-08 16:46:02.154000
++type(str)
+
+# 2017-09-08 16:46:07.770000
++help(type)
+
+# 2017-09-08 16:46:23.849000
++a = 'a'
+
+# 2017-09-08 16:46:26.280000
++type(a)
+
+# 2017-09-09 15:04:31.040000
++d1 = dict(title_error='blah blah blah', title_problem='nonunique')
+
+# 2017-09-09 15:04:31.741000
++d1
+
+# 2017-09-09 15:04:37.726000
++s1 = set(d1)
+
+# 2017-09-09 15:04:38.774000
++s1
+
+# 2017-09-09 15:04:58.160000
++s2 = set('title_error', 'title_problem')
+
+# 2017-09-09 15:05:10.519000
++help(set)
+
+# 2017-09-09 15:06:11.980000
++s2 = {'title_error', 'title_problem'}
+
+# 2017-09-09 15:06:13.014000
++s2
+
+# 2017-09-09 15:06:15.326000
++s1
+
+# 2017-09-09 15:06:16.095000
++s2
+
+# 2017-09-09 15:06:18.745000
++s1 == s2
+
+# 2017-09-09 15:06:21.707000
++d1
+
+# 2017-09-09 15:06:48.486000
++d2 = dict(title_error='blah', title_problem='blah', other_problem='blah')
+
+# 2017-09-09 15:06:53.808000
++s3 = set(d2)
+
+# 2017-09-09 15:06:54.549000
++s1
+
+# 2017-09-09 15:06:55.213000
++s2
+
+# 2017-09-09 15:06:56.224000
++s3
+
+# 2017-09-09 15:06:59.322000
++s2 == s3
+
+# 2017-09-09 15:09:09.920000
++d1
+
+# 2017-09-09 15:09:14.519000
++s2 == set(d1)
+
+# 2017-09-09 15:36:41.084000
++session.query(Item).order_by(Item.name).all()
+
+# 2017-09-09 15:36:50.173000
++dir(session)
+
+# 2017-09-09 15:38:06.592000
++help(session.merge)
+
+# 2017-09-09 16:36:55.270000
++def func(): return 2 + 2
+
+# 2017-09-09 16:36:57.624000
++func
+
+# 2017-09-09 16:36:59.827000
++func()
+
+# 2017-09-09 16:37:02.764000
++othername= func
+
+# 2017-09-09 16:37:04.962000
++othername()
+
+# 2017-09-09 16:38:02.612000
++func.attr = 'value'
+
+# 2017-09-09 16:38:05.974000
++othername.attr
+
+# 2017-09-09 16:42:19.360000
++dir(func)
+
+# 2017-09-09 16:42:54.092000
++func.func_name
+
+# 2017-09-09 16:42:58.135000
++othername.func_name
+
+# 2017-09-09 16:43:04.664000
++func.func_code
+
+# 2017-09-09 16:43:14.540000
++func.func_code.__dict__
+
+# 2017-09-10 13:11:11.181000
++a = 1
+
+# 2017-09-10 13:11:21.711000
++b = 'StRing'
+
+# 2017-09-10 13:11:44.192000
++bool(a and b.lower() == 'string')
+
+# 2017-09-10 14:50:37.903000
++dir()
+
+# 2017-09-10 14:51:26.037000
++def intersect(seq1, seq2):
++    res = []                     # Start empty
++    for x in seq1:               # Scan seq1
++        if x in seq2:            # Common item?
++            res.append(x)        # Add to end
++    return res
+
+# 2017-09-10 14:51:32.633000
++intersect(3, 5)
+
+# 2017-09-12 10:48:45.065000
++def p_decorate(func):
++    def func_wrapper(name):
++        print('In func_wrapper, name={}'.format(name))
++        return '<p>{}</p>'.format(func(name))
++    print('In p_decorate, func={}'.format(func))
++    return func_wrapper
+
+# 2017-09-12 10:49:14.828000
++def get_text(name):
++    return 'lorem ipsum, {} dolor sit amet'.format(name)
+
+# 2017-09-12 10:49:38.578000
++@p_decorate
++def get_text(name):
++    return 'lorem ipsum, {} dolor sit amet'.format(name)
+
+# 2017-09-12 10:50:04.258000
++get_text('Jon')
+
+# 2017-09-12 10:52:07.746000
++get_text
+
+# 2017-09-12 10:52:20.972000
++print(get_text)
+
+# 2017-09-12 10:56:05.981000
++def tags(tag_name):
++    def tags_decorator(func):
++        def func_wrapper(name):
++            print('In func_wrapper, name={}'.format(name))
++            return '<{0}>{1}</{0}>'.format(tag_name, func(name))
++        print('In tags_decorator, func={}'.format(func))
++        return func_wrapper
++    print('In tags, tag_name={}'.format(tag_name))
++    return tags_decorator
+
+# 2017-09-12 10:56:55.281000
++@tags('p')
++def get_text(name):
++    print('In get_text, name={}'.format(name))
++    return 'Hello, {}'.format(name)
+
+# 2017-09-12 10:58:09.017000
++get_text('Jon')
+
+# 2017-09-13 12:27:32.985000
++def get_text(name):
++    print('Inside get_text, name={}'.format(name))
++    return 'lorem ipsum, {} dolor sit amet'.format(name)
++
++def p_decorate(func):
++    def func_wrapper(name):
++        print('Inside func_wrapper, name={}'.format(name))
++        return '<p>{}</p>'.format(func(name))
++    print('Inside p_decorate, func={}'.format(func))
++    return func_wrapper
++
++# This is the equivalent of
++# @p_decorate
++# def get_text(name):
++# (...)
++my_get_text = p_decorate(get_text)
++
++print(my_get_text('John'))
+
+# 2017-09-13 12:29:42.454000
++@p_decorate
++def get_text(name):
++    print('Inside get_text, name={}'.format(name))
++    return 'lorem ipsum, {} dolor sit amet'.format(name)
+
+# 2017-09-13 12:29:59.826000
++print(get_text('John'))
+
+# 2017-09-13 12:32:20.962000
++def get_text(name):
++    print('Inside get_text, name={}'.format(name))
++    return 'lorem ipsum, {} dolor sit amet'.format(name)
+
+# 2017-09-13 12:32:34.429000
++get_text = p_decorate(get_text)
+
+# 2017-09-13 12:40:03.567000
++def tags(tag_name):
++    def tags_decorator(func):
++        def func_wrapper(name):
++            print('In func_wrapper, name={}'.format(name))
++            return '<{0}>{1}</{0}>'.format(tag_name, func(name))
++        print('In tags_decorator, func={}'.format(func))
++        return func_wrapper
++    print('In tags, tag_name={}'.format(tag_name))
++    return tags_decorator
++
++@tags('p')
++def get_text(name):
++    print('In get_text, name={}'.format(name))
++    return 'Hello, {}'.format(name)
+
+# 2017-09-13 12:40:14.461000
++print(get_text('John'))
+
+# 2017-09-13 12:49:48.532000
++from functools import wraps
++
++def tags(tag_name):
++    def tags_decorator(func):
++        # Preserve original function __name/doc/module__ attributes
++        @wraps(func)
++        def func_wrapper(name):
++            print('In func_wrapper, name={}'.format(name))
++            return '<{0}>{1}</{0}>'.format(tag_name, func(name))
++        print('In tags_decorator, func={}'.format(func))
++        return func_wrapper
++    print('In tags, tag_name={}'.format(tag_name))
++    return tags_decorator
++
++@tags('p')
++def get_text(name):
++    '''Returns some text example docstring'''
++    print('In get_text, name={}'.format(name))
++    return 'Hello, {}'.format(name)
+
+# 2017-09-13 12:50:12.792000
++print(get_text.__name__)
+
+# 2017-09-13 12:50:16.979000
++print(get_text.__doc__)
+
+# 2017-09-13 12:50:22.224000
++print(get_text.__module__)
+
+# 2017-09-13 12:51:10.914000
++def tags(tag_name):
++    def tags_decorator(func):
++        def func_wrapper(name):
++            print('In func_wrapper, name={}'.format(name))
++            return '<{0}>{1}</{0}>'.format(tag_name, func(name))
++        print('In tags_decorator, func={}'.format(func))
++        return func_wrapper
++    print('In tags, tag_name={}'.format(tag_name))
++    return tags_decorator
++
++@tags('p')
++def get_text(name):
++    '''Returns some text example docstring'''
++    print('In get_text, name={}'.format(name))
++    return 'Hello, {}'.format(name)
+
+# 2017-09-13 12:51:18.185000
++print(get_text.__name__)
+
+# 2017-09-13 12:51:22.042000
++print(get_text.__doc__)
+
+# 2017-09-13 12:51:24.790000
++print(get_text.__module__)
+
+# 2017-09-13 12:57:33.023000
++def p_decorate(func):
++    def func_wrapper(*args, **kwargs):
++        print('Inside func_wrapper, args={}, kwargs={}'.format(args, kwargs))
++        return '<p>{}</p>'.format(func(name))
++    print('Inside p_decorate, func={}'.format(func))
++    return func_wrapper
++
++class Person(object):
++    def __init__(self):
++        self.name = 'John'
++        self.family = 'Doe'
++    @p_decorate
++    def get_fullname(self):
++        return '{} {}'.format(self.name, self.family)
++
++my_person = Person()
++print(my_person.get_fullname())
+
+# 2017-09-13 12:58:21.488000
++def p_decorate(func):
++    def func_wrapper(*args, **kwargs):
++        print('Inside func_wrapper, args={}, kwargs={}'.format(args, kwargs))
++        return '<p>{}</p>'.format(func(*args, **kwargs))
++    print('Inside p_decorate, func={}'.format(func))
++    return func_wrapper
++
++class Person(object):
++    def __init__(self):
++        self.name = 'John'
++        self.family = 'Doe'
++    @p_decorate
++    def get_fullname(self):
++        return '{} {}'.format(self.name, self.family)
++
++my_person = Person()
++print(my_person.get_fullname())
+
+# 2017-09-13 12:58:41.813000
++def p_decorate(func):
++    def func_wrapper(*args, **kwargs):
++        print('Inside func_wrapper, args={}, kwargs={}'.format(args, kwargs))
++        return '<p>{}</p>'.format(func(*args, **kwargs))
++    print('Inside p_decorate, func={}'.format(func))
++    return func_wrapper
+
+# 2017-09-13 12:58:46.757000
++class Person(object):
++    def __init__(self):
++        self.name = 'John'
++        self.family = 'Doe'
++    @p_decorate
++    def get_fullname(self):
++        return '{} {}'.format(self.name, self.family)
+
+# 2017-09-13 12:58:51.529000
++my_person = Person()
++print(my_person.get_fullname())
+
+# 2017-09-13 13:04:16.539000
++class myDecorator(object):
++    def __init__(self, f):
++        print "inside myDecorator.__init__()"
++        f() # Prove that function definition has completed
++    def __call__(self):
++        print "inside myDecorator.__call__()"
++
++@myDecorator
++def aFunction():
++    print "inside aFunction()"
++
++print "Finished decorating aFunction()"
++aFunction()
+
+# 2017-09-13 13:04:23.301000
++class myDecorator(object):
++    def __init__(self, f):
++        print "inside myDecorator.__init__()"
++        f() # Prove that function definition has completed
++    def __call__(self):
++        print "inside myDecorator.__call__()"
+
+# 2017-09-13 13:04:27.528000
++@myDecorator
++def aFunction():
++    print "inside aFunction()"
+
+# 2017-09-13 13:05:09.529000
++print "Finished decorating aFunction()"
++aFunction()
+
+# 2017-09-13 13:06:08.406000
++print "Finished decorating aFunction()"
+
+# 2017-09-13 13:06:11.761000
++aFunction()
+
+# 2017-09-14 06:29:43.556000
++__dict__
+
+# 2017-09-14 06:29:46.493000
++dir()
+
+# 2017-09-14 06:30:01.354000
++myDecorator.__dict__
+
+# 2017-09-14 06:31:28.186000
++def func1(*args, **kwargs):
++    print('My __dict__={}'.format(__dict__))
++    print('func1.__dict__={}'.format(func1.__dict__))
+
+# 2017-09-14 06:31:31.666000
++func1()
+
+# 2017-09-14 06:31:52.504000
++def func1(*args, **kwargs):
++    print('func1.__dict__={}'.format(func1.__dict__))
+
+# 2017-09-14 06:31:56.368000
++func1()
+
+# 2017-09-14 06:32:03.270000
++func1(1, 2, 3)
+
+# 2017-09-14 06:32:20.966000
++func1
+
+# 2017-09-14 06:32:25.588000
++func1.__dict__
+
+# 2017-09-14 06:32:28.934000
++dir(func1)
+
+# 2017-09-14 06:32:52.019000
++func1.func_dict
+
+# 2017-09-14 06:32:58.184000
++func1.func_name
+
+# 2017-09-14 06:43:07.734000
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    def decl2(f, *args2, **kwargs2):
++        print('Entered decl2, f={}, *args2={}, **kwargs2={}'.format(f, args2, kwargs2))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, f={}, *args2={}, **kwargs2={}'.format(f, args2, kwargs2))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking f...')
++            res = f()
++            print('(after) f was invoked...')
++            print('Returning result of f...')
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:47:58.105000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func({})...'.format(dec_func.__name__))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ()...'.format(res))
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:49:54.669000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func with args:  {}({}, {})...'.format(dec_func.__name__, *args3, **kwargs3))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ()...'.format(res))
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:51:54.083000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func with args:  {}({}, {})...'.format(
++                    dec_func.__name__, args3, kwargs3))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ()...'.format(res))
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:52:57.072000
++print True
+
+# 2017-09-14 06:53:02.233000
++print(True)
+
+# 2017-09-14 06:53:15.213000
++sayHello(1,2,3,4)
+
+# 2017-09-14 06:54:40.201000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func with args:  {}({}, {})...'.format(
++                    dec_func.__name__, args3, kwargs3))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ()...'.format(res))
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return 4
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:54:48.159000
++sayHello(1,2,3,4)
+
+# 2017-09-14 06:55:17.015000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func with args:  {}({}, {})...'.format(
++                    dec_func.__name__, args3, kwargs3))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ({})...'.format(res))
++            return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:55:36.153000
++sayHello(1,2,4,5)
+
+# 2017-09-14 06:55:47.308000
++# I enclose the decorator arguments
++def decl1(*args1, **kwargs1):
++    print('Entered decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++    # I enclose the decorated function
++    def decl2(dec_func):
++        print('Entered decl2, dec_func={}'.format(dec_func))
++        print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++
++        # I enclose the decorated function's arguments
++        def decl3(*args3, **kwargs3):
++            print('Entered decl3, *args3={}, **kwargs3={}'.format(args3, kwargs3))
++            print('Enclosed from decl2, dec_func={}'.format(dec_func))
++            print('Enclosed from decl1, *args1={}, **kwargs1={}'.format(args1, kwargs1))
++            print('(before) Invoking dec_func with args:  {}({}, {})...'.format(
++                    dec_func.__name__, args3, kwargs3))
++            res = dec_func(*args3, **kwargs3)
++            print('(after) dec_func was invoked...')
++            print('Returning result of dec_func ({})...'.format(res))
++            # return res
++
++        print('decl3 defined, returning it with captured function and args via closure...')
++        return decl3
++
++    print('decl2 defined, returning it with captured decorator args via closure...')
++    return decl2
++
++@decl1("hello", "world", number=42)
++def sayHello(a1, a2, a3, a4):
++    print 'sayHello arguments:', a1, a2, a3, a4
++
++    return True
++
++sayHello('do', 'rey', 'mi', 'fa')
+
+# 2017-09-14 06:55:52.572000
++sayHello(1,2,3,4)
+
+# 2017-09-19 09:52:41.589000
++exit
+
+# 2017-09-19 09:54:39.521000
++
