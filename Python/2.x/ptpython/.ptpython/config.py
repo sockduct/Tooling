@@ -101,11 +101,13 @@ def configure(repl):
     repl.enable_input_validation = True
 
     # Use this colorscheme for the code.
-    repl.use_code_colorscheme('pastie')
+    # repl.use_code_colorscheme('pastie')
+    # repl.use_code_colorscheme('default')
+    repl.use_code_colorscheme('win32')
 
     # Enable 24bit True color. (Not all terminals support this. -- maybe check
     # $TERM before changing.)
-    repl.true_color = False
+    repl.true_color = True
 
     # Install custom colorscheme named 'my-colorscheme' and use it.
     """
@@ -166,3 +168,4 @@ _custom_ui_colorscheme = {
     # Make the status toolbar red.
     Token.Toolbar.Status:                         'bg:#ff0000 #000000',
 }
+
