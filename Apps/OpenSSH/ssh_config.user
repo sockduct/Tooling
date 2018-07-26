@@ -1,11 +1,13 @@
-# Added to support Cisco devices
-# List available algorithms:  ssh -Q kex
-# These are default KexAlgorithms for Git Bash
-# diffie-hellman-group1-sha1, diffie-hellman-group14-sha1,
-# diffie-hellman-group14-sha256, diffie-hellman-group16-sha512,
-# diffie-hellman-group18-sha512, diffie-hellman-group-exchange-sha1,
-# diffie-hellman-group-exchange-sha256, ecdh-sha2-nistp256,
-# ecdh-sha2-nistp384, ecdh-sha2-nistp521, curve25519-sha256@libssh.org
-#
+# User OpenSSH configuration
+
+# List available Ciphers:  ssh -Q cipher
+# List available MACs:  ssh -Q mac
+# List available Key Exchange Algorithms:  ssh -Q kex
+# List available accepted Public Key types:  ssh -Q key
+
+# Updated to support ssh to Cisco devices
+Ciphers 3des-cbc,aes128-cbc,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+
+# Updated to support ssh to Cisco devices
 KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,curve25519-sha256@libssh.org
 
