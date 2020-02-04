@@ -36,7 +36,7 @@ Import-Module posh-git
 # Start-SshAgent -Quiet
 # "C:\Program Files\git\usr\bin\ssh-agent"
 # Use Git Start-SSH-Agent:
-# "C:\Program Files\git\cmd\start-ssh-agent.cmd"
+. $Env:ComSpec /c "C:\Program Files\git\cmd\start-ssh-agent.cmd"
 
 #function Test-Administrator {
 #    $user = [Security.Principal.WindowsIdentity]::GetCurrent();
