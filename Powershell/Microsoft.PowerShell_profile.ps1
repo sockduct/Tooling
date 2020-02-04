@@ -2,35 +2,46 @@
 #. 'C:\Apps\Working\Tooling\git\modules\posh-git\profile.example.ps1'
 
 # Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
+#$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+#if (Test-Path($ChocolateyProfile)) {
+#  Import-Module "$ChocolateyProfile"
+#}
+
+# Old
+#. "C:\Apps\Working\Tooling\PowerShell\Modules\Get-ChildItem-Color\Get-ChildItem-Color.ps1"
+
+# From https://github.com/joonro/Get-ChildItemColor
+If (-Not (Test-Path Variable:PSise)) {  # Only run this in the console and not in the ISE
+    Import-Module Get-ChildItemColor
+    
+    Set-Alias dir Get-ChildItem -option AllScope
+    Set-Alias dirw Get-ChildItemColorFormatWide -option AllScope
 }
 
-. "C:\Apps\Working\Tooling\PowerShell\Modules\Get-ChildItem-Color\Get-ChildItem-Color.ps1"
-Set-Alias l Get-ChildItem-Color -option AllScope -Force
-Set-Alias dir Get-ChildItem-Color -option AllScope -Force
-Set-Alias ls Get-ChildItem-Format-Wide -option AllScope -Force
-
+# From https://github.com/dahlbyk/posh-git
 Import-Module posh-git
 
+# Old way of setting up prompt
 # Set up a simple prompt, adding the git prompt parts inside git repos
-function global:prompt {
-    $realLASTEXITCODE = $LASTEXITCODE
-    Write-Host($pwd.ProviderPath) -nonewline
-    Write-VcsStatus
-    $global:LASTEXITCODE = $realLASTEXITCODE
-    return "> "
-}
+#function global:prompt {
+#    $realLASTEXITCODE = $LASTEXITCODE
+#    Write-Host($pwd.ProviderPath) -nonewline
+#    Write-VcsStatus
+#    $global:LASTEXITCODE = $realLASTEXITCODE
+#    return "> "
+#}
 
 # Hangs - commenting out for now...
+# OK now, but doesn't work - perhaps because of path but not sure...
 # Start-SshAgent -Quiet
-"C:\Program Files\git\usr\bin\ssh-agent"
+# "C:\Program Files\git\usr\bin\ssh-agent"
+# Use Git Start-SSH-Agent:
+# "C:\Program Files\git\cmd\start-ssh-agent.cmd"
 
-function Test-Administrator {
-    $user = [Security.Principal.WindowsIdentity]::GetCurrent();
-    (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-}
+#function Test-Administrator {
+#    $user = [Security.Principal.WindowsIdentity]::GetCurrent();
+#    (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+#}
 
 #function prompt {
 #    $realLASTEXITCODE = $LASTEXITCODE
