@@ -45,6 +45,11 @@ endfunction
 
 "
 " User defined
+"
+" Undo re-map Ctrl-F to Find in gvim:
+" Never want to remap this!
+unmap <C-F>
+"
 " Enable power of vim, compatible mode cripples it
 set nocompatible
 "
